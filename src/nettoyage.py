@@ -16,10 +16,24 @@ INFOS_PUBLIABLES = {
 
 
 def charger_dernier(prefixe: str) -> pd.DataFrame:
-    """Lit le fichier brut le plus récent dont le nom commence par `prefixe`."""
+    """Lit la version la plus récente d'un fichier brut.
+
+    Ordre de recherche : d'abord la copie figée sur MinIO (source de référence
+    pour la reproductibilité), sinon le fichier local dans data/raw.
+    """
+    try:
+        from stockage import lire, lister
+        distants = lister(prefixe)
+    except Exception:          # hors SSP Cloud ou s3fs absent
+        distants = []
+    if distants:
+        print(f"Lecture MinIO : {distants[-1]}")
+        return lire(distants[-1])
+
     fichiers = sorted(RAW.glob(f"{prefixe}_*.csv"))
     if not fichiers:
-        raise FileNotFoundError(f"Aucun fichier {prefixe}_*.csv dans {RAW}")
+        raise FileNotFoundError(f"Aucun fichier {prefixe}_* sur MinIO ni dans {RAW}")
+    print(f"Lecture locale : {fichiers[-1]}")
     return pd.read_csv(fichiers[-1])
 
 

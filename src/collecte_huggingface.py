@@ -8,6 +8,7 @@ import pandas as pd
 import requests
 
 from config import AUJOURDHUI, RAW
+from stockage import envoyer
 
 ORGANISATIONS = {
     "mistralai": "France", "kyutai": "France", "lightonai": "France",
@@ -37,4 +38,6 @@ if __name__ == "__main__":
     RAW.mkdir(parents=True, exist_ok=True)
     hf = pd.concat([modeles_organisation(o) for o in ORGANISATIONS], ignore_index=True)
     hf.to_csv(RAW / f"hf_models_{AUJOURDHUI}.csv", index=False)
+    hf["tags"] = hf["tags"].astype(str)   # Parquet n'accepte pas les listes hétérogènes
+    print("MinIO ->", envoyer(hf, f"hf_models_{AUJOURDHUI}"))
     print(hf.groupby("pays")["downloads"].sum().sort_values(ascending=False))

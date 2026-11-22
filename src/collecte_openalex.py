@@ -17,6 +17,7 @@ import requests
 from dotenv import load_dotenv
 
 from config import AUJOURDHUI, CODES_ISO, RAW
+from stockage import envoyer
 
 load_dotenv()
 API = "https://api.openalex.org"
@@ -105,6 +106,9 @@ if __name__ == "__main__":
         raise SystemExit("Définir OPENALEX_API_KEY avant de lancer la collecte.")
     RAW.mkdir(parents=True, exist_ok=True)
     print(chercher_subfield())
-    table_publications().to_csv(RAW / f"openalex_publications_{AUJOURDHUI}.csv", index=False)
+    publications = table_publications()
+    publications.to_csv(RAW / f"openalex_publications_{AUJOURDHUI}.csv", index=False)
+    print("MinIO ->", envoyer(publications, f"openalex_publications_{AUJOURDHUI}"))
     resumes = pd.concat([echantillon_resumes("fr"), echantillon_resumes("us")])
     resumes.to_csv(RAW / f"openalex_resumes_{AUJOURDHUI}.csv", index=False)
+    print("MinIO ->", envoyer(resumes, f"openalex_resumes_{AUJOURDHUI}"))

@@ -37,9 +37,15 @@ Puis exécuter les notebooks dans l'ordre :
 - `notebooks/01_epoch_descriptif.ipynb` — retard et opacité, statistiques descriptives
 - `notebooks/02_nlp_termes.ipynb` — de quoi parle la recherche française en IA (nuages de mots, termes surreprésentés, loi de Zipf)
 
-Les fichiers bruts sont datés : une fois collectés, ils sont copiés sur le stockage
-MinIO du SSPCloud et les notebooks les relisent depuis là, pour que l'analyse reste
-reproductible même si une API change.
+Les fichiers bruts sont datés. Chaque script de collecte les « fige » aussi en
+Parquet sur le stockage MinIO du SSP Cloud, dans
+`<bucket>/diffusion/projet-ia-france/raw/` (lisible par tous les utilisateurs
+du SSP Cloud). Les notebooks relisent en priorité ces copies : l'analyse reste
+reproductible même si une API change. Le bucket utilisé se règle avec la
+variable d'environnement `PROJET_BUCKET` (bucket d'un des membres du groupe).
+
+Créer au préalable le dossier `diffusion` dans son bucket, via
+[Mes fichiers](https://datalab.sspcloud.fr/my-files).
 
 ## Organisation du dépôt
 

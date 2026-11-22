@@ -3,6 +3,7 @@
 import pandas as pd
 
 from config import AUJOURDHUI, RAW
+from stockage import envoyer
 
 URL_EPOCH = "https://epoch.ai/data/notable_ai_models.csv"
 
@@ -20,3 +21,4 @@ if __name__ == "__main__":
     chemin = RAW / f"epoch_notable_models_{AUJOURDHUI}.csv"
     epoch.to_csv(chemin, index=False)
     print(f"{len(epoch)} modèles, {epoch.shape[1]} colonnes -> {chemin}")
+    print("MinIO ->", envoyer(epoch, f"epoch_notable_models_{AUJOURDHUI}"))
