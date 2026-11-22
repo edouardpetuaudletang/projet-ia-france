@@ -15,10 +15,15 @@ def telecharger_epoch(url: str = URL_EPOCH) -> pd.DataFrame:
     return df
 
 
-if __name__ == "__main__":
+def main():
+    """Collecte, sauvegarde locale datée et copie figée sur MinIO."""
     RAW.mkdir(parents=True, exist_ok=True)
     epoch = telecharger_epoch()
     chemin = RAW / f"epoch_notable_models_{AUJOURDHUI}.csv"
     epoch.to_csv(chemin, index=False)
     print(f"{len(epoch)} modèles, {epoch.shape[1]} colonnes -> {chemin}")
     print("MinIO ->", envoyer(epoch, f"epoch_notable_models_{AUJOURDHUI}"))
+
+
+if __name__ == "__main__":
+    main()

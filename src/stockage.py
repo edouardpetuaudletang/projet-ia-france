@@ -24,10 +24,17 @@ def _fs():
 
 
 def envoyer(df: pd.DataFrame, nom: str) -> str:
-    """Écrit `df` en Parquet sur MinIO sous le nom `nom` (sans extension)."""
+    """Écrit `df` en Parquet sur MinIO sous le nom `nom` (sans extension).
+
+    Hors du SSP Cloud (pas d'accès MinIO), la copie distante est ignorée avec
+    un avertissement : la copie locale dans data/raw suffit pour avancer.
+    """
     chemin = f"{DOSSIER}/{nom}.parquet"
-    with _fs().open(chemin, "wb") as f:
-        df.to_parquet(f, index=False)
+    try:
+        with _fs().open(chemin, "wb") as f:
+            df.to_parquet(f, index=False)
+    except Exception as erreur:          # pas de jetons S3, réseau, s3fs absent…
+        return f"non envoyé ({type(erreur).__name__}) : copie locale uniquement"
     return chemin
 
 

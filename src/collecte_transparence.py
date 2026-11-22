@@ -66,7 +66,8 @@ def signataires(url: str = URL_CODE) -> pd.DataFrame:
     return df
 
 
-if __name__ == "__main__":
+def main():
+    """Collecte, sauvegarde locale datée et copie figée sur MinIO."""
     RAW.mkdir(parents=True, exist_ok=True)
     scores = fmti()
     scores.to_csv(RAW / f"fmti_scores_{AUJOURDHUI}.csv", index=False)
@@ -77,3 +78,7 @@ if __name__ == "__main__":
     signes.to_csv(RAW / f"signataires_code_{AUJOURDHUI}.csv", index=False)
     print("MinIO ->", envoyer(signes, f"signataires_code_{AUJOURDHUI}"))
     print(signes)
+
+
+if __name__ == "__main__":
+    main()

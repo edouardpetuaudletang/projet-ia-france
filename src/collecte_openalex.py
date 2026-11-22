@@ -107,7 +107,8 @@ def echantillon_resumes(pays: str, annee_min: int = 2022, n: int = 1000) -> pd.D
     return pd.DataFrame(lignes)
 
 
-if __name__ == "__main__":
+def main():
+    """Collecte, sauvegarde locale datée et copie figée sur MinIO."""
     if not CLE:
         print("Attention : pas de OPENALEX_API_KEY, budget gratuit partagé et limité.")
     RAW.mkdir(parents=True, exist_ok=True)
@@ -118,3 +119,7 @@ if __name__ == "__main__":
     resumes = pd.concat([echantillon_resumes("fr"), echantillon_resumes("us")])
     resumes.to_csv(RAW / f"openalex_resumes_{AUJOURDHUI}.csv", index=False)
     print("MinIO ->", envoyer(resumes, f"openalex_resumes_{AUJOURDHUI}"))
+
+
+if __name__ == "__main__":
+    main()

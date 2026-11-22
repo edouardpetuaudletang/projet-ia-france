@@ -33,9 +33,14 @@ def table_pays() -> pd.DataFrame:
     return out.sort_values(["pays", "annee"])
 
 
-if __name__ == "__main__":
+def main():
+    """Collecte, sauvegarde locale datée et copie figée sur MinIO."""
     RAW.mkdir(parents=True, exist_ok=True)
     pays = table_pays()
     pays.to_csv(RAW / f"banque_mondiale_{AUJOURDHUI}.csv", index=False)
     print("MinIO ->", envoyer(pays, f"banque_mondiale_{AUJOURDHUI}"))
     print(pays.tail())
+
+
+if __name__ == "__main__":
+    main()
