@@ -52,19 +52,38 @@ def profil_maillons(profil, titre, fichier=None):
     return ax
 
 
-def barres_divergentes(termes, colonne, titre, etiquette, fichier=None):
-    """Barres horizontales signées : > 0 associé à la France, < 0 aux États-Unis."""
+def barres_rapport(termes, titre, fichier=None):
+    """Barres horizontales sur échelle log : rapport des fréquences France / États-Unis.
+
+    Barre vers la droite = terme plus fréquent en France, vers la gauche = aux
+    États-Unis. L'échelle log rend symétriques « 3 fois plus » et « 3 fois moins ».
+    """
     fig, ax = plt.subplots(figsize=(8, 7))
-    termes = termes.sort_values(colonne)
-    couleurs = [COULEURS_PAYS["France"] if v > 0 else COULEURS_PAYS["États-Unis"]
-                for v in termes[colonne]]
-    ax.barh(termes["terme"], termes[colonne], color=couleurs, height=0.65)
+    termes = termes.sort_values("rapport")
+    couleurs = [COULEURS_PAYS["France"] if v > 1 else COULEURS_PAYS["États-Unis"]
+                for v in termes["rapport"]]
+    ax.barh(termes["terme"], np.log10(termes["rapport"]), color=couleurs, height=0.65)
     ax.axvline(0, color="#8a8984", linewidth=1)
-    for seuil in (-2, 2):
-        ax.axvline(seuil, color="#b4b2ab", linewidth=0.8, linestyle="--")
-    ax.set_xlabel(etiquette)
+    graduations = [1 / 10, 1 / 3, 1, 3, 10]
+    ax.set_xticks(np.log10(graduations), ["÷10", "÷3", "=", "×3", "×10"])
+    ax.set_xlabel("Fréquence en France rapportée à la fréquence aux États-Unis")
     ax.set_title(titre)
     ax.grid(axis="y", visible=False)
+    _enregistrer(ax, fichier)
+    return ax
+
+
+def nuage_de_points_annote(table, x, y, titre, xlabel, ylabel, fichier=None):
+    """Nuage de points avec le nom de chaque ligne écrit à côté de son point."""
+    fig, ax = plt.subplots(figsize=(8, 5.5))
+    ax.scatter(table[x], table[y], s=60, color="#2a78d6", zorder=3)
+    for nom, ligne in table.iterrows():
+        ax.annotate(nom, (ligne[x], ligne[y]), textcoords="offset points", xytext=(6, 4), fontsize=9)
+    ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
+    ax.yaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
+    ax.set_xlabel(xlabel)
+    ax.set_ylabel(ylabel)
+    ax.set_title(titre)
     _enregistrer(ax, fichier)
     return ax
 

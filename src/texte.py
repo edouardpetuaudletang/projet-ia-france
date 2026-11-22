@@ -37,24 +37,28 @@ def frequences(liste_tokens) -> pd.DataFrame:
     return df
 
 
-def termes_surrepresentes(freq_a: pd.DataFrame, freq_b: pd.DataFrame,
-                          alpha: float = 0.01) -> pd.DataFrame:
-    """Log-odds ratio avec a priori de Dirichlet (Monroe, Colaresi & Quinn, 2008).
+def comparer_presence(tokens_a, tokens_b, min_articles=20):
+    """Compare deux corpus terme par terme.
 
-    Compare deux corpus A et B. Le z-score corrige l'avantage des mots rares :
-    un z > 2 signale un terme nettement plus fréquent dans A que dans B.
+    Pour chaque terme : la part des articles qui le mentionnent dans chaque
+    corpus, puis le rapport entre les deux. Un rapport de 3 veut dire que le
+    terme apparaît dans 3 fois plus d'articles (en proportion) dans le corpus A
+    que dans le corpus B.
+
+    On compte des articles plutôt que des occurrences : un terme répété vingt
+    fois dans un seul résumé ne doit pas peser plus qu'un terme cité dans vingt
+    articles différents. On ne garde que les termes présents dans au moins
+    `min_articles` articles au total.
     """
-    t = (freq_a.set_index("terme")["freq"].rename("a").to_frame()
-         .join(freq_b.set_index("terme")["freq"].rename("b"), how="outer").fillna(0))
-    prior = alpha * (t["a"] + t["b"])
-    n_a, n_b, a0 = t["a"].sum(), t["b"].sum(), prior.sum()
-    lo_a = np.log((t["a"] + prior) / (n_a + a0 - t["a"] - prior))
-    lo_b = np.log((t["b"] + prior) / (n_b + a0 - t["b"] - prior))
-    delta = lo_a - lo_b
-    var = 1 / (t["a"] + prior) + 1 / (t["b"] + prior)
-    t["log_odds"] = delta
-    t["z"] = delta / np.sqrt(var)
-    return t.sort_values("z", ascending=False).reset_index()
+    presence_a = Counter(t for tokens in tokens_a for t in set(tokens))
+    presence_b = Counter(t for tokens in tokens_b for t in set(tokens))
+    t = pd.DataFrame({"articles_a": pd.Series(presence_a), "articles_b": pd.Series(presence_b)}).fillna(0)
+    t = t.loc[t["articles_a"] + t["articles_b"] >= min_articles]
+    t["part_a"] = t["articles_a"] / len(tokens_a)
+    t["part_b"] = t["articles_b"] / len(tokens_b)
+    # un article fictif de chaque côté évite les divisions par zéro
+    t["rapport"] = ((t["articles_a"] + 1) / (len(tokens_a) + 1)) / ((t["articles_b"] + 1) / (len(tokens_b) + 1))
+    return t.rename_axis("terme").sort_values("rapport", ascending=False).reset_index()
 
 
 def nuage(frequences_dict: dict, ax, titre: str, couleur: str = "#2a78d6"):

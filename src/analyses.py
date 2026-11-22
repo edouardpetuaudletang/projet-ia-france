@@ -7,7 +7,6 @@ et l'interprétation.
 
 import numpy as np
 import pandas as pd
-import statsmodels.formula.api as smf
 
 from nettoyage import cle_organisation, statut_signature
 
@@ -49,42 +48,29 @@ def profil_recent(chaine, hf, periode="2024-2025"):
     }).reindex(PAYS)
 
 
-def temps_de_doublement(epoch_pays):
-    """Régression log-linéaire de la puissance de calcul sur la date, par échantillon."""
-    calc = epoch_pays.dropna(subset=["log10_calcul"])
-    calc = calc.loc[calc["annee"] >= 2015].assign(
-        t=lambda d: d["date"].dt.year + d["date"].dt.dayofyear / 365.25)
-    echantillons = {"tous les modèles": calc, "modèles de pointe": calc[calc["frontiere"]],
-                    "États-Unis": calc[calc["pays"] == "États-Unis"],
-                    "Chine": calc[calc["pays"] == "Chine"]}
-    lignes = []
-    for nom, d in echantillons.items():
-        m = smf.ols("log10_calcul ~ t", data=d).fit()
-        b, (bas, haut) = m.params["t"], m.conf_int().loc["t"]
-        mois = lambda x: 12 * np.log10(2) / x
-        lignes.append({"échantillon": nom, "n": int(m.nobs),
-                       "doublement (mois)": round(mois(b), 1),
-                       "IC 95 % (mois)": f"{mois(haut):.1f} - {mois(bas):.1f}",
-                       "R²": round(m.rsquared, 2)})
-    return pd.DataFrame(lignes)
+def record_par_annee(epoch, depuis=2015):
+    """Puissance de calcul du modèle le plus puissant de chaque année (en FLOP),
+    et son évolution par rapport à l'année précédente."""
+    r = epoch.loc[epoch["annee"] >= depuis].dropna(subset=["log10_calcul"])
+    # log10_calcul est la version numérique et nettoyée de la colonne FLOP
+    record = (10 ** r.groupby("annee")["log10_calcul"].max()).rename("record (FLOP)")
+    t = record.to_frame()
+    t["× par rapport à l'année précédente"] = t["record (FLOP)"] / t["record (FLOP)"].shift()
+    return t
 
 
-def logit_publication(epoch_pays, depuis=2018):
-    """Probabilité que la puissance de calcul soit connue : rapports de chances."""
-    d = (epoch_pays.loc[(epoch_pays["annee"] >= depuis) & (epoch_pays["poids"] == 1)
-                        & epoch_pays["ouvert"].notna()]
-         .assign(publie=lambda x: x["publie_calcul"].astype(int),
-                 ouvert=lambda x: x["ouvert"].astype(int),
-                 frontiere=lambda x: x["frontiere"].astype(int),
-                 annees_depuis=lambda x: x["annee"] - depuis))
-    m = smf.logit("publie ~ annees_depuis + ouvert + frontiere"
-                  " + C(pays, Treatment('États-Unis'))", data=d).fit(disp=False)
-    t = pd.DataFrame({"rapport de chances": np.exp(m.params),
-                      "IC bas": np.exp(m.conf_int()[0]), "IC haut": np.exp(m.conf_int()[1]),
-                      "p-valeur": m.pvalues}).round(3)
-    t.index = (t.index.str.replace("C(pays, Treatment('États-Unis'))[T.", "pays : ", regex=False)
-               .str.replace("]", "", regex=False))
-    return t, m
+def tableau_publication(epoch, depuis=2018):
+    """Part des modèles dont la puissance de calcul est connue,
+    par période et selon que les poids du modèle sont ouverts ou non."""
+    r = epoch.loc[(epoch["annee"] >= depuis) & epoch["ouvert"].notna()].copy()
+    r["periode"] = pd.cut(r["annee"], bins=[depuis - 1, 2020, 2023, 2026],
+                          labels=[f"{depuis}-2020", "2021-2023", "2024-2026"])
+    r["acces"] = np.where(r["ouvert"].astype(bool), "poids ouverts", "fermé")
+    part = r.pivot_table(index="periode", columns="acces", values="publie_calcul",
+                         aggfunc="mean", observed=True)
+    effectifs = r.pivot_table(index="periode", columns="acces", values="publie_calcul",
+                              aggfunc="count", observed=True).add_prefix("nombre, ")
+    return part.join(effectifs)
 
 
 def score_stanford(fmti, signataires):
@@ -105,9 +91,7 @@ def comparer_mesures(score, epoch, depuis=2024):
         score_epoch=("score_transparence", "mean"),
         calcul_publie_strict=("source_calcul", lambda s: (s == "calculée depuis des infos publiées").mean()))
     t = score[[derniere]].rename(columns={derniere: "stanford"}).join(epoch_dev, how="inner").dropna()
-    rho = {"score Epoch complet": t["stanford"].corr(t["score_epoch"], method="spearman"),
-           "calcul publié (strict)": t["stanford"].corr(t["calcul_publie_strict"], method="spearman")}
-    return t.sort_values("stanford", ascending=False), rho
+    return t.sort_values("stanford", ascending=False)
 
 
 def avant_apres_ai_act(epoch, signataires, depuis="2024-01-01"):
