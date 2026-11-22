@@ -1,5 +1,7 @@
 """Nettoyage de la base Epoch AI et construction des indicateurs."""
 
+import re
+
 import numpy as np
 import pandas as pd
 
@@ -96,3 +98,42 @@ def annees_de_retard(df_pays: pd.DataFrame, reference: str = "États-Unis") -> p
     record["annee_ref_au_meme_niveau"] = record["record"].map(premiere_annee_ref)
     record["retard_annees"] = record["annee"] - record["annee_ref_au_meme_niveau"]
     return record
+
+
+# --------------------------------------------------------------------------
+# Rapprochement des noms d'organisations entre sources
+# --------------------------------------------------------------------------
+# Epoch écrit « Google DeepMind », Stanford « Google », la Commission « Google » ;
+# Epoch « Meta AI », Stanford « Meta »… On ramène chaque nom à une clé commune.
+# La table est volontairement explicite : chaque rapprochement est un choix
+# documenté, à compléter si une organisation importante reste non appariée.
+CLES_ORGANISATIONS = {
+    "deepmind": "Google", "google": "Google",
+    "openai": "OpenAI", "anthropic": "Anthropic", "mistral": "Mistral",
+    "meta": "Meta", "facebook": "Meta", "microsoft": "Microsoft",
+    "amazon": "Amazon", "ibm": "IBM", "xai": "xAI", "alibaba": "Alibaba",
+    "qwen": "Alibaba", "deepseek": "DeepSeek", "cohere": "Cohere",
+    "aleph alpha": "Aleph Alpha", "writer": "Writer", "ai21": "AI21 Labs",
+    "stability": "Stability AI", "nvidia": "NVIDIA", "baidu": "Baidu",
+    "black forest labs": "Black Forest Labs", "servicenow": "ServiceNow",
+}
+
+
+def cle_organisation(nom) -> str | None:
+    """Clé commune d'une organisation, ou None si elle n'est pas répertoriée."""
+    if not isinstance(nom, str):
+        return None
+    bas = nom.lower()
+    for motif, cle in CLES_ORGANISATIONS.items():
+        if re.search(rf"(^|[^a-z]){re.escape(motif)}([^a-z]|$)", bas):
+            return cle
+    return None
+
+
+def statut_signature(cle, signataires: pd.DataFrame) -> str:
+    """'complète', 'partielle (…)' ou 'non signataire' pour une clé d'organisation."""
+    if cle is None:
+        return "non répertorié"
+    table = signataires.assign(cle=signataires["organisation"].map(cle_organisation))
+    ligne = table.loc[table["cle"] == cle, "signature"]
+    return ligne.iloc[0] if not ligne.empty else "non signataire"
