@@ -16,6 +16,7 @@ PAYS_COMPARES = {
     "United States of America": "États-Unis",
     "China": "Chine",
     "United Kingdom of Great Britain and Northern Ireland": "Royaume-Uni",
+    "United Kingdom": "Royaume-Uni",
     "France": "France",
     "Germany": "Allemagne",
     "Canada": "Canada",

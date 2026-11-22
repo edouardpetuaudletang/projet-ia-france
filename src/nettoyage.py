@@ -58,7 +58,13 @@ def preparer_epoch(brut: pd.DataFrame) -> pd.DataFrame:
         df[indicateur] = df[colonne].notna() if colonne in df else False
     df["score_transparence"] = df[list(INFOS_PUBLIABLES.values())].sum(axis=1)
 
-    df["ouvert"] = _vrai(df["Open model weights?"]) if "Open model weights?" in df else np.nan
+    # Ouverture : la colonne « Model accessibility » est la plus complète
+    # (Open weights / API access / Unreleased…) ; vide = information inconnue.
+    if "Model accessibility" in df:
+        acces = df["Model accessibility"].astype("string").str.lower()
+        df["ouvert"] = acces.str.startswith("open weights").astype("boolean").where(acces.notna())
+    else:
+        df["ouvert"] = _vrai(df["Open model weights?"])
     df["frontiere"] = _vrai(df["Frontier model"]) if "Frontier model" in df else False
     df["apres_ai_act"] = df["date"] >= pd.Timestamp(DATE_AI_ACT)
     df["log10_calcul"] = np.log10(pd.to_numeric(df["Training compute (FLOP)"], errors="coerce"))
