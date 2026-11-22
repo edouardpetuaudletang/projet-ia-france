@@ -3,10 +3,8 @@
 La clé d'API se lit dans la variable d'environnement OPENALEX_API_KEY
 (ou un fichier .env non versionné). Elle ne doit jamais apparaître dans le code.
 
-À vérifier au premier lancement : l'identifiant du sous-domaine
-« Artificial Intelligence » dans la classification d'OpenAlex
-(SUBFIELD_IA ci-dessous, 1702 a priori). La fonction `chercher_subfield`
-permet de le confirmer.
+Le sous-domaine « Artificial Intelligence » d'OpenAlex a l'identifiant 1702
+(vérifié avec `chercher_subfield`).
 """
 
 import os
@@ -41,31 +39,37 @@ def chercher_subfield(texte: str = "artificial intelligence") -> pd.DataFrame:
     return pd.DataFrame([{"id": s["id"], "nom": s["display_name"]} for s in res])
 
 
-def compter_publications(pays: str, annee: int, tres_citees: bool = False) -> int:
-    """Nombre d'articles en IA avec au moins une institution du pays."""
+# En IA, les actes de conférence (NeurIPS, ICML…) sont le principal canal de
+# publication : les exclure ferait disparaître plus de la moitié des articles.
+TYPES = "type:article|preprint|conference-paper"
+
+
+def publications_par_annee(pays: str, tres_citees: bool = False) -> pd.Series:
+    """Nombre d'articles en IA par année, avec au moins une institution du pays.
+
+    Une seule requête par pays grâce à `group_by=publication_year`.
+    """
     filtres = [
         f"primary_topic.subfield.id:{SUBFIELD_IA}",
         f"institutions.country_code:{pays}",
-        f"publication_year:{annee}",
-        "type:article|preprint",
+        f"publication_year:{min(ANNEES)}-{max(ANNEES)}",
+        TYPES,
     ]
-    params = {"filter": ",".join(filtres), "per_page": 1}
     if tres_citees:
-        # approximation : articles dans le 1 % le plus cité de leur année/domaine
-        params["filter"] += ",citation_normalized_percentile.is_in_top_1_percent:true"
-    return _get("works", params)["meta"]["count"]
+        filtres.append("citation_normalized_percentile.is_in_top_1_percent:true")
+    groupes = _get("works", {"filter": ",".join(filtres), "group_by": "publication_year"})["group_by"]
+    return pd.Series({int(g["key"]): g["count"] for g in groupes})
 
 
 def table_publications() -> pd.DataFrame:
     lignes = []
     for nom, code in CODES_ISO.items():
+        tout, top = publications_par_annee(code), publications_par_annee(code, tres_citees=True)
         for annee in ANNEES:
-            lignes.append({
-                "pays": nom, "annee": annee,
-                "publications": compter_publications(code, annee),
-                "publications_top1": compter_publications(code, annee, tres_citees=True),
-            })
-            print(nom, annee, lignes[-1]["publications"])
+            lignes.append({"pays": nom, "annee": annee,
+                           "publications": tout.get(annee, 0),
+                           "publications_top1": top.get(annee, 0)})
+        print(nom, "ok")
     return pd.DataFrame(lignes)
 
 
@@ -77,33 +81,35 @@ def reconstruire_resume(index_inverse: dict | None) -> str:
     return " ".join(mot for _, mot in sorted(positions))
 
 
-def echantillon_resumes(pays: str, annee_min: int = 2022, n: int = 2000) -> pd.DataFrame:
-    """Résumés des articles IA les plus cités d'un pays, pour la partie NLP."""
+def echantillon_resumes(pays: str, annee_min: int = 2022, n: int = 1000) -> pd.DataFrame:
+    """Résumés des n articles d'IA les plus cités d'un pays, pour la partie NLP.
+
+    Pagination simple (`page=`) : la pagination par curseur exige une clé d'API.
+    """
     filtres = ",".join([
         f"primary_topic.subfield.id:{SUBFIELD_IA}",
         f"institutions.country_code:{pays}",
         f"from_publication_date:{annee_min}-01-01",
-        "has_abstract:true",
+        "has_abstract:true", TYPES,
     ])
-    lignes, curseur = [], "*"
-    while curseur and len(lignes) < n:
-        page = _get("works", {"filter": filtres, "per_page": 200, "cursor": curseur,
-                              "sort": "cited_by_count:desc",
-                              "select": "id,title,publication_year,cited_by_count,abstract_inverted_index"})
-        for w in page["results"]:
+    lignes = []
+    for page in range(1, n // 200 + 1):
+        res = _get("works", {"filter": filtres, "per_page": 200, "page": page,
+                             "sort": "cited_by_count:desc",
+                             "select": "id,title,publication_year,cited_by_count,abstract_inverted_index"})
+        for w in res["results"]:
             lignes.append({
                 "id": w["id"], "titre": w["title"], "annee": w["publication_year"],
                 "citations": w["cited_by_count"],
                 "resume": reconstruire_resume(w.get("abstract_inverted_index")),
                 "pays": pays,
             })
-        curseur = page["meta"].get("next_cursor")
-    return pd.DataFrame(lignes[:n])
+    return pd.DataFrame(lignes)
 
 
 if __name__ == "__main__":
     if not CLE:
-        raise SystemExit("Définir OPENALEX_API_KEY avant de lancer la collecte.")
+        print("Attention : pas de OPENALEX_API_KEY, budget gratuit partagé et limité.")
     RAW.mkdir(parents=True, exist_ok=True)
     print(chercher_subfield())
     publications = table_publications()
