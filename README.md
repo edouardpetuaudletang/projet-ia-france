@@ -23,40 +23,40 @@ Projet Python pour la data science — ENSAE 2A.
 
 ## Reproduire
 
+Le rapport final est **`rapport.ipynb`**, à la racine : il s'exécute de bout en bout,
+de la lecture des données aux conclusions.
+
 ```bash
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
-export OPENALEX_API_KEY="..."          # jamais dans le dépôt
-
-python src/collecte_epoch.py           # -> data/raw/epoch_notable_models_<date>.csv
-python src/collecte_openalex.py        # -> data/raw/openalex_*.csv
-python src/collecte_huggingface.py     # -> data/raw/hf_models_<date>.csv
-python src/collecte_transparence.py    # -> data/raw/fmti_scores_<date>.csv, signataires_code_<date>.csv
-python src/collecte_banque_mondiale.py # -> data/raw/banque_mondiale_<date>.csv
+export OPENALEX_API_KEY="..."          # clé gratuite, jamais dans le dépôt
 ```
 
-Puis exécuter les notebooks dans l'ordre :
+Par défaut, le rapport relit les données figées (stockage MinIO du SSP Cloud,
+sinon `data/raw/`). Mettre `COLLECTER = True` dans sa première cellule de code
+relance toute la collecte (`src/pipeline.py`), source par source. Chaque script
+de collecte peut aussi être lancé seul, par exemple `python src/collecte_epoch.py`.
 
-- `notebooks/01_epoch_descriptif.ipynb` — retard et opacité, statistiques descriptives
-- `notebooks/02_nlp_termes.ipynb` — de quoi parle la recherche française en IA (nuages de mots, termes surreprésentés, loi de Zipf)
-- `notebooks/03_recherche_modeles.ipynb` — de la recherche aux modèles : où la France décroche-t-elle ?
-- `notebooks/04_transparence.ipynb` — transparence selon Stanford, avant / après l'AI Act
+Chaque collecte « fige » ses données en Parquet sur MinIO, dans
+`<bucket>/diffusion/projet-ia-france/raw/` (lisible par tous les utilisateurs du
+SSP Cloud), en plus d'une copie datée dans `data/raw/`. Le bucket se règle avec
+la variable d'environnement `PROJET_BUCKET`. Créer au préalable le dossier
+`diffusion` via [Mes fichiers](https://datalab.sspcloud.fr/my-files).
 
-Les fichiers bruts sont datés. Chaque script de collecte les « fige » aussi en
-Parquet sur le stockage MinIO du SSP Cloud, dans
-`<bucket>/diffusion/projet-ia-france/raw/` (lisible par tous les utilisateurs
-du SSP Cloud). Les notebooks relisent en priorité ces copies : l'analyse reste
-reproductible même si une API change. Le bucket utilisé se règle avec la
-variable d'environnement `PROJET_BUCKET` (bucket d'un des membres du groupe).
+Les notebooks de `notebooks/` sont des **annexes** : analyses détaillées et tests
+de robustesse qui ne figurent pas dans le rapport.
 
-Créer au préalable le dossier `diffusion` dans son bucket, via
-[Mes fichiers](https://datalab.sspcloud.fr/my-files).
+- `01_epoch_descriptif` — retard et opacité, analyses complètes
+- `02_nlp_termes` — analyse textuelle complète (fréquences, loi de Zipf…)
+- `03_recherche_modeles` — de la recherche aux modèles, par habitant
+- `04_transparence` — Stanford et AI Act en détail
 
 ## Organisation du dépôt
 
 ```
-src/           collecte et nettoyage (fonctions réutilisables)
-notebooks/     analyses
+rapport.ipynb  rapport final
+src/           collecte, nettoyage, analyses et graphiques (fonctions réutilisables)
+notebooks/     annexes
 data/raw/      données brutes datées (non versionnées)
 data/processed données nettoyées (non versionnées)
 figures/       graphiques exportés pour le rapport
