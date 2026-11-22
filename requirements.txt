@@ -8,5 +8,6 @@ statsmodels
 spacy
 wordcloud
 python-dotenv
+beautifulsoup4
 # modèles spaCy (à installer une fois) :
 #   python -m spacy download en_core_web_sm
