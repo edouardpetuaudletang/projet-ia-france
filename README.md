@@ -18,7 +18,8 @@ Projet Python pour la data science — ENSAE 2A.
 | [OpenAlex](https://developers.openalex.org) | API, clé gratuite | publications en IA par pays, résumés (NLP) |
 | [Hugging Face Hub](https://huggingface.co/docs/huggingface_hub) | API libre | diffusion des modèles ouverts |
 | [FMTI, Stanford](https://github.com/stanford-crfm/fmti) | CSV GitHub | score de transparence (validation) |
-| [Signataires du code GPAI](https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai) | page web | avant / après AI Act |
+| [Signataires du code GPAI](https://digital-strategy.ec.europa.eu/en/policies/contents-code-gpai) | web scraping | avant / après AI Act |
+| [Banque mondiale](https://data.worldbank.org) | API libre | population et PIB, pour rapporter les indicateurs à la taille des pays |
 
 ## Reproduire
 
@@ -30,12 +31,16 @@ export OPENALEX_API_KEY="..."          # jamais dans le dépôt
 python src/collecte_epoch.py           # -> data/raw/epoch_notable_models_<date>.csv
 python src/collecte_openalex.py        # -> data/raw/openalex_*.csv
 python src/collecte_huggingface.py     # -> data/raw/hf_models_<date>.csv
+python src/collecte_transparence.py    # -> data/raw/fmti_scores_<date>.csv, signataires_code_<date>.csv
+python src/collecte_banque_mondiale.py # -> data/raw/banque_mondiale_<date>.csv
 ```
 
 Puis exécuter les notebooks dans l'ordre :
 
 - `notebooks/01_epoch_descriptif.ipynb` — retard et opacité, statistiques descriptives
 - `notebooks/02_nlp_termes.ipynb` — de quoi parle la recherche française en IA (nuages de mots, termes surreprésentés, loi de Zipf)
+- `notebooks/03_recherche_modeles.ipynb` — de la recherche aux modèles : où la France décroche-t-elle ?
+- `notebooks/04_transparence.ipynb` — transparence selon Stanford, avant / après l'AI Act
 
 Les fichiers bruts sont datés. Chaque script de collecte les « fige » aussi en
 Parquet sur le stockage MinIO du SSP Cloud, dans
