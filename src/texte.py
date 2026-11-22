@@ -10,19 +10,22 @@ STOPWORDS_ACADEMIQUES = {
     "paper", "propose", "proposed", "method", "approach", "result", "results",
     "show", "use", "using", "based", "model", "models", "study", "new", "also",
     "work", "present", "performance", "task", "problem", "provide", "however",
-    "different", "well", "first", "two", "high", "large", "set", "data",
+    "different", "well", "first", "two", "high", "large", "set",
 }
+
+
+# Corrections de lemmatisation constatées sur le corpus : spaCy lemmatise
+# « data » en « datum », et « LLMs » n'est pas ramené à « LLM ».
+LEMMES_CORRIGES = {"datum": "data", "llms": "llm"}
 
 
 def nettoyer(textes, nlp, stop_supp=STOPWORDS_ACADEMIQUES, batch_size=200):
     """Lemmatise et retire stopwords, ponctuation, nombres (méthode du cours)."""
     resultats = []
     for doc in nlp.pipe(textes, batch_size=batch_size, disable=["parser", "ner"]):
-        resultats.append([
-            t.lemma_.lower() for t in doc
-            if t.is_alpha and not t.is_stop and len(t) > 2
-            and t.lemma_.lower() not in stop_supp
-        ])
+        lemmes = [LEMMES_CORRIGES.get(t.lemma_.lower(), t.lemma_.lower()) for t in doc
+                  if t.is_alpha and not t.is_stop and len(t) > 2]
+        resultats.append([l for l in lemmes if l not in stop_supp])
     return resultats
 
 
