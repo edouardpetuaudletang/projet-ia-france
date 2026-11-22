@@ -1,0 +1,15 @@
+# Secrets : la clé OpenAlex va dans une variable d'environnement, jamais ici
+.env
+*.key
+
+# Données : stockées sur MinIO (SSPCloud), pas dans Git
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/

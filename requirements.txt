@@ -1,0 +1,12 @@
+pandas>=2.1
+numpy
+matplotlib
+requests
+pyarrow
+s3fs
+statsmodels
+spacy
+wordcloud
+python-dotenv
+# modèles spaCy (à installer une fois) :
+#   python -m spacy download en_core_web_sm
