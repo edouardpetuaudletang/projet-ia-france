@@ -75,3 +75,21 @@ def nuage(frequences_dict: dict, ax, titre: str, couleur: str = "#2a78d6"):
     ax.imshow(wc, interpolation="bilinear")
     ax.set_title(titre)
     ax.axis("off")
+
+
+def tfidf_par_groupe(tokens_par_article, groupes, n=15):
+    """Score TF-IDF moyen de chaque terme dans chaque groupe d'articles.
+
+    Méthode du chapitre « bag of words » du cours : chaque résumé est un
+    document ; TfidfVectorizer donne à chaque terme un poids d'autant plus fort
+    qu'il est fréquent dans le résumé et rare dans l'ensemble du corpus. On fait
+    ensuite la moyenne par groupe (pays) et on garde les `n` termes les plus forts.
+    """
+    from sklearn.feature_extraction.text import TfidfVectorizer
+
+    textes = [" ".join(tokens) for tokens in tokens_par_article]
+    tfidf = TfidfVectorizer(min_df=5)          # termes présents dans au moins 5 résumés
+    matrice = tfidf.fit_transform(textes)
+    scores = pd.DataFrame(matrice.toarray(), columns=tfidf.get_feature_names_out())
+    moyennes = scores.groupby(list(groupes)).mean().T
+    return {g: moyennes[g].sort_values(ascending=False).head(n) for g in moyennes.columns}
