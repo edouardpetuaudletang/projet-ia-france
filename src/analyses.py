@@ -138,3 +138,21 @@ def opacite_leaders(epoch, depuis=2024, motif=LABOS_LEADERS):
              .groupby("groupe").agg(modeles=("Model", "count"),
                                     part_calcul_connu=("publie_calcul", "mean"),
                                     part_pointe=("frontiere", "mean")))
+
+
+# Noms de pays d'Epoch qui diffèrent de ceux du fond de carte Natural Earth
+CORRECTIONS_CARTE = {"Iran (Islamic Republic of)": "Iran"}
+
+
+def modeles_par_pays_monde(epoch_pays, fond):
+    """Nombre de modèles notables (comptage fractionnaire) pour chaque pays du fond de carte.
+
+    Renvoie le fond de carte complété d'une colonne `modeles` (0 si aucun modèle)
+    et la liste des pays d'Epoch absents de la carte.
+    """
+    compte = (epoch_pays.assign(nom=epoch_pays["pays_brut"].replace(CORRECTIONS_CARTE))
+              .groupby("nom")["poids"].sum())
+    carte = fond.merge(compte.rename("modeles"), left_on="ADMIN", right_index=True, how="left")
+    carte["modeles"] = carte["modeles"].fillna(0)
+    absents = compte.loc[~compte.index.isin(fond["ADMIN"])]
+    return carte, absents

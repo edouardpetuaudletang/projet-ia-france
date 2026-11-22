@@ -9,5 +9,7 @@ spacy
 wordcloud
 python-dotenv
 beautifulsoup4
+geopandas
+scikit-learn
 # modèles spaCy (à installer une fois) :
 #   python -m spacy download en_core_web_sm
