@@ -67,21 +67,64 @@ def preparer_epoch(brut: pd.DataFrame) -> pd.DataFrame:
         df["ouvert"] = _vrai(df["Open model weights?"])
     df["frontiere"] = _vrai(df["Frontier model"]) if "Frontier model" in df else False
     df["apres_ai_act"] = df["date"] >= pd.Timestamp(DATE_AI_ACT)
+    df["source_calcul"] = qualifier_source_calcul(df)
     df["log10_calcul"] = np.log10(pd.to_numeric(df["Training compute (FLOP)"], errors="coerce"))
     return df
 
 
-def eclater_pays(df: pd.DataFrame) -> pd.DataFrame:
-    """Une ligne par (modèle, pays), avec un poids fractionnaire.
+# Notes d'Epoch signalant une puissance de calcul devinée plutôt que calculée
+# à partir d'informations publiées (score aux benchmarks, modèles comparables…).
+MOTIF_ESTIMATION_INDIRECTE = (r"benchmark|scaling law|peer model|comparable model|"
+                              r"guess|speculat|rough|plausibl")
 
-    Un modèle développé par une collaboration franco-américaine compte pour
-    0,5 en France et 0,5 aux États-Unis : c'est le comptage fractionnaire,
-    choix à justifier dans le rapport.
+
+def qualifier_source_calcul(df: pd.DataFrame) -> pd.Series:
+    """D'où vient la puissance de calcul d'un modèle dans Epoch ?
+
+    - « non renseignée » : Epoch n'a aucune valeur ;
+    - « estimation indirecte » : Epoch l'a devinée (fiabilité « Speculative »,
+      ou note qui évoque benchmarks, modèles comparables, ordre de grandeur) ;
+    - « calculée depuis des infos publiées » : calcul d'Epoch à partir de ce que
+      le développeur a rendu public (paramètres × jetons, matériel × durée…),
+      ou valeur déclarée directement.
+
+    Distinction essentielle pour la partie opacité : une valeur renseignée ne
+    prouve pas que le développeur l'a divulguée. Sans les colonnes de notes
+    (fichier allégé), toute valeur présente est classée dans la 3e catégorie.
     """
+    presente = df["Training compute (FLOP)"].notna()
+    notes = df.get("Training compute notes", pd.Series("", index=df.index)).fillna("")
+    fiabilite = df.get("Confidence", pd.Series("", index=df.index)).fillna("")
+    indirecte = (notes.str.contains(MOTIF_ESTIMATION_INDIRECTE, case=False, regex=True)
+                 | (fiabilite == "Speculative"))
+    return pd.Series(np.select([~presente, indirecte],
+                               ["non renseignée", "estimation indirecte"],
+                               default="calculée depuis des infos publiées"),
+                     index=df.index)
+
+
+def eclater_pays(df: pd.DataFrame, mode: str = "fractionnaire") -> pd.DataFrame:
+    """Une ligne par (modèle, pays), avec un poids.
+
+    - « fractionnaire » (par défaut) : un modèle d'une collaboration
+      franco-américaine compte 0,5 pour la France et 0,5 pour les États-Unis ;
+      deux organisations américaines comptent 0,5 + 0,5 pour les États-Unis.
+    - « entier » : le modèle compte 1 pour chaque pays participant (une seule
+      fois par pays). La somme des pays dépasse alors le nombre de modèles.
+
+    Choix à justifier dans le rapport ; le mode « entier » sert de test de
+    robustesse.
+    """
+    if mode not in {"fractionnaire", "entier"}:
+        raise ValueError("mode = 'fractionnaire' ou 'entier'")
     pays = (df["Country (of organization)"].fillna("Inconnu")
             .str.split(r"\s*,\s*", regex=True))
     out = df.assign(pays_brut=pays).explode("pays_brut")
-    out["poids"] = 1 / out.groupby(level=0)["pays_brut"].transform("count")
+    if mode == "fractionnaire":
+        out["poids"] = 1 / out.groupby(level=0)["pays_brut"].transform("count")
+    else:
+        out = out.reset_index().drop_duplicates(["index", "pays_brut"]).set_index("index")
+        out["poids"] = 1.0
     out["pays"] = out["pays_brut"].map(PAYS_COMPARES).fillna("Autres")
     return out.reset_index(drop=True)
 
