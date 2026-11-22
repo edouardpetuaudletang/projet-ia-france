@@ -123,3 +123,34 @@ def avant_apres_ai_act(epoch, signataires, depuis="2024-01-01"):
                   publie_donnees=("publie_donnees", "mean"))
              .reindex(pd.MultiIndex.from_product([["signataire", "non signataire"],
                                                   ["avant août 2025", "après août 2025"]])))
+
+
+LABOS_LEADERS = r"OpenAI|Anthropic|Google DeepMind|xAI"
+
+
+def opacite_par_pays(epoch_pays, depuis=2024):
+    """Pour les modèles récents : part dont la puissance de calcul est connue, par pays.
+
+    Pondérée par le comptage fractionnaire, comme les comptes de modèles.
+    """
+    r = epoch_pays.loc[epoch_pays["annee"] >= depuis]
+    poids = r["poids"]
+    t = pd.DataFrame({
+        "modeles": poids.groupby(r["pays"]).sum(),
+        "calcul_connu": (poids * r["publie_calcul"]).groupby(r["pays"]).sum(),
+        "ouverts": (poids * r["ouvert"].astype("float").fillna(0)).groupby(r["pays"]).sum(),
+    })
+    t["part_calcul_connu"] = t["calcul_connu"] / t["modeles"]
+    t["part_ouverts"] = t["ouverts"] / t["modeles"]
+    return t[["modeles", "part_calcul_connu", "part_ouverts"]].reindex(PAYS + ["Autres"]).dropna(how="all")
+
+
+def opacite_leaders(epoch, depuis=2024, motif=LABOS_LEADERS):
+    """Part des modèles récents dont la puissance de calcul est connue :
+    laboratoires de pointe américains contre tous les autres développeurs."""
+    r = epoch.loc[epoch["annee"] >= depuis]
+    leader = r["Organization"].str.contains(motif, na=False)
+    return (r.assign(groupe=np.where(leader, "OpenAI, Anthropic, Google DeepMind, xAI", "autres développeurs"))
+             .groupby("groupe").agg(modeles=("Model", "count"),
+                                    part_calcul_connu=("publie_calcul", "mean"),
+                                    part_pointe=("frontiere", "mean")))

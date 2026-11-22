@@ -73,3 +73,21 @@ def _enregistrer(ax, fichier):
     ax.figure.tight_layout()
     if fichier is not None:
         ax.figure.savefig(fichier)
+
+
+def barres_par_pays(serie, titre, xlabel, pourcentage=True, fichier=None):
+    """Barres horizontales triées, France en couleur d'accent, autres pays en gris."""
+    serie = serie.dropna().sort_values()
+    fig, ax = plt.subplots(figsize=(8, 0.5 * len(serie) + 1.2))
+    couleurs = [COULEURS_PAYS["France"] if p == "France" else "#b4b2ab" for p in serie.index]
+    ax.barh(serie.index, serie.values, color=couleurs, height=0.6)
+    for y, v in enumerate(serie.values):
+        ax.text(v + 0.01 * (serie.max() or 1), y, f"{v:.0%}" if pourcentage else f"{v:.1f}",
+                va="center", fontsize=9, color="#52514e")
+    if pourcentage:
+        ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
+    ax.set_xlabel(xlabel)
+    ax.set_title(titre)
+    ax.grid(axis="y", visible=False)
+    _enregistrer(ax, fichier)
+    return ax
