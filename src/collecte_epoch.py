@@ -9,6 +9,7 @@ URL_EPOCH = "https://epoch.ai/data/notable_ai_models.csv"
 
 
 def telecharger_epoch(url: str = URL_EPOCH) -> pd.DataFrame:
+    """Lit le CSV des modèles notables d'Epoch AI et vérifie qu'il n'est pas vide."""
     df = pd.read_csv(url)
     if df.empty:
         raise ValueError("Le fichier Epoch AI est vide : vérifier l'URL.")

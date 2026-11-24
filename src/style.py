@@ -15,6 +15,7 @@ ORDRE_PAYS = list(COULEURS_PAYS)
 
 
 def appliquer_style():
+    """Applique le style commun à tous les graphiques (taille, grille, couleurs des axes)."""
     plt.rcParams.update({
         "figure.figsize": (9, 4.8), "figure.dpi": 110,
         "axes.spines.top": False, "axes.spines.right": False,

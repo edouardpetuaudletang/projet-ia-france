@@ -17,7 +17,9 @@ torch pour s'exécuter.
 import numpy as np
 import pandas as pd
 
-from config import PROCESSED
+from config import RACINE
+
+PROCESSED = RACINE / "data" / "processed"   # vecteurs calculés une fois, versionnés dans Git
 
 MODELE = "microsoft/harrier-oss-v1-0.6b"
 FICHIER_RESUMES = PROCESSED / "embeddings_resumes.parquet"

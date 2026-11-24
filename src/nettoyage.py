@@ -39,14 +39,6 @@ def charger_dernier(prefixe: str) -> pd.DataFrame:
     return pd.read_csv(fichiers[-1])
 
 
-def _vrai(serie: pd.Series) -> pd.Series:
-    """Convertit les colonnes oui/non d'Epoch (formats variables) en booléens."""
-    texte = serie.astype(str).str.strip().str.lower()
-    return texte.isin({"true", "yes", "1", "open weights (unrestricted)",
-                       "open weights (restricted use)", "open weights (non-commercial)"}) \
-        | texte.str.startswith("open weights") | texte.str.startswith("yes")
-
-
 def preparer_epoch(brut: pd.DataFrame) -> pd.DataFrame:
     """Une ligne par modèle, avec dates, indicateurs d'ouverture et d'opacité."""
     df = brut.copy()
@@ -58,14 +50,12 @@ def preparer_epoch(brut: pd.DataFrame) -> pd.DataFrame:
         df[indicateur] = df[colonne].notna() if colonne in df else False
     df["score_transparence"] = df[list(INFOS_PUBLIABLES.values())].sum(axis=1)
 
-    # Ouverture : la colonne « Model accessibility » est la plus complète
-    # (Open weights / API access / Unreleased…) ; vide = information inconnue.
-    if "Model accessibility" in df:
-        acces = df["Model accessibility"].astype("string").str.lower()
-        df["ouvert"] = acces.str.startswith("open weights").astype("boolean").where(acces.notna())
-    else:
-        df["ouvert"] = _vrai(df["Open model weights?"])
-    df["frontiere"] = _vrai(df["Frontier model"]) if "Frontier model" in df else False
+    # Ouverture, lue dans « Model accessibility » (Open weights / API access /
+    # Unreleased…). Une case vide reste vide (<NA>) : l'information est inconnue.
+    acces = df["Model accessibility"].astype("string").str.lower()
+    df["ouvert"] = acces.str.startswith("open weights")
+    # Modèle de pointe : Epoch met « True » dans la colonne, sinon la laisse vide
+    df["frontiere"] = df["Frontier model"].astype(str).str.lower() == "true"
     df["apres_ai_act"] = df["date"] >= pd.Timestamp(DATE_AI_ACT)
     df["source_calcul"] = qualifier_source_calcul(df)
     df["log10_calcul"] = np.log10(pd.to_numeric(df["Training compute (FLOP)"], errors="coerce"))
@@ -89,18 +79,19 @@ def qualifier_source_calcul(df: pd.DataFrame) -> pd.Series:
       ou valeur déclarée directement.
 
     Distinction essentielle pour la partie opacité : une valeur renseignée ne
-    prouve pas que le développeur l'a divulguée. Sans les colonnes de notes
-    (fichier allégé), toute valeur présente est classée dans la 3e catégorie.
+    prouve pas que le développeur l'a divulguée. Si les colonnes de notes
+    sont absentes, toute valeur présente est classée dans la 3e catégorie.
     """
-    presente = df["Training compute (FLOP)"].notna()
     notes = df.get("Training compute notes", pd.Series("", index=df.index)).fillna("")
     fiabilite = df.get("Confidence", pd.Series("", index=df.index)).fillna("")
     indirecte = (notes.str.contains(MOTIF_ESTIMATION_INDIRECTE, case=False, regex=True)
                  | (fiabilite == "Speculative"))
-    return pd.Series(np.select([~presente, indirecte],
-                               ["non renseignée", "estimation indirecte"],
-                               default="calculée depuis des infos publiées"),
-                     index=df.index)
+    absente = df["Training compute (FLOP)"].isna()
+
+    source = pd.Series("calculée depuis des infos publiées", index=df.index)
+    source.loc[indirecte] = "estimation indirecte"
+    source.loc[absente] = "non renseignée"   # en dernier : prime sur les deux autres cas
+    return source
 
 
 def eclater_pays(df: pd.DataFrame, mode: str = "fractionnaire") -> pd.DataFrame:
@@ -112,18 +103,24 @@ def eclater_pays(df: pd.DataFrame, mode: str = "fractionnaire") -> pd.DataFrame:
     - « entier » : le modèle compte 1 pour chaque pays participant (une seule
       fois par pays). La somme des pays dépasse alors le nombre de modèles.
 
-    Choix à justifier dans le rapport ; le mode « entier » sert de test de
-    robustesse.
+    Le mode « fractionnaire » est utilisé dans tout le rapport ; le mode « entier »
+    sert de test de robustesse.
     """
     if mode not in {"fractionnaire", "entier"}:
         raise ValueError("mode = 'fractionnaire' ou 'entier'")
-    pays = (df["Country (of organization)"].fillna("Inconnu")
-            .str.split(r"\s*,\s*", regex=True))
-    out = df.assign(pays_brut=pays).explode("pays_brut")
+    out = df.copy()
+    out["id_modele"] = range(len(out))
+    # Epoch donne un pays par organisation, séparés par des virgules
+    pays = out["Country (of organization)"].fillna("Inconnu")
+    out["nb_organisations"] = pays.str.count(",") + 1
+    out["pays_brut"] = pays.str.split(",")
+    out = out.explode("pays_brut")                  # une ligne par (modèle, organisation)
+    out["pays_brut"] = out["pays_brut"].str.strip()
+
     if mode == "fractionnaire":
-        out["poids"] = 1 / out.groupby(level=0)["pays_brut"].transform("count")
+        out["poids"] = 1 / out["nb_organisations"]
     else:
-        out = out.reset_index().drop_duplicates(["index", "pays_brut"]).set_index("index")
+        out = out.drop_duplicates(["id_modele", "pays_brut"])   # une seule fois par pays
         out["poids"] = 1.0
     out["pays"] = out["pays_brut"].map(PAYS_COMPARES).fillna("Autres")
     return out.reset_index(drop=True)
@@ -141,6 +138,7 @@ def annees_de_retard(df_pays: pd.DataFrame, reference: str = "États-Unis") -> p
     ref = record.loc[record["pays"] == reference].sort_values("annee")
 
     def premiere_annee_ref(niveau):
+        """Première année où le pays de référence a atteint ce niveau de calcul."""
         atteint = ref.loc[ref["record"] >= niveau, "annee"]
         return atteint.min() if not atteint.empty else np.nan
 

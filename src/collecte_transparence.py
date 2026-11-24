@@ -8,8 +8,6 @@
    page officielle de la Commission européenne (web scraping).
 """
 
-import re
-
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
@@ -37,6 +35,7 @@ def fmti_edition(edition: str) -> pd.DataFrame:
 
 
 def fmti() -> pd.DataFrame:
+    """Réunit les trois éditions du score de transparence de Stanford en une seule table."""
     return pd.concat([fmti_edition(e) for e in EDITIONS], ignore_index=True)
 
 
@@ -57,11 +56,13 @@ def signataires(url: str = URL_CODE) -> pd.DataFrame:
     noms = [l for l in lignes[1:] if l and not l.startswith("Some signatories")]
     df = pd.DataFrame({"organisation": noms, "signature": "complète"})
 
-    # Signatures partielles, décrites en toutes lettres après la liste
-    partiel = re.findall(r"In addition, ([\w .,&-]+?) signed up to the ([\w ]+?) Chapter",
-                         texte[fin:fin + 1000])
-    for nom, chapitre in partiel:
-        df.loc[len(df)] = [nom.strip(), f"partielle ({chapitre.strip()})"]
+    # Signatures partielles, décrites en toutes lettres après la liste, par exemple
+    # « In addition, xAI signed up to the Safety and Security Chapter of the Code. »
+    for phrase in texte[fin:fin + 1000].split("In addition, ")[1:]:
+        if " signed up to the " in phrase:
+            nom, suite = phrase.split(" signed up to the ", 1)
+            chapitre = suite.split(" Chapter")[0]
+            df.loc[len(df)] = [nom.strip(), f"partielle ({chapitre.strip()})"]
     df["date_collecte"] = AUJOURDHUI
     return df
 

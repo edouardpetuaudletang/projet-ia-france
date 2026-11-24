@@ -6,12 +6,11 @@ from pathlib import Path
 
 RACINE = Path(__file__).resolve().parents[1]
 RAW = Path(os.environ.get("PROJET_RAW", RACINE / "data" / "raw"))
-PROCESSED = RACINE / "data" / "processed"
 FIGURES = RACINE / "figures"
 
 AUJOURDHUI = date.today().isoformat()
 
-# Groupe de comparaison retenu (justifié dans le rapport)
+# Pays comparés à la France dans tout le projet (noms d'Epoch -> noms en français)
 PAYS_COMPARES = {
     "United States of America": "États-Unis",
     "China": "Chine",
@@ -24,7 +23,7 @@ PAYS_COMPARES = {
 CODES_ISO = {"États-Unis": "us", "Chine": "cn", "Royaume-Uni": "gb",
              "France": "fr", "Allemagne": "de", "Canada": "ca"}
 
-# Entrée en application des obligations GPAI de l'AI Act
+# Entrée en application des obligations de l'AI Act pour les modèles d'IA à usage général
 DATE_AI_ACT = "2025-08-02"
 
 # Fond de carte des pays du monde (Natural Earth, domaine public), lu directement par URL

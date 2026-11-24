@@ -1,7 +1,7 @@
 """Collecte Hugging Face : modèles ouverts des principales organisations.
 
 Hugging Face ne fournit pas le pays : la correspondance organisation -> pays
-est construite à la main ci-dessous (et recoupée avec Epoch AI dans le notebook).
+est construite à la main ci-dessous.
 """
 
 import pandas as pd
@@ -21,6 +21,7 @@ ORGANISATIONS = {
 
 
 def modeles_organisation(auteur: str, limite: int = 1000) -> pd.DataFrame:
+    """Liste les modèles publiés par une organisation sur Hugging Face, avec leurs téléchargements."""
     r = requests.get("https://huggingface.co/api/models",
                      params={"author": auteur, "limit": limite, "sort": "downloads"},
                      timeout=60)

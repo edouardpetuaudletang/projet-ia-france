@@ -30,6 +30,7 @@ def nettoyer(textes, nlp, stop_supp=STOPWORDS_ACADEMIQUES, batch_size=200):
 
 
 def frequences(liste_tokens) -> pd.DataFrame:
+    """Compte les mots sur tout le corpus : fréquence, rang et part de chaque mot."""
     compte = Counter(tok for tokens in liste_tokens for tok in tokens)
     df = pd.DataFrame(compte.most_common(), columns=["terme", "freq"])
     df["rang"] = np.arange(1, len(df) + 1)

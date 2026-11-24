@@ -2,6 +2,8 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
+import pandas as pd
+from matplotlib.colors import ListedColormap
 
 from style import COULEURS_PAYS
 
@@ -89,6 +91,7 @@ def nuage_de_points_annote(table, x, y, titre, xlabel, ylabel, fichier=None):
 
 
 def _enregistrer(ax, fichier):
+    """Ajuste les marges et enregistre la figure si un nom de fichier est donné."""
     ax.figure.tight_layout()
     if fichier is not None:
         ax.figure.savefig(fichier)
@@ -124,21 +127,17 @@ def carte_monde(carte, colonne, titre, fichier=None):
     Projection Equal Earth : elle respecte les surfaces, contrairement à
     Mercator qui grossit les pays proches des pôles.
     """
-    import pandas as pd
-
-    bornes = [0, 0.001, 5, 20, 100, float("inf")]
-    etiquettes = ["aucun", "moins de 5", "5 à 20", "20 à 100", "plus de 100"]
-    teintes = ["#eeede9", "#c6dbef", "#6baed6", "#2171b5", "#08306b"]
+    # Classes ]-1 ; 0], ]0 ; 5], ]5 ; 20], ]20 ; 100], ]100 ; +inf[ : la première ne contient que 0
+    bornes = [-1, 0, 5, 20, 100, float("inf")]
+    etiquettes = ["aucun", "jusqu'à 5", "5 à 20", "20 à 100", "plus de 100"]
+    teintes = ListedColormap(["#eeede9", "#c6dbef", "#6baed6", "#2171b5", "#08306b"])
     carte = carte.to_crs("EPSG:8857")
-    carte["classe"] = pd.cut(carte[colonne], bins=bornes, labels=etiquettes, right=False)
-    fig, ax = plt.subplots(figsize=(11, 5.5))
-    for classe, couleur in zip(etiquettes, teintes):
-        sous = carte.loc[carte["classe"] == classe]
-        if len(sous):
-            sous.plot(ax=ax, color=couleur, edgecolor="white", linewidth=0.3)
-        ax.scatter([], [], color=couleur, marker="s", s=80, label=classe)
+    carte["classe"] = pd.cut(carte[colonne], bins=bornes, labels=etiquettes)
+    ax = carte.plot(column="classe", categorical=True, cmap=teintes, legend=True,
+                    edgecolor="white", linewidth=0.3, figsize=(11, 5.5),
+                    legend_kwds={"title": "Modèles notables", "loc": "lower left",
+                                 "fontsize": 9, "frameon": False})
     ax.set_axis_off()
     ax.set_title(titre)
-    ax.legend(title="Modèles notables", loc="lower left", fontsize=9, frameon=False)
     _enregistrer(ax, fichier)
     return ax
