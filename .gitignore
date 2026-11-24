@@ -3,8 +3,10 @@
 *.key
 
 # Données : stockées sur MinIO (SSPCloud), pas dans Git
+# Données brutes figées du 22/11/2026, versionnées pour que le rapport tourne sans SSP Cloud
 data/raw/*
 !data/raw/.gitkeep
+!data/raw/*_2026-11-22.csv
 
 # Python / Jupyter
 __pycache__/
