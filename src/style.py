@@ -25,3 +25,6 @@ def appliquer_style():
         "axes.titlesize": 12, "axes.titleweight": "bold",
         "lines.linewidth": 2, "legend.frameon": False, "axes.axisbelow": True,
     })
+
+# Couleurs des huit groupes d'articles (partie 4) : une couleur fixe par groupe
+COULEURS_GROUPES = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4", "#008300", "#7b5ea7", "#8a8984"]

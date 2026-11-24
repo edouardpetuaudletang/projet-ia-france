@@ -29,6 +29,27 @@ def nettoyer(textes, nlp, stop_supp=STOPWORDS_ACADEMIQUES, batch_size=200):
     return resultats
 
 
+def corpus_resumes(resumes: pd.DataFrame) -> pd.DataFrame:
+    """Corpus analysé dans la partie 4 : résumés français et américains, nettoyés.
+
+    Retire les résumés vides ou trop courts, les articles d'informatique
+    quantique (classés à tort en IA par OpenAlex), les articles présents dans
+    les deux classements, et les notices bibliographiques données à la place du
+    résumé (elles se terminent par une année, comme « … of the ACL. 2023. »).
+    """
+    r = resumes.dropna(subset=["resume"])
+    r = r.loc[r["resume"].str.len() > 200]
+    r = r.loc[~r["titre"].fillna("").str.contains(r"\bquantum\b", case=False)]
+    communs = r["id"].duplicated(keep=False)          # articles franco-américains
+    print(f"Articles présents dans les deux corpus, retirés : {communs.sum() // 2}")
+    r = r.loc[~communs]
+    notices = r["resume"].str.strip().str.contains(r"\.\s*(?:19|20)\d\d\.?$")   # se termine par « . 2023. »
+    print("Notices bibliographiques retirées :", r.loc[notices, "pays"].value_counts().to_dict())
+    r = r.loc[~notices].copy()
+    r["pays"] = r["pays"].map({"fr": "France", "us": "États-Unis"})
+    return r
+
+
 def frequences(liste_tokens) -> pd.DataFrame:
     """Compte les mots sur tout le corpus : fréquence, rang et part de chaque mot."""
     compte = Counter(tok for tokens in liste_tokens for tok in tokens)

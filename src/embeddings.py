@@ -107,6 +107,43 @@ def score_theorique(vecteurs: np.ndarray, references: pd.DataFrame) -> np.ndarra
     return (vecteurs @ theo.T).mean(axis=1) - (vecteurs @ appl.T).mean(axis=1)
 
 
+def voisins_retrouves(coordonnees: np.ndarray, reference: np.ndarray, k: int = 10) -> float:
+    """Fidélité d'une réduction de dimension.
+
+    Pour chaque point, part de ses `k` plus proches voisins dans `reference`
+    (l'espace de départ) qu'on retrouve parmi ses `k` plus proches voisins dans
+    `coordonnees` (l'espace réduit), en moyenne sur tous les points.
+    """
+    from sklearn.neighbors import NearestNeighbors
+
+    def voisins(points):
+        modele = NearestNeighbors(n_neighbors=k + 1).fit(points)
+        return modele.kneighbors(points, return_distance=False)[:, 1:]     # sans le point lui-même
+
+    communs = [len(set(a) & set(b)) / k for a, b in zip(voisins(reference), voisins(coordonnees))]
+    return float(np.mean(communs))
+
+
+def ecarts_sans_une_phrase(vecteurs: np.ndarray, references: pd.DataFrame, groupe_a: np.ndarray) -> pd.Series:
+    """Sensibilité du score aux phrases de référence.
+
+    Écart des médianes du score entre le groupe A (`groupe_a` vaut True) et le
+    groupe B, calculé avec les huit phrases, puis en retirant chaque phrase à
+    son tour. Si une seule phrase fabriquait le résultat, l'écart s'annulerait
+    ou changerait de signe quand on la retire.
+    """
+    def ecart(refs):
+        score = score_theorique(vecteurs, refs)
+        return np.median(score[groupe_a]) - np.median(score[~groupe_a])
+
+    ecarts = {"les 8 phrases": ecart(references)}
+    rang = {}
+    for i, ligne in references.iterrows():
+        rang[ligne["type"]] = rang.get(ligne["type"], 0) + 1
+        ecarts[f"sans {ligne['type']} n°{rang[ligne['type']]}"] = ecart(references.drop(index=i))
+    return pd.Series(ecarts)
+
+
 if __name__ == "__main__":
     from nettoyage import charger_dernier
     calculer(charger_dernier("openalex_resumes"))
