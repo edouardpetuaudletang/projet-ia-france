@@ -1,10 +1,8 @@
 """Collecte OpenAlex : publications en IA par pays et par an, et résumés.
 
-La clé d'API se lit dans la variable d'environnement OPENALEX_API_KEY
-(ou un fichier .env non versionné). Elle ne doit jamais apparaître dans le code.
+La clé d'API se lit dans la variable d'environnement OPENALEX_API_KEY.
 
-Le sous-domaine « Artificial Intelligence » d'OpenAlex a l'identifiant 1702
-(vérifié avec `chercher_subfield`).
+Le sous-domaine « Artificial Intelligence » d'OpenAlex a l'identifiant 1702.
 """
 
 import os

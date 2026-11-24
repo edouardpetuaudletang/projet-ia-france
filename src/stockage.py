@@ -3,10 +3,9 @@
 Conformément aux consignes du cours : les données issues d'API sont « figées »
 sur le stockage S3 une fois collectées, et l'analyse relit ces copies.
 Le dossier `diffusion` du bucket est lisible par tous les utilisateurs
-authentifiés du SSP Cloud, donc par le correcteur.
+authentifiés du SSP Cloud.
 
-Les jetons S3 sont injectés automatiquement dans les services du SSP Cloud
-(valables 7 jours) : aucun identifiant n'apparaît dans ce code.
+
 """
 
 import os
