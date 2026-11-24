@@ -8,7 +8,7 @@ pour que deux textes de sens proche aient des vecteurs proches (cosinus élevé)
 Modèle : microsoft/harrier-oss-v1-0.6b (licence MIT, 0,6 milliard de paramètres),
 lancé en local avec la bibliothèque sentence-transformers.
 
-Le calcul prend une quinzaine de minutes sur un ordinateur portable. Il est fait
+Le calcul prend environ six minutes sur un ordinateur portable. Il est fait
 une seule fois (`python src/embeddings.py`) et les vecteurs sont enregistrés dans
 data/processed/. Le rapport relit ce fichier : il n'a besoin ni du modèle ni de
 torch pour s'exécuter.
