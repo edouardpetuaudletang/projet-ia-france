@@ -25,6 +25,7 @@ ANNEES = range(2015, 2026)
 
 
 def _get(endpoint: str, params: dict) -> dict:
+    """Envoie une requête à l'API OpenAlex (avec la clé si elle existe) et renvoie le JSON."""
     if CLE:
         params = {**params, "api_key": CLE}
     r = requests.get(f"{API}/{endpoint}", params=params, timeout=60)
@@ -62,6 +63,7 @@ def publications_par_annee(pays: str, tres_citees: bool = False) -> pd.Series:
 
 
 def table_publications() -> pd.DataFrame:
+    """Nombre d'articles d'IA (tous, et dans le 1 % les plus cités) par pays et par année."""
     lignes = []
     for nom, code in CODES_ISO.items():
         tout, top = publications_par_annee(code), publications_par_annee(code, tres_citees=True)

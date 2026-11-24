@@ -19,6 +19,7 @@ DOSSIER = f"{BUCKET}/diffusion/projet-ia-france/raw"
 
 
 def _fs():
+    """Connexion au stockage MinIO du SSP Cloud (identifiants lus dans l'environnement)."""
     import s3fs
     return s3fs.S3FileSystem(client_kwargs={"endpoint_url": ENDPOINT})
 
@@ -49,5 +50,6 @@ def lister(prefixe: str) -> list[str]:
 
 
 def lire(chemin: str) -> pd.DataFrame:
+    """Lit un fichier Parquet stocké sur MinIO."""
     with _fs().open(chemin, "rb") as f:
         return pd.read_parquet(f)

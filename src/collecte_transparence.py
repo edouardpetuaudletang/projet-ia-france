@@ -37,6 +37,7 @@ def fmti_edition(edition: str) -> pd.DataFrame:
 
 
 def fmti() -> pd.DataFrame:
+    """Réunit les trois éditions du score de transparence de Stanford en une seule table."""
     return pd.concat([fmti_edition(e) for e in EDITIONS], ignore_index=True)
 
 

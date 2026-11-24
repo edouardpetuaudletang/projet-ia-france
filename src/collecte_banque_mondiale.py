@@ -15,6 +15,7 @@ INDICATEURS = {"SP.POP.TOTL": "population", "NY.GDP.MKTP.CD": "pib_usd"}
 
 
 def indicateur(code: str, nom: str) -> pd.DataFrame:
+    """Télécharge un indicateur de la Banque mondiale (code, ex. SP.POP.TOTL) pour les six pays, de 2015 à 2025."""
     pays = ";".join(c.upper() for c in CODES_ISO.values())
     r = requests.get(API.format(pays=pays, indic=code),
                      params={"format": "json", "date": "2015:2025", "per_page": 500}, timeout=60)
@@ -26,6 +27,7 @@ def indicateur(code: str, nom: str) -> pd.DataFrame:
 
 
 def table_pays() -> pd.DataFrame:
+    """Assemble tous les indicateurs en une table pays × année."""
     tables = [indicateur(c, n) for c, n in INDICATEURS.items()]
     out = tables[0]
     for t in tables[1:]:

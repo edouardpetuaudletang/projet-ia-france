@@ -141,6 +141,7 @@ def annees_de_retard(df_pays: pd.DataFrame, reference: str = "États-Unis") -> p
     ref = record.loc[record["pays"] == reference].sort_values("annee")
 
     def premiere_annee_ref(niveau):
+        """Première année où le pays de référence a atteint ce niveau de calcul."""
         atteint = ref.loc[ref["record"] >= niveau, "annee"]
         return atteint.min() if not atteint.empty else np.nan
 

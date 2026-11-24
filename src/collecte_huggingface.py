@@ -21,6 +21,7 @@ ORGANISATIONS = {
 
 
 def modeles_organisation(auteur: str, limite: int = 1000) -> pd.DataFrame:
+    """Liste les modèles publiés par une organisation sur Hugging Face, avec leurs téléchargements."""
     r = requests.get("https://huggingface.co/api/models",
                      params={"author": auteur, "limit": limite, "sort": "downloads"},
                      timeout=60)

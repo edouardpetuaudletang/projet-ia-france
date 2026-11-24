@@ -89,6 +89,7 @@ def nuage_de_points_annote(table, x, y, titre, xlabel, ylabel, fichier=None):
 
 
 def _enregistrer(ax, fichier):
+    """Ajuste les marges et enregistre la figure si un nom de fichier est donné."""
     ax.figure.tight_layout()
     if fichier is not None:
         ax.figure.savefig(fichier)
