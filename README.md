@@ -1,6 +1,7 @@
 # La France est-elle en retard en IA, ou simplement plus transparente ?
 
 Projet Python pour la data science — ENSAE 2A.
+
 Auteurs : Edouard Petuaud-Letang, Enzo Nicolay, Amaury Lakrouf
 
 ## Question
