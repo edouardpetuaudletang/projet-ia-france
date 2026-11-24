@@ -1,0 +1,3701 @@
+Domain,Subdomain,developpeur,satisfait,indicateur,edition
+Upstream,Data,Meta,1,Data size,2023-10
+Upstream,Data,Meta,0,Data sources,2023-10
+Upstream,Data,Meta,0,Data creators,2023-10
+Upstream,Data,Meta,0,Data source selection,2023-10
+Upstream,Data,Meta,1,Data curation,2023-10
+Upstream,Data,Meta,1,Data augmentation,2023-10
+Upstream,Data,Meta,1,Harmful data filtration,2023-10
+Upstream,Data,Meta,0,Data copyright status,2023-10
+Upstream,Data,Meta,0,Data license status,2023-10
+Upstream,Data,Meta,0,Personal information in data,2023-10
+Upstream,Data labor,Meta,1,Use of human labor,2023-10
+Upstream,Data labor,Meta,0,Employment of data laborers,2023-10
+Upstream,Data labor,Meta,0,Geographic distribution of data laborers,2023-10
+Upstream,Data labor,Meta,0,Wages,2023-10
+Upstream,Data labor,Meta,1,Instructions for creating data,2023-10
+Upstream,Data labor,Meta,0,Labor protections,2023-10
+Upstream,Data labor,Meta,0,Third party partners,2023-10
+Upstream,Data access,Meta,0,Queryable external data access,2023-10
+Upstream,Data access,Meta,0,Direct external data access,2023-10
+Upstream,Compute,Meta,0,Compute usage,2023-10
+Upstream,Compute,Meta,1,Development duration,2023-10
+Upstream,Compute,Meta,0,Compute hardware,2023-10
+Upstream,Compute,Meta,1,Hardware owner,2023-10
+Upstream,Compute,Meta,1,Energy usage,2023-10
+Upstream,Compute,Meta,1,Carbon emissions,2023-10
+Upstream,Compute,Meta,0,Broader environmental impact,2023-10
+Upstream,Methods,Meta,1,Model stages,2023-10
+Upstream,Methods,Meta,1,Model objectives,2023-10
+Upstream,Methods,Meta,0,Core frameworks,2023-10
+Upstream,Methods,Meta,1,Additional dependencies,2023-10
+Upstream,Data Mitigations,Meta,1,Mitigations for privacy,2023-10
+Upstream,Data Mitigations,Meta,0,Mitigations for copyright,2023-10
+Model,Model basics,Meta,1,Input modality,2023-10
+Model,Model basics,Meta,1,Output modality,2023-10
+Model,Model basics,Meta,1,Model components,2023-10
+Model,Model basics,Meta,1,Model size,2023-10
+Model,Model basics,Meta,1,Model architecture,2023-10
+Model,Model basics,Meta,1,Centralized model documentation,2023-10
+Model,Model access,Meta,1,External model access protocol,2023-10
+Model,Model access,Meta,1,Blackbox external model access,2023-10
+Model,Model access,Meta,1,Full external model access,2023-10
+Model,Capabilities,Meta,0,Capabilities description,2023-10
+Model,Capabilities,Meta,1,Capabilities demonstration,2023-10
+Model,Capabilities,Meta,1,Evaluation of capabilities,2023-10
+Model,Capabilities,Meta,1,External reproducibility of capabilities evaluation,2023-10
+Model,Capabilities,Meta,0,Third-party capabilities evaluation,2023-10
+Model,Limitations,Meta,1,Limitations description,2023-10
+Model,Limitations,Meta,0,Limitations demonstration,2023-10
+Model,Limitations,Meta,1,Third-party evaluation of limitations,2023-10
+Model,Risks,Meta,1,Risks description,2023-10
+Model,Risks,Meta,1,Risks demonstration,2023-10
+Model,Risks,Meta,1,Unintentional harm evaluation,2023-10
+Model,Risks,Meta,1,External reproducibility of unintentional harm evaluation,2023-10
+Model,Risks,Meta,0,Intentional harm evaluation,2023-10
+Model,Risks,Meta,0,External reproducibility of intentional harm evaluation,2023-10
+Model,Risks,Meta,0,Third-party risks evaluation,2023-10
+Model,Model Mitigations,Meta,1,Mitigations description,2023-10
+Model,Model Mitigations,Meta,1,Mitigations demonstration,2023-10
+Model,Model Mitigations,Meta,1,Mitigations evaluation,2023-10
+Model,Model Mitigations,Meta,0,External reproducibility of mitigations evaluation,2023-10
+Model,Model Mitigations,Meta,0,Third-party mitigations evaluation,2023-10
+Model,Trustworthiness,Meta,0,Trustworthiness evaluation,2023-10
+Model,Trustworthiness,Meta,0,External reproducibility of trustworthiness evaluation,2023-10
+Model,Inference,Meta,1,Inference duration evaluation,2023-10
+Model,Inference,Meta,0,Inference compute evaluation,2023-10
+Downstream,Distribution,Meta,0,Release decision-making protocol,2023-10
+Downstream,Distribution,Meta,1,Release process,2023-10
+Downstream,Distribution,Meta,1,Distribution channels,2023-10
+Downstream,Distribution,Meta,1,Products and services,2023-10
+Downstream,Distribution,Meta,0,Machine-generated content,2023-10
+Downstream,Distribution,Meta,1,Model Asset License,2023-10
+Downstream,Distribution,Meta,1,Terms of service,2023-10
+Downstream,Usage policy,Meta,1,Permitted and prohibited users,2023-10
+Downstream,Usage policy,Meta,1,"Permitted, restricted, and prohibited uses",2023-10
+Downstream,Usage policy,Meta,0,Usage policy enforcement,2023-10
+Downstream,Usage policy,Meta,0,Justification for enforcement action,2023-10
+Downstream,Usage policy,Meta,0,Usage policy violation appeals mechanism,2023-10
+Downstream,Model behavior policy,Meta,0,"Permitted, restricted, and prohibited model behaviors",2023-10
+Downstream,Model behavior policy,Meta,0,Model behavior policy enforcement,2023-10
+Downstream,Model behavior policy,Meta,0,Interoperability of usage and model behavior policies,2023-10
+Downstream,User Interface,Meta,1,User interaction with AI system,2023-10
+Downstream,User Interface,Meta,1,Usage disclaimers,2023-10
+Downstream,User data protection,Meta,1,User data protection policy,2023-10
+Downstream,User data protection,Meta,1,Permitted and prohibited use of user data,2023-10
+Downstream,User data protection,Meta,0,Usage data access protocol,2023-10
+Downstream,Model Updates,Meta,1,Versioning protocol,2023-10
+Downstream,Model Updates,Meta,1,Change log,2023-10
+Downstream,Model Updates,Meta,1,Deprecation policy,2023-10
+Downstream,Feedback,Meta,1,Feedback mechanism,2023-10
+Downstream,Feedback,Meta,0,Feedback summary,2023-10
+Downstream,Feedback,Meta,0,Government inquiries,2023-10
+Downstream,Impact,Meta,0,Monitoring mechanism,2023-10
+Downstream,Impact,Meta,1,Downstream applications,2023-10
+Downstream,Impact,Meta,0,Affected market sectors,2023-10
+Downstream,Impact,Meta,0,Affected individuals,2023-10
+Downstream,Impact,Meta,0,Usage reports,2023-10
+Downstream,Impact,Meta,0,Geographic statistics,2023-10
+Downstream,Impact,Meta,0,Redress mechanism,2023-10
+Downstream,Documentation for Deployers,Meta,1,Centralized documentation for downstream use,2023-10
+Downstream,Documentation for Deployers,Meta,1,Documentation for responsible downstream use,2023-10
+Upstream,Data,Hugging Face,1,Data size,2023-10
+Upstream,Data,Hugging Face,1,Data sources,2023-10
+Upstream,Data,Hugging Face,0,Data creators,2023-10
+Upstream,Data,Hugging Face,1,Data source selection,2023-10
+Upstream,Data,Hugging Face,1,Data curation,2023-10
+Upstream,Data,Hugging Face,1,Data augmentation,2023-10
+Upstream,Data,Hugging Face,1,Harmful data filtration,2023-10
+Upstream,Data,Hugging Face,0,Data copyright status,2023-10
+Upstream,Data,Hugging Face,0,Data license status,2023-10
+Upstream,Data,Hugging Face,0,Personal information in data,2023-10
+Upstream,Data labor,Hugging Face,1,Use of human labor,2023-10
+Upstream,Data labor,Hugging Face,1,Employment of data laborers,2023-10
+Upstream,Data labor,Hugging Face,1,Geographic distribution of data laborers,2023-10
+Upstream,Data labor,Hugging Face,1,Wages,2023-10
+Upstream,Data labor,Hugging Face,1,Instructions for creating data,2023-10
+Upstream,Data labor,Hugging Face,0,Labor protections,2023-10
+Upstream,Data labor,Hugging Face,1,Third party partners,2023-10
+Upstream,Data access,Hugging Face,1,Queryable external data access,2023-10
+Upstream,Data access,Hugging Face,1,Direct external data access,2023-10
+Upstream,Compute,Hugging Face,0,Compute usage,2023-10
+Upstream,Compute,Hugging Face,0,Development duration,2023-10
+Upstream,Compute,Hugging Face,1,Compute hardware,2023-10
+Upstream,Compute,Hugging Face,0,Hardware owner,2023-10
+Upstream,Compute,Hugging Face,0,Energy usage,2023-10
+Upstream,Compute,Hugging Face,0,Carbon emissions,2023-10
+Upstream,Compute,Hugging Face,0,Broader environmental impact,2023-10
+Upstream,Methods,Hugging Face,1,Model stages,2023-10
+Upstream,Methods,Hugging Face,1,Model objectives,2023-10
+Upstream,Methods,Hugging Face,1,Core frameworks,2023-10
+Upstream,Methods,Hugging Face,1,Additional dependencies,2023-10
+Upstream,Data Mitigations,Hugging Face,1,Mitigations for privacy,2023-10
+Upstream,Data Mitigations,Hugging Face,1,Mitigations for copyright,2023-10
+Model,Model basics,Hugging Face,1,Input modality,2023-10
+Model,Model basics,Hugging Face,1,Output modality,2023-10
+Model,Model basics,Hugging Face,1,Model components,2023-10
+Model,Model basics,Hugging Face,1,Model size,2023-10
+Model,Model basics,Hugging Face,1,Model architecture,2023-10
+Model,Model basics,Hugging Face,1,Centralized model documentation,2023-10
+Model,Model access,Hugging Face,1,External model access protocol,2023-10
+Model,Model access,Hugging Face,1,Blackbox external model access,2023-10
+Model,Model access,Hugging Face,1,Full external model access,2023-10
+Model,Capabilities,Hugging Face,1,Capabilities description,2023-10
+Model,Capabilities,Hugging Face,1,Capabilities demonstration,2023-10
+Model,Capabilities,Hugging Face,1,Evaluation of capabilities,2023-10
+Model,Capabilities,Hugging Face,1,External reproducibility of capabilities evaluation,2023-10
+Model,Capabilities,Hugging Face,0,Third-party capabilities evaluation,2023-10
+Model,Limitations,Hugging Face,1,Limitations description,2023-10
+Model,Limitations,Hugging Face,0,Limitations demonstration,2023-10
+Model,Limitations,Hugging Face,1,Third-party evaluation of limitations,2023-10
+Model,Risks,Hugging Face,0,Risks description,2023-10
+Model,Risks,Hugging Face,0,Risks demonstration,2023-10
+Model,Risks,Hugging Face,0,Unintentional harm evaluation,2023-10
+Model,Risks,Hugging Face,0,External reproducibility of unintentional harm evaluation,2023-10
+Model,Risks,Hugging Face,0,Intentional harm evaluation,2023-10
+Model,Risks,Hugging Face,0,External reproducibility of intentional harm evaluation,2023-10
+Model,Risks,Hugging Face,0,Third-party risks evaluation,2023-10
+Model,Model Mitigations,Hugging Face,0,Mitigations description,2023-10
+Model,Model Mitigations,Hugging Face,0,Mitigations demonstration,2023-10
+Model,Model Mitigations,Hugging Face,0,Mitigations evaluation,2023-10
+Model,Model Mitigations,Hugging Face,0,External reproducibility of mitigations evaluation,2023-10
+Model,Model Mitigations,Hugging Face,0,Third-party mitigations evaluation,2023-10
+Model,Trustworthiness,Hugging Face,0,Trustworthiness evaluation,2023-10
+Model,Trustworthiness,Hugging Face,0,External reproducibility of trustworthiness evaluation,2023-10
+Model,Inference,Hugging Face,1,Inference duration evaluation,2023-10
+Model,Inference,Hugging Face,0,Inference compute evaluation,2023-10
+Downstream,Distribution,Hugging Face,1,Release decision-making protocol,2023-10
+Downstream,Distribution,Hugging Face,1,Release process,2023-10
+Downstream,Distribution,Hugging Face,1,Distribution channels,2023-10
+Downstream,Distribution,Hugging Face,0,Products and services,2023-10
+Downstream,Distribution,Hugging Face,0,Machine-generated content,2023-10
+Downstream,Distribution,Hugging Face,1,Model Asset License,2023-10
+Downstream,Distribution,Hugging Face,1,Terms of service,2023-10
+Downstream,Usage policy,Hugging Face,0,Permitted and prohibited users,2023-10
+Downstream,Usage policy,Hugging Face,1,"Permitted, restricted, and prohibited uses",2023-10
+Downstream,Usage policy,Hugging Face,0,Usage policy enforcement,2023-10
+Downstream,Usage policy,Hugging Face,0,Justification for enforcement action,2023-10
+Downstream,Usage policy,Hugging Face,0,Usage policy violation appeals mechanism,2023-10
+Downstream,Model behavior policy,Hugging Face,0,"Permitted, restricted, and prohibited model behaviors",2023-10
+Downstream,Model behavior policy,Hugging Face,0,Model behavior policy enforcement,2023-10
+Downstream,Model behavior policy,Hugging Face,0,Interoperability of usage and model behavior policies,2023-10
+Downstream,User Interface,Hugging Face,1,User interaction with AI system,2023-10
+Downstream,User Interface,Hugging Face,1,Usage disclaimers,2023-10
+Downstream,User data protection,Hugging Face,1,User data protection policy,2023-10
+Downstream,User data protection,Hugging Face,1,Permitted and prohibited use of user data,2023-10
+Downstream,User data protection,Hugging Face,0,Usage data access protocol,2023-10
+Downstream,Model Updates,Hugging Face,1,Versioning protocol,2023-10
+Downstream,Model Updates,Hugging Face,1,Change log,2023-10
+Downstream,Model Updates,Hugging Face,1,Deprecation policy,2023-10
+Downstream,Feedback,Hugging Face,1,Feedback mechanism,2023-10
+Downstream,Feedback,Hugging Face,0,Feedback summary,2023-10
+Downstream,Feedback,Hugging Face,0,Government inquiries,2023-10
+Downstream,Impact,Hugging Face,0,Monitoring mechanism,2023-10
+Downstream,Impact,Hugging Face,1,Downstream applications,2023-10
+Downstream,Impact,Hugging Face,0,Affected market sectors,2023-10
+Downstream,Impact,Hugging Face,0,Affected individuals,2023-10
+Downstream,Impact,Hugging Face,0,Usage reports,2023-10
+Downstream,Impact,Hugging Face,0,Geographic statistics,2023-10
+Downstream,Impact,Hugging Face,0,Redress mechanism,2023-10
+Downstream,Documentation for Deployers,Hugging Face,1,Centralized documentation for downstream use,2023-10
+Downstream,Documentation for Deployers,Hugging Face,0,Documentation for responsible downstream use,2023-10
+Upstream,Data,OpenAI,0,Data size,2023-10
+Upstream,Data,OpenAI,0,Data sources,2023-10
+Upstream,Data,OpenAI,0,Data creators,2023-10
+Upstream,Data,OpenAI,0,Data source selection,2023-10
+Upstream,Data,OpenAI,1,Data curation,2023-10
+Upstream,Data,OpenAI,0,Data augmentation,2023-10
+Upstream,Data,OpenAI,1,Harmful data filtration,2023-10
+Upstream,Data,OpenAI,0,Data copyright status,2023-10
+Upstream,Data,OpenAI,0,Data license status,2023-10
+Upstream,Data,OpenAI,0,Personal information in data,2023-10
+Upstream,Data labor,OpenAI,0,Use of human labor,2023-10
+Upstream,Data labor,OpenAI,0,Employment of data laborers,2023-10
+Upstream,Data labor,OpenAI,0,Geographic distribution of data laborers,2023-10
+Upstream,Data labor,OpenAI,0,Wages,2023-10
+Upstream,Data labor,OpenAI,0,Instructions for creating data,2023-10
+Upstream,Data labor,OpenAI,1,Labor protections,2023-10
+Upstream,Data labor,OpenAI,0,Third party partners,2023-10
+Upstream,Data access,OpenAI,0,Queryable external data access,2023-10
+Upstream,Data access,OpenAI,0,Direct external data access,2023-10
+Upstream,Compute,OpenAI,0,Compute usage,2023-10
+Upstream,Compute,OpenAI,0,Development duration,2023-10
+Upstream,Compute,OpenAI,0,Compute hardware,2023-10
+Upstream,Compute,OpenAI,1,Hardware owner,2023-10
+Upstream,Compute,OpenAI,0,Energy usage,2023-10
+Upstream,Compute,OpenAI,0,Carbon emissions,2023-10
+Upstream,Compute,OpenAI,0,Broader environmental impact,2023-10
+Upstream,Methods,OpenAI,1,Model stages,2023-10
+Upstream,Methods,OpenAI,1,Model objectives,2023-10
+Upstream,Methods,OpenAI,0,Core frameworks,2023-10
+Upstream,Methods,OpenAI,0,Additional dependencies,2023-10
+Upstream,Data Mitigations,OpenAI,1,Mitigations for privacy,2023-10
+Upstream,Data Mitigations,OpenAI,0,Mitigations for copyright,2023-10
+Model,Model basics,OpenAI,1,Input modality,2023-10
+Model,Model basics,OpenAI,1,Output modality,2023-10
+Model,Model basics,OpenAI,0,Model components,2023-10
+Model,Model basics,OpenAI,0,Model size,2023-10
+Model,Model basics,OpenAI,0,Model architecture,2023-10
+Model,Model basics,OpenAI,1,Centralized model documentation,2023-10
+Model,Model access,OpenAI,1,External model access protocol,2023-10
+Model,Model access,OpenAI,1,Blackbox external model access,2023-10
+Model,Model access,OpenAI,0,Full external model access,2023-10
+Model,Capabilities,OpenAI,1,Capabilities description,2023-10
+Model,Capabilities,OpenAI,1,Capabilities demonstration,2023-10
+Model,Capabilities,OpenAI,1,Evaluation of capabilities,2023-10
+Model,Capabilities,OpenAI,1,External reproducibility of capabilities evaluation,2023-10
+Model,Capabilities,OpenAI,1,Third-party capabilities evaluation,2023-10
+Model,Limitations,OpenAI,1,Limitations description,2023-10
+Model,Limitations,OpenAI,0,Limitations demonstration,2023-10
+Model,Limitations,OpenAI,1,Third-party evaluation of limitations,2023-10
+Model,Risks,OpenAI,1,Risks description,2023-10
+Model,Risks,OpenAI,1,Risks demonstration,2023-10
+Model,Risks,OpenAI,0,Unintentional harm evaluation,2023-10
+Model,Risks,OpenAI,0,External reproducibility of unintentional harm evaluation,2023-10
+Model,Risks,OpenAI,0,Intentional harm evaluation,2023-10
+Model,Risks,OpenAI,1,External reproducibility of intentional harm evaluation,2023-10
+Model,Risks,OpenAI,1,Third-party risks evaluation,2023-10
+Model,Model Mitigations,OpenAI,1,Mitigations description,2023-10
+Model,Model Mitigations,OpenAI,1,Mitigations demonstration,2023-10
+Model,Model Mitigations,OpenAI,1,Mitigations evaluation,2023-10
+Model,Model Mitigations,OpenAI,0,External reproducibility of mitigations evaluation,2023-10
+Model,Model Mitigations,OpenAI,0,Third-party mitigations evaluation,2023-10
+Model,Trustworthiness,OpenAI,1,Trustworthiness evaluation,2023-10
+Model,Trustworthiness,OpenAI,0,External reproducibility of trustworthiness evaluation,2023-10
+Model,Inference,OpenAI,0,Inference duration evaluation,2023-10
+Model,Inference,OpenAI,0,Inference compute evaluation,2023-10
+Downstream,Distribution,OpenAI,0,Release decision-making protocol,2023-10
+Downstream,Distribution,OpenAI,1,Release process,2023-10
+Downstream,Distribution,OpenAI,1,Distribution channels,2023-10
+Downstream,Distribution,OpenAI,1,Products and services,2023-10
+Downstream,Distribution,OpenAI,0,Machine-generated content,2023-10
+Downstream,Distribution,OpenAI,0,Model Asset License,2023-10
+Downstream,Distribution,OpenAI,1,Terms of service,2023-10
+Downstream,Usage policy,OpenAI,1,Permitted and prohibited users,2023-10
+Downstream,Usage policy,OpenAI,1,"Permitted, restricted, and prohibited uses",2023-10
+Downstream,Usage policy,OpenAI,1,Usage policy enforcement,2023-10
+Downstream,Usage policy,OpenAI,0,Justification for enforcement action,2023-10
+Downstream,Usage policy,OpenAI,1,Usage policy violation appeals mechanism,2023-10
+Downstream,Model behavior policy,OpenAI,1,"Permitted, restricted, and prohibited model behaviors",2023-10
+Downstream,Model behavior policy,OpenAI,0,Model behavior policy enforcement,2023-10
+Downstream,Model behavior policy,OpenAI,1,Interoperability of usage and model behavior policies,2023-10
+Downstream,User Interface,OpenAI,1,User interaction with AI system,2023-10
+Downstream,User Interface,OpenAI,1,Usage disclaimers,2023-10
+Downstream,User data protection,OpenAI,1,User data protection policy,2023-10
+Downstream,User data protection,OpenAI,1,Permitted and prohibited use of user data,2023-10
+Downstream,User data protection,OpenAI,0,Usage data access protocol,2023-10
+Downstream,Model Updates,OpenAI,1,Versioning protocol,2023-10
+Downstream,Model Updates,OpenAI,1,Change log,2023-10
+Downstream,Model Updates,OpenAI,1,Deprecation policy,2023-10
+Downstream,Feedback,OpenAI,1,Feedback mechanism,2023-10
+Downstream,Feedback,OpenAI,0,Feedback summary,2023-10
+Downstream,Feedback,OpenAI,0,Government inquiries,2023-10
+Downstream,Impact,OpenAI,1,Monitoring mechanism,2023-10
+Downstream,Impact,OpenAI,0,Downstream applications,2023-10
+Downstream,Impact,OpenAI,0,Affected market sectors,2023-10
+Downstream,Impact,OpenAI,0,Affected individuals,2023-10
+Downstream,Impact,OpenAI,0,Usage reports,2023-10
+Downstream,Impact,OpenAI,0,Geographic statistics,2023-10
+Downstream,Impact,OpenAI,0,Redress mechanism,2023-10
+Downstream,Documentation for Deployers,OpenAI,1,Centralized documentation for downstream use,2023-10
+Downstream,Documentation for Deployers,OpenAI,1,Documentation for responsible downstream use,2023-10
+Upstream,Data,Stability AI,1,Data size,2023-10
+Upstream,Data,Stability AI,0,Data sources,2023-10
+Upstream,Data,Stability AI,0,Data creators,2023-10
+Upstream,Data,Stability AI,0,Data source selection,2023-10
+Upstream,Data,Stability AI,1,Data curation,2023-10
+Upstream,Data,Stability AI,1,Data augmentation,2023-10
+Upstream,Data,Stability AI,1,Harmful data filtration,2023-10
+Upstream,Data,Stability AI,0,Data copyright status,2023-10
+Upstream,Data,Stability AI,0,Data license status,2023-10
+Upstream,Data,Stability AI,0,Personal information in data,2023-10
+Upstream,Data labor,Stability AI,0,Use of human labor,2023-10
+Upstream,Data labor,Stability AI,0,Employment of data laborers,2023-10
+Upstream,Data labor,Stability AI,0,Geographic distribution of data laborers,2023-10
+Upstream,Data labor,Stability AI,0,Wages,2023-10
+Upstream,Data labor,Stability AI,0,Instructions for creating data,2023-10
+Upstream,Data labor,Stability AI,0,Labor protections,2023-10
+Upstream,Data labor,Stability AI,1,Third party partners,2023-10
+Upstream,Data access,Stability AI,1,Queryable external data access,2023-10
+Upstream,Data access,Stability AI,1,Direct external data access,2023-10
+Upstream,Compute,Stability AI,0,Compute usage,2023-10
+Upstream,Compute,Stability AI,1,Development duration,2023-10
+Upstream,Compute,Stability AI,1,Compute hardware,2023-10
+Upstream,Compute,Stability AI,1,Hardware owner,2023-10
+Upstream,Compute,Stability AI,0,Energy usage,2023-10
+Upstream,Compute,Stability AI,1,Carbon emissions,2023-10
+Upstream,Compute,Stability AI,0,Broader environmental impact,2023-10
+Upstream,Methods,Stability AI,1,Model stages,2023-10
+Upstream,Methods,Stability AI,1,Model objectives,2023-10
+Upstream,Methods,Stability AI,1,Core frameworks,2023-10
+Upstream,Methods,Stability AI,1,Additional dependencies,2023-10
+Upstream,Data Mitigations,Stability AI,1,Mitigations for privacy,2023-10
+Upstream,Data Mitigations,Stability AI,0,Mitigations for copyright,2023-10
+Model,Model basics,Stability AI,1,Input modality,2023-10
+Model,Model basics,Stability AI,1,Output modality,2023-10
+Model,Model basics,Stability AI,1,Model components,2023-10
+Model,Model basics,Stability AI,0,Model size,2023-10
+Model,Model basics,Stability AI,1,Model architecture,2023-10
+Model,Model basics,Stability AI,1,Centralized model documentation,2023-10
+Model,Model access,Stability AI,1,External model access protocol,2023-10
+Model,Model access,Stability AI,1,Blackbox external model access,2023-10
+Model,Model access,Stability AI,1,Full external model access,2023-10
+Model,Capabilities,Stability AI,1,Capabilities description,2023-10
+Model,Capabilities,Stability AI,1,Capabilities demonstration,2023-10
+Model,Capabilities,Stability AI,0,Evaluation of capabilities,2023-10
+Model,Capabilities,Stability AI,0,External reproducibility of capabilities evaluation,2023-10
+Model,Capabilities,Stability AI,0,Third-party capabilities evaluation,2023-10
+Model,Limitations,Stability AI,1,Limitations description,2023-10
+Model,Limitations,Stability AI,0,Limitations demonstration,2023-10
+Model,Limitations,Stability AI,1,Third-party evaluation of limitations,2023-10
+Model,Risks,Stability AI,1,Risks description,2023-10
+Model,Risks,Stability AI,0,Risks demonstration,2023-10
+Model,Risks,Stability AI,0,Unintentional harm evaluation,2023-10
+Model,Risks,Stability AI,0,External reproducibility of unintentional harm evaluation,2023-10
+Model,Risks,Stability AI,0,Intentional harm evaluation,2023-10
+Model,Risks,Stability AI,0,External reproducibility of intentional harm evaluation,2023-10
+Model,Risks,Stability AI,0,Third-party risks evaluation,2023-10
+Model,Model Mitigations,Stability AI,0,Mitigations description,2023-10
+Model,Model Mitigations,Stability AI,0,Mitigations demonstration,2023-10
+Model,Model Mitigations,Stability AI,0,Mitigations evaluation,2023-10
+Model,Model Mitigations,Stability AI,0,External reproducibility of mitigations evaluation,2023-10
+Model,Model Mitigations,Stability AI,0,Third-party mitigations evaluation,2023-10
+Model,Trustworthiness,Stability AI,0,Trustworthiness evaluation,2023-10
+Model,Trustworthiness,Stability AI,0,External reproducibility of trustworthiness evaluation,2023-10
+Model,Inference,Stability AI,0,Inference duration evaluation,2023-10
+Model,Inference,Stability AI,0,Inference compute evaluation,2023-10
+Downstream,Distribution,Stability AI,0,Release decision-making protocol,2023-10
+Downstream,Distribution,Stability AI,1,Release process,2023-10
+Downstream,Distribution,Stability AI,1,Distribution channels,2023-10
+Downstream,Distribution,Stability AI,0,Products and services,2023-10
+Downstream,Distribution,Stability AI,1,Machine-generated content,2023-10
+Downstream,Distribution,Stability AI,1,Model Asset License,2023-10
+Downstream,Distribution,Stability AI,1,Terms of service,2023-10
+Downstream,Usage policy,Stability AI,0,Permitted and prohibited users,2023-10
+Downstream,Usage policy,Stability AI,1,"Permitted, restricted, and prohibited uses",2023-10
+Downstream,Usage policy,Stability AI,1,Usage policy enforcement,2023-10
+Downstream,Usage policy,Stability AI,0,Justification for enforcement action,2023-10
+Downstream,Usage policy,Stability AI,0,Usage policy violation appeals mechanism,2023-10
+Downstream,Model behavior policy,Stability AI,0,"Permitted, restricted, and prohibited model behaviors",2023-10
+Downstream,Model behavior policy,Stability AI,1,Model behavior policy enforcement,2023-10
+Downstream,Model behavior policy,Stability AI,0,Interoperability of usage and model behavior policies,2023-10
+Downstream,User Interface,Stability AI,1,User interaction with AI system,2023-10
+Downstream,User Interface,Stability AI,1,Usage disclaimers,2023-10
+Downstream,User data protection,Stability AI,1,User data protection policy,2023-10
+Downstream,User data protection,Stability AI,1,Permitted and prohibited use of user data,2023-10
+Downstream,User data protection,Stability AI,0,Usage data access protocol,2023-10
+Downstream,Model Updates,Stability AI,1,Versioning protocol,2023-10
+Downstream,Model Updates,Stability AI,1,Change log,2023-10
+Downstream,Model Updates,Stability AI,1,Deprecation policy,2023-10
+Downstream,Feedback,Stability AI,1,Feedback mechanism,2023-10
+Downstream,Feedback,Stability AI,0,Feedback summary,2023-10
+Downstream,Feedback,Stability AI,0,Government inquiries,2023-10
+Downstream,Impact,Stability AI,0,Monitoring mechanism,2023-10
+Downstream,Impact,Stability AI,1,Downstream applications,2023-10
+Downstream,Impact,Stability AI,0,Affected market sectors,2023-10
+Downstream,Impact,Stability AI,0,Affected individuals,2023-10
+Downstream,Impact,Stability AI,0,Usage reports,2023-10
+Downstream,Impact,Stability AI,0,Geographic statistics,2023-10
+Downstream,Impact,Stability AI,0,Redress mechanism,2023-10
+Downstream,Documentation for Deployers,Stability AI,1,Centralized documentation for downstream use,2023-10
+Downstream,Documentation for Deployers,Stability AI,0,Documentation for responsible downstream use,2023-10
+Upstream,Data,Google,0,Data size,2023-10
+Upstream,Data,Google,0,Data sources,2023-10
+Upstream,Data,Google,0,Data creators,2023-10
+Upstream,Data,Google,0,Data source selection,2023-10
+Upstream,Data,Google,1,Data curation,2023-10
+Upstream,Data,Google,1,Data augmentation,2023-10
+Upstream,Data,Google,0,Harmful data filtration,2023-10
+Upstream,Data,Google,0,Data copyright status,2023-10
+Upstream,Data,Google,0,Data license status,2023-10
+Upstream,Data,Google,0,Personal information in data,2023-10
+Upstream,Data labor,Google,0,Use of human labor,2023-10
+Upstream,Data labor,Google,0,Employment of data laborers,2023-10
+Upstream,Data labor,Google,0,Geographic distribution of data laborers,2023-10
+Upstream,Data labor,Google,0,Wages,2023-10
+Upstream,Data labor,Google,0,Instructions for creating data,2023-10
+Upstream,Data labor,Google,0,Labor protections,2023-10
+Upstream,Data labor,Google,0,Third party partners,2023-10
+Upstream,Data access,Google,0,Queryable external data access,2023-10
+Upstream,Data access,Google,0,Direct external data access,2023-10
+Upstream,Compute,Google,0,Compute usage,2023-10
+Upstream,Compute,Google,0,Development duration,2023-10
+Upstream,Compute,Google,0,Compute hardware,2023-10
+Upstream,Compute,Google,1,Hardware owner,2023-10
+Upstream,Compute,Google,0,Energy usage,2023-10
+Upstream,Compute,Google,0,Carbon emissions,2023-10
+Upstream,Compute,Google,0,Broader environmental impact,2023-10
+Upstream,Methods,Google,1,Model stages,2023-10
+Upstream,Methods,Google,0,Model objectives,2023-10
+Upstream,Methods,Google,1,Core frameworks,2023-10
+Upstream,Methods,Google,1,Additional dependencies,2023-10
+Upstream,Data Mitigations,Google,0,Mitigations for privacy,2023-10
+Upstream,Data Mitigations,Google,0,Mitigations for copyright,2023-10
+Model,Model basics,Google,1,Input modality,2023-10
+Model,Model basics,Google,1,Output modality,2023-10
+Model,Model basics,Google,0,Model components,2023-10
+Model,Model basics,Google,0,Model size,2023-10
+Model,Model basics,Google,1,Model architecture,2023-10
+Model,Model basics,Google,1,Centralized model documentation,2023-10
+Model,Model access,Google,0,External model access protocol,2023-10
+Model,Model access,Google,1,Blackbox external model access,2023-10
+Model,Model access,Google,0,Full external model access,2023-10
+Model,Capabilities,Google,1,Capabilities description,2023-10
+Model,Capabilities,Google,1,Capabilities demonstration,2023-10
+Model,Capabilities,Google,1,Evaluation of capabilities,2023-10
+Model,Capabilities,Google,1,External reproducibility of capabilities evaluation,2023-10
+Model,Capabilities,Google,0,Third-party capabilities evaluation,2023-10
+Model,Limitations,Google,1,Limitations description,2023-10
+Model,Limitations,Google,0,Limitations demonstration,2023-10
+Model,Limitations,Google,1,Third-party evaluation of limitations,2023-10
+Model,Risks,Google,0,Risks description,2023-10
+Model,Risks,Google,0,Risks demonstration,2023-10
+Model,Risks,Google,1,Unintentional harm evaluation,2023-10
+Model,Risks,Google,1,External reproducibility of unintentional harm evaluation,2023-10
+Model,Risks,Google,0,Intentional harm evaluation,2023-10
+Model,Risks,Google,0,External reproducibility of intentional harm evaluation,2023-10
+Model,Risks,Google,0,Third-party risks evaluation,2023-10
+Model,Model Mitigations,Google,1,Mitigations description,2023-10
+Model,Model Mitigations,Google,0,Mitigations demonstration,2023-10
+Model,Model Mitigations,Google,1,Mitigations evaluation,2023-10
+Model,Model Mitigations,Google,0,External reproducibility of mitigations evaluation,2023-10
+Model,Model Mitigations,Google,0,Third-party mitigations evaluation,2023-10
+Model,Trustworthiness,Google,0,Trustworthiness evaluation,2023-10
+Model,Trustworthiness,Google,0,External reproducibility of trustworthiness evaluation,2023-10
+Model,Inference,Google,0,Inference duration evaluation,2023-10
+Model,Inference,Google,0,Inference compute evaluation,2023-10
+Downstream,Distribution,Google,0,Release decision-making protocol,2023-10
+Downstream,Distribution,Google,1,Release process,2023-10
+Downstream,Distribution,Google,1,Distribution channels,2023-10
+Downstream,Distribution,Google,1,Products and services,2023-10
+Downstream,Distribution,Google,0,Machine-generated content,2023-10
+Downstream,Distribution,Google,1,Model Asset License,2023-10
+Downstream,Distribution,Google,1,Terms of service,2023-10
+Downstream,Usage policy,Google,1,Permitted and prohibited users,2023-10
+Downstream,Usage policy,Google,1,"Permitted, restricted, and prohibited uses",2023-10
+Downstream,Usage policy,Google,0,Usage policy enforcement,2023-10
+Downstream,Usage policy,Google,1,Justification for enforcement action,2023-10
+Downstream,Usage policy,Google,0,Usage policy violation appeals mechanism,2023-10
+Downstream,Model behavior policy,Google,0,"Permitted, restricted, and prohibited model behaviors",2023-10
+Downstream,Model behavior policy,Google,0,Model behavior policy enforcement,2023-10
+Downstream,Model behavior policy,Google,0,Interoperability of usage and model behavior policies,2023-10
+Downstream,User Interface,Google,1,User interaction with AI system,2023-10
+Downstream,User Interface,Google,1,Usage disclaimers,2023-10
+Downstream,User data protection,Google,1,User data protection policy,2023-10
+Downstream,User data protection,Google,1,Permitted and prohibited use of user data,2023-10
+Downstream,User data protection,Google,0,Usage data access protocol,2023-10
+Downstream,Model Updates,Google,1,Versioning protocol,2023-10
+Downstream,Model Updates,Google,1,Change log,2023-10
+Downstream,Model Updates,Google,1,Deprecation policy,2023-10
+Downstream,Feedback,Google,1,Feedback mechanism,2023-10
+Downstream,Feedback,Google,0,Feedback summary,2023-10
+Downstream,Feedback,Google,0,Government inquiries,2023-10
+Downstream,Impact,Google,1,Monitoring mechanism,2023-10
+Downstream,Impact,Google,0,Downstream applications,2023-10
+Downstream,Impact,Google,0,Affected market sectors,2023-10
+Downstream,Impact,Google,0,Affected individuals,2023-10
+Downstream,Impact,Google,0,Usage reports,2023-10
+Downstream,Impact,Google,0,Geographic statistics,2023-10
+Downstream,Impact,Google,0,Redress mechanism,2023-10
+Downstream,Documentation for Deployers,Google,1,Centralized documentation for downstream use,2023-10
+Downstream,Documentation for Deployers,Google,1,Documentation for responsible downstream use,2023-10
+Upstream,Data,Anthropic,0,Data size,2023-10
+Upstream,Data,Anthropic,0,Data sources,2023-10
+Upstream,Data,Anthropic,0,Data creators,2023-10
+Upstream,Data,Anthropic,0,Data source selection,2023-10
+Upstream,Data,Anthropic,0,Data curation,2023-10
+Upstream,Data,Anthropic,0,Data augmentation,2023-10
+Upstream,Data,Anthropic,0,Harmful data filtration,2023-10
+Upstream,Data,Anthropic,0,Data copyright status,2023-10
+Upstream,Data,Anthropic,0,Data license status,2023-10
+Upstream,Data,Anthropic,0,Personal information in data,2023-10
+Upstream,Data labor,Anthropic,0,Use of human labor,2023-10
+Upstream,Data labor,Anthropic,0,Employment of data laborers,2023-10
+Upstream,Data labor,Anthropic,0,Geographic distribution of data laborers,2023-10
+Upstream,Data labor,Anthropic,1,Wages,2023-10
+Upstream,Data labor,Anthropic,1,Instructions for creating data,2023-10
+Upstream,Data labor,Anthropic,0,Labor protections,2023-10
+Upstream,Data labor,Anthropic,0,Third party partners,2023-10
+Upstream,Data access,Anthropic,0,Queryable external data access,2023-10
+Upstream,Data access,Anthropic,0,Direct external data access,2023-10
+Upstream,Compute,Anthropic,0,Compute usage,2023-10
+Upstream,Compute,Anthropic,0,Development duration,2023-10
+Upstream,Compute,Anthropic,0,Compute hardware,2023-10
+Upstream,Compute,Anthropic,0,Hardware owner,2023-10
+Upstream,Compute,Anthropic,0,Energy usage,2023-10
+Upstream,Compute,Anthropic,0,Carbon emissions,2023-10
+Upstream,Compute,Anthropic,0,Broader environmental impact,2023-10
+Upstream,Methods,Anthropic,1,Model stages,2023-10
+Upstream,Methods,Anthropic,1,Model objectives,2023-10
+Upstream,Methods,Anthropic,0,Core frameworks,2023-10
+Upstream,Methods,Anthropic,1,Additional dependencies,2023-10
+Upstream,Data Mitigations,Anthropic,0,Mitigations for privacy,2023-10
+Upstream,Data Mitigations,Anthropic,0,Mitigations for copyright,2023-10
+Model,Model basics,Anthropic,1,Input modality,2023-10
+Model,Model basics,Anthropic,1,Output modality,2023-10
+Model,Model basics,Anthropic,0,Model components,2023-10
+Model,Model basics,Anthropic,0,Model size,2023-10
+Model,Model basics,Anthropic,1,Model architecture,2023-10
+Model,Model basics,Anthropic,1,Centralized model documentation,2023-10
+Model,Model access,Anthropic,0,External model access protocol,2023-10
+Model,Model access,Anthropic,1,Blackbox external model access,2023-10
+Model,Model access,Anthropic,0,Full external model access,2023-10
+Model,Capabilities,Anthropic,1,Capabilities description,2023-10
+Model,Capabilities,Anthropic,1,Capabilities demonstration,2023-10
+Model,Capabilities,Anthropic,1,Evaluation of capabilities,2023-10
+Model,Capabilities,Anthropic,1,External reproducibility of capabilities evaluation,2023-10
+Model,Capabilities,Anthropic,0,Third-party capabilities evaluation,2023-10
+Model,Limitations,Anthropic,1,Limitations description,2023-10
+Model,Limitations,Anthropic,0,Limitations demonstration,2023-10
+Model,Limitations,Anthropic,1,Third-party evaluation of limitations,2023-10
+Model,Risks,Anthropic,1,Risks description,2023-10
+Model,Risks,Anthropic,0,Risks demonstration,2023-10
+Model,Risks,Anthropic,0,Unintentional harm evaluation,2023-10
+Model,Risks,Anthropic,0,External reproducibility of unintentional harm evaluation,2023-10
+Model,Risks,Anthropic,0,Intentional harm evaluation,2023-10
+Model,Risks,Anthropic,0,External reproducibility of intentional harm evaluation,2023-10
+Model,Risks,Anthropic,1,Third-party risks evaluation,2023-10
+Model,Model Mitigations,Anthropic,1,Mitigations description,2023-10
+Model,Model Mitigations,Anthropic,0,Mitigations demonstration,2023-10
+Model,Model Mitigations,Anthropic,1,Mitigations evaluation,2023-10
+Model,Model Mitigations,Anthropic,0,External reproducibility of mitigations evaluation,2023-10
+Model,Model Mitigations,Anthropic,0,Third-party mitigations evaluation,2023-10
+Model,Trustworthiness,Anthropic,0,Trustworthiness evaluation,2023-10
+Model,Trustworthiness,Anthropic,0,External reproducibility of trustworthiness evaluation,2023-10
+Model,Inference,Anthropic,0,Inference duration evaluation,2023-10
+Model,Inference,Anthropic,0,Inference compute evaluation,2023-10
+Downstream,Distribution,Anthropic,0,Release decision-making protocol,2023-10
+Downstream,Distribution,Anthropic,1,Release process,2023-10
+Downstream,Distribution,Anthropic,1,Distribution channels,2023-10
+Downstream,Distribution,Anthropic,1,Products and services,2023-10
+Downstream,Distribution,Anthropic,0,Machine-generated content,2023-10
+Downstream,Distribution,Anthropic,0,Model Asset License,2023-10
+Downstream,Distribution,Anthropic,1,Terms of service,2023-10
+Downstream,Usage policy,Anthropic,1,Permitted and prohibited users,2023-10
+Downstream,Usage policy,Anthropic,1,"Permitted, restricted, and prohibited uses",2023-10
+Downstream,Usage policy,Anthropic,1,Usage policy enforcement,2023-10
+Downstream,Usage policy,Anthropic,0,Justification for enforcement action,2023-10
+Downstream,Usage policy,Anthropic,0,Usage policy violation appeals mechanism,2023-10
+Downstream,Model behavior policy,Anthropic,1,"Permitted, restricted, and prohibited model behaviors",2023-10
+Downstream,Model behavior policy,Anthropic,0,Model behavior policy enforcement,2023-10
+Downstream,Model behavior policy,Anthropic,1,Interoperability of usage and model behavior policies,2023-10
+Downstream,User Interface,Anthropic,0,User interaction with AI system,2023-10
+Downstream,User Interface,Anthropic,1,Usage disclaimers,2023-10
+Downstream,User data protection,Anthropic,1,User data protection policy,2023-10
+Downstream,User data protection,Anthropic,1,Permitted and prohibited use of user data,2023-10
+Downstream,User data protection,Anthropic,0,Usage data access protocol,2023-10
+Downstream,Model Updates,Anthropic,1,Versioning protocol,2023-10
+Downstream,Model Updates,Anthropic,0,Change log,2023-10
+Downstream,Model Updates,Anthropic,0,Deprecation policy,2023-10
+Downstream,Feedback,Anthropic,1,Feedback mechanism,2023-10
+Downstream,Feedback,Anthropic,0,Feedback summary,2023-10
+Downstream,Feedback,Anthropic,0,Government inquiries,2023-10
+Downstream,Impact,Anthropic,0,Monitoring mechanism,2023-10
+Downstream,Impact,Anthropic,0,Downstream applications,2023-10
+Downstream,Impact,Anthropic,0,Affected market sectors,2023-10
+Downstream,Impact,Anthropic,0,Affected individuals,2023-10
+Downstream,Impact,Anthropic,0,Usage reports,2023-10
+Downstream,Impact,Anthropic,0,Geographic statistics,2023-10
+Downstream,Impact,Anthropic,0,Redress mechanism,2023-10
+Downstream,Documentation for Deployers,Anthropic,1,Centralized documentation for downstream use,2023-10
+Downstream,Documentation for Deployers,Anthropic,1,Documentation for responsible downstream use,2023-10
+Upstream,Data,Cohere,1,Data size,2023-10
+Upstream,Data,Cohere,0,Data sources,2023-10
+Upstream,Data,Cohere,0,Data creators,2023-10
+Upstream,Data,Cohere,0,Data source selection,2023-10
+Upstream,Data,Cohere,1,Data curation,2023-10
+Upstream,Data,Cohere,0,Data augmentation,2023-10
+Upstream,Data,Cohere,0,Harmful data filtration,2023-10
+Upstream,Data,Cohere,0,Data copyright status,2023-10
+Upstream,Data,Cohere,0,Data license status,2023-10
+Upstream,Data,Cohere,0,Personal information in data,2023-10
+Upstream,Data labor,Cohere,0,Use of human labor,2023-10
+Upstream,Data labor,Cohere,0,Employment of data laborers,2023-10
+Upstream,Data labor,Cohere,0,Geographic distribution of data laborers,2023-10
+Upstream,Data labor,Cohere,0,Wages,2023-10
+Upstream,Data labor,Cohere,0,Instructions for creating data,2023-10
+Upstream,Data labor,Cohere,0,Labor protections,2023-10
+Upstream,Data labor,Cohere,0,Third party partners,2023-10
+Upstream,Data access,Cohere,0,Queryable external data access,2023-10
+Upstream,Data access,Cohere,0,Direct external data access,2023-10
+Upstream,Compute,Cohere,0,Compute usage,2023-10
+Upstream,Compute,Cohere,0,Development duration,2023-10
+Upstream,Compute,Cohere,0,Compute hardware,2023-10
+Upstream,Compute,Cohere,1,Hardware owner,2023-10
+Upstream,Compute,Cohere,0,Energy usage,2023-10
+Upstream,Compute,Cohere,0,Carbon emissions,2023-10
+Upstream,Compute,Cohere,0,Broader environmental impact,2023-10
+Upstream,Methods,Cohere,0,Model stages,2023-10
+Upstream,Methods,Cohere,0,Model objectives,2023-10
+Upstream,Methods,Cohere,0,Core frameworks,2023-10
+Upstream,Methods,Cohere,0,Additional dependencies,2023-10
+Upstream,Data Mitigations,Cohere,0,Mitigations for privacy,2023-10
+Upstream,Data Mitigations,Cohere,0,Mitigations for copyright,2023-10
+Model,Model basics,Cohere,1,Input modality,2023-10
+Model,Model basics,Cohere,1,Output modality,2023-10
+Model,Model basics,Cohere,0,Model components,2023-10
+Model,Model basics,Cohere,0,Model size,2023-10
+Model,Model basics,Cohere,0,Model architecture,2023-10
+Model,Model basics,Cohere,1,Centralized model documentation,2023-10
+Model,Model access,Cohere,1,External model access protocol,2023-10
+Model,Model access,Cohere,1,Blackbox external model access,2023-10
+Model,Model access,Cohere,0,Full external model access,2023-10
+Model,Capabilities,Cohere,1,Capabilities description,2023-10
+Model,Capabilities,Cohere,1,Capabilities demonstration,2023-10
+Model,Capabilities,Cohere,0,Evaluation of capabilities,2023-10
+Model,Capabilities,Cohere,0,External reproducibility of capabilities evaluation,2023-10
+Model,Capabilities,Cohere,1,Third-party capabilities evaluation,2023-10
+Model,Limitations,Cohere,1,Limitations description,2023-10
+Model,Limitations,Cohere,1,Limitations demonstration,2023-10
+Model,Limitations,Cohere,1,Third-party evaluation of limitations,2023-10
+Model,Risks,Cohere,1,Risks description,2023-10
+Model,Risks,Cohere,0,Risks demonstration,2023-10
+Model,Risks,Cohere,0,Unintentional harm evaluation,2023-10
+Model,Risks,Cohere,0,External reproducibility of unintentional harm evaluation,2023-10
+Model,Risks,Cohere,0,Intentional harm evaluation,2023-10
+Model,Risks,Cohere,0,External reproducibility of intentional harm evaluation,2023-10
+Model,Risks,Cohere,1,Third-party risks evaluation,2023-10
+Model,Model Mitigations,Cohere,1,Mitigations description,2023-10
+Model,Model Mitigations,Cohere,0,Mitigations demonstration,2023-10
+Model,Model Mitigations,Cohere,0,Mitigations evaluation,2023-10
+Model,Model Mitigations,Cohere,0,External reproducibility of mitigations evaluation,2023-10
+Model,Model Mitigations,Cohere,0,Third-party mitigations evaluation,2023-10
+Model,Trustworthiness,Cohere,1,Trustworthiness evaluation,2023-10
+Model,Trustworthiness,Cohere,1,External reproducibility of trustworthiness evaluation,2023-10
+Model,Inference,Cohere,0,Inference duration evaluation,2023-10
+Model,Inference,Cohere,0,Inference compute evaluation,2023-10
+Downstream,Distribution,Cohere,0,Release decision-making protocol,2023-10
+Downstream,Distribution,Cohere,0,Release process,2023-10
+Downstream,Distribution,Cohere,1,Distribution channels,2023-10
+Downstream,Distribution,Cohere,1,Products and services,2023-10
+Downstream,Distribution,Cohere,0,Machine-generated content,2023-10
+Downstream,Distribution,Cohere,1,Model Asset License,2023-10
+Downstream,Distribution,Cohere,1,Terms of service,2023-10
+Downstream,Usage policy,Cohere,1,Permitted and prohibited users,2023-10
+Downstream,Usage policy,Cohere,1,"Permitted, restricted, and prohibited uses",2023-10
+Downstream,Usage policy,Cohere,0,Usage policy enforcement,2023-10
+Downstream,Usage policy,Cohere,0,Justification for enforcement action,2023-10
+Downstream,Usage policy,Cohere,0,Usage policy violation appeals mechanism,2023-10
+Downstream,Model behavior policy,Cohere,0,"Permitted, restricted, and prohibited model behaviors",2023-10
+Downstream,Model behavior policy,Cohere,0,Model behavior policy enforcement,2023-10
+Downstream,Model behavior policy,Cohere,0,Interoperability of usage and model behavior policies,2023-10
+Downstream,User Interface,Cohere,1,User interaction with AI system,2023-10
+Downstream,User Interface,Cohere,1,Usage disclaimers,2023-10
+Downstream,User data protection,Cohere,1,User data protection policy,2023-10
+Downstream,User data protection,Cohere,1,Permitted and prohibited use of user data,2023-10
+Downstream,User data protection,Cohere,0,Usage data access protocol,2023-10
+Downstream,Model Updates,Cohere,0,Versioning protocol,2023-10
+Downstream,Model Updates,Cohere,1,Change log,2023-10
+Downstream,Model Updates,Cohere,0,Deprecation policy,2023-10
+Downstream,Feedback,Cohere,1,Feedback mechanism,2023-10
+Downstream,Feedback,Cohere,0,Feedback summary,2023-10
+Downstream,Feedback,Cohere,0,Government inquiries,2023-10
+Downstream,Impact,Cohere,1,Monitoring mechanism,2023-10
+Downstream,Impact,Cohere,0,Downstream applications,2023-10
+Downstream,Impact,Cohere,0,Affected market sectors,2023-10
+Downstream,Impact,Cohere,0,Affected individuals,2023-10
+Downstream,Impact,Cohere,0,Usage reports,2023-10
+Downstream,Impact,Cohere,0,Geographic statistics,2023-10
+Downstream,Impact,Cohere,0,Redress mechanism,2023-10
+Downstream,Documentation for Deployers,Cohere,1,Centralized documentation for downstream use,2023-10
+Downstream,Documentation for Deployers,Cohere,1,Documentation for responsible downstream use,2023-10
+Upstream,Data,AI21 Labs,0,Data size,2023-10
+Upstream,Data,AI21 Labs,0,Data sources,2023-10
+Upstream,Data,AI21 Labs,0,Data creators,2023-10
+Upstream,Data,AI21 Labs,0,Data source selection,2023-10
+Upstream,Data,AI21 Labs,0,Data curation,2023-10
+Upstream,Data,AI21 Labs,0,Data augmentation,2023-10
+Upstream,Data,AI21 Labs,0,Harmful data filtration,2023-10
+Upstream,Data,AI21 Labs,0,Data copyright status,2023-10
+Upstream,Data,AI21 Labs,0,Data license status,2023-10
+Upstream,Data,AI21 Labs,0,Personal information in data,2023-10
+Upstream,Data labor,AI21 Labs,0,Use of human labor,2023-10
+Upstream,Data labor,AI21 Labs,0,Employment of data laborers,2023-10
+Upstream,Data labor,AI21 Labs,0,Geographic distribution of data laborers,2023-10
+Upstream,Data labor,AI21 Labs,0,Wages,2023-10
+Upstream,Data labor,AI21 Labs,0,Instructions for creating data,2023-10
+Upstream,Data labor,AI21 Labs,0,Labor protections,2023-10
+Upstream,Data labor,AI21 Labs,0,Third party partners,2023-10
+Upstream,Data access,AI21 Labs,0,Queryable external data access,2023-10
+Upstream,Data access,AI21 Labs,0,Direct external data access,2023-10
+Upstream,Compute,AI21 Labs,0,Compute usage,2023-10
+Upstream,Compute,AI21 Labs,0,Development duration,2023-10
+Upstream,Compute,AI21 Labs,0,Compute hardware,2023-10
+Upstream,Compute,AI21 Labs,0,Hardware owner,2023-10
+Upstream,Compute,AI21 Labs,0,Energy usage,2023-10
+Upstream,Compute,AI21 Labs,0,Carbon emissions,2023-10
+Upstream,Compute,AI21 Labs,0,Broader environmental impact,2023-10
+Upstream,Methods,AI21 Labs,0,Model stages,2023-10
+Upstream,Methods,AI21 Labs,0,Model objectives,2023-10
+Upstream,Methods,AI21 Labs,0,Core frameworks,2023-10
+Upstream,Methods,AI21 Labs,0,Additional dependencies,2023-10
+Upstream,Data Mitigations,AI21 Labs,0,Mitigations for privacy,2023-10
+Upstream,Data Mitigations,AI21 Labs,0,Mitigations for copyright,2023-10
+Model,Model basics,AI21 Labs,1,Input modality,2023-10
+Model,Model basics,AI21 Labs,1,Output modality,2023-10
+Model,Model basics,AI21 Labs,0,Model components,2023-10
+Model,Model basics,AI21 Labs,0,Model size,2023-10
+Model,Model basics,AI21 Labs,0,Model architecture,2023-10
+Model,Model basics,AI21 Labs,0,Centralized model documentation,2023-10
+Model,Model access,AI21 Labs,0,External model access protocol,2023-10
+Model,Model access,AI21 Labs,1,Blackbox external model access,2023-10
+Model,Model access,AI21 Labs,0,Full external model access,2023-10
+Model,Capabilities,AI21 Labs,1,Capabilities description,2023-10
+Model,Capabilities,AI21 Labs,1,Capabilities demonstration,2023-10
+Model,Capabilities,AI21 Labs,0,Evaluation of capabilities,2023-10
+Model,Capabilities,AI21 Labs,0,External reproducibility of capabilities evaluation,2023-10
+Model,Capabilities,AI21 Labs,1,Third-party capabilities evaluation,2023-10
+Model,Limitations,AI21 Labs,0,Limitations description,2023-10
+Model,Limitations,AI21 Labs,0,Limitations demonstration,2023-10
+Model,Limitations,AI21 Labs,1,Third-party evaluation of limitations,2023-10
+Model,Risks,AI21 Labs,1,Risks description,2023-10
+Model,Risks,AI21 Labs,0,Risks demonstration,2023-10
+Model,Risks,AI21 Labs,0,Unintentional harm evaluation,2023-10
+Model,Risks,AI21 Labs,0,External reproducibility of unintentional harm evaluation,2023-10
+Model,Risks,AI21 Labs,0,Intentional harm evaluation,2023-10
+Model,Risks,AI21 Labs,0,External reproducibility of intentional harm evaluation,2023-10
+Model,Risks,AI21 Labs,1,Third-party risks evaluation,2023-10
+Model,Model Mitigations,AI21 Labs,0,Mitigations description,2023-10
+Model,Model Mitigations,AI21 Labs,0,Mitigations demonstration,2023-10
+Model,Model Mitigations,AI21 Labs,0,Mitigations evaluation,2023-10
+Model,Model Mitigations,AI21 Labs,0,External reproducibility of mitigations evaluation,2023-10
+Model,Model Mitigations,AI21 Labs,0,Third-party mitigations evaluation,2023-10
+Model,Trustworthiness,AI21 Labs,1,Trustworthiness evaluation,2023-10
+Model,Trustworthiness,AI21 Labs,1,External reproducibility of trustworthiness evaluation,2023-10
+Model,Inference,AI21 Labs,0,Inference duration evaluation,2023-10
+Model,Inference,AI21 Labs,0,Inference compute evaluation,2023-10
+Downstream,Distribution,AI21 Labs,0,Release decision-making protocol,2023-10
+Downstream,Distribution,AI21 Labs,1,Release process,2023-10
+Downstream,Distribution,AI21 Labs,1,Distribution channels,2023-10
+Downstream,Distribution,AI21 Labs,0,Products and services,2023-10
+Downstream,Distribution,AI21 Labs,0,Machine-generated content,2023-10
+Downstream,Distribution,AI21 Labs,0,Model Asset License,2023-10
+Downstream,Distribution,AI21 Labs,1,Terms of service,2023-10
+Downstream,Usage policy,AI21 Labs,0,Permitted and prohibited users,2023-10
+Downstream,Usage policy,AI21 Labs,1,"Permitted, restricted, and prohibited uses",2023-10
+Downstream,Usage policy,AI21 Labs,0,Usage policy enforcement,2023-10
+Downstream,Usage policy,AI21 Labs,0,Justification for enforcement action,2023-10
+Downstream,Usage policy,AI21 Labs,0,Usage policy violation appeals mechanism,2023-10
+Downstream,Model behavior policy,AI21 Labs,0,"Permitted, restricted, and prohibited model behaviors",2023-10
+Downstream,Model behavior policy,AI21 Labs,0,Model behavior policy enforcement,2023-10
+Downstream,Model behavior policy,AI21 Labs,0,Interoperability of usage and model behavior policies,2023-10
+Downstream,User Interface,AI21 Labs,1,User interaction with AI system,2023-10
+Downstream,User Interface,AI21 Labs,1,Usage disclaimers,2023-10
+Downstream,User data protection,AI21 Labs,1,User data protection policy,2023-10
+Downstream,User data protection,AI21 Labs,1,Permitted and prohibited use of user data,2023-10
+Downstream,User data protection,AI21 Labs,0,Usage data access protocol,2023-10
+Downstream,Model Updates,AI21 Labs,1,Versioning protocol,2023-10
+Downstream,Model Updates,AI21 Labs,1,Change log,2023-10
+Downstream,Model Updates,AI21 Labs,0,Deprecation policy,2023-10
+Downstream,Feedback,AI21 Labs,1,Feedback mechanism,2023-10
+Downstream,Feedback,AI21 Labs,0,Feedback summary,2023-10
+Downstream,Feedback,AI21 Labs,0,Government inquiries,2023-10
+Downstream,Impact,AI21 Labs,1,Monitoring mechanism,2023-10
+Downstream,Impact,AI21 Labs,0,Downstream applications,2023-10
+Downstream,Impact,AI21 Labs,0,Affected market sectors,2023-10
+Downstream,Impact,AI21 Labs,0,Affected individuals,2023-10
+Downstream,Impact,AI21 Labs,0,Usage reports,2023-10
+Downstream,Impact,AI21 Labs,0,Geographic statistics,2023-10
+Downstream,Impact,AI21 Labs,0,Redress mechanism,2023-10
+Downstream,Documentation for Deployers,AI21 Labs,1,Centralized documentation for downstream use,2023-10
+Downstream,Documentation for Deployers,AI21 Labs,1,Documentation for responsible downstream use,2023-10
+Upstream,Data,Inflection,0,Data size,2023-10
+Upstream,Data,Inflection,0,Data sources,2023-10
+Upstream,Data,Inflection,0,Data creators,2023-10
+Upstream,Data,Inflection,0,Data source selection,2023-10
+Upstream,Data,Inflection,0,Data curation,2023-10
+Upstream,Data,Inflection,0,Data augmentation,2023-10
+Upstream,Data,Inflection,0,Harmful data filtration,2023-10
+Upstream,Data,Inflection,0,Data copyright status,2023-10
+Upstream,Data,Inflection,0,Data license status,2023-10
+Upstream,Data,Inflection,0,Personal information in data,2023-10
+Upstream,Data labor,Inflection,0,Use of human labor,2023-10
+Upstream,Data labor,Inflection,0,Employment of data laborers,2023-10
+Upstream,Data labor,Inflection,0,Geographic distribution of data laborers,2023-10
+Upstream,Data labor,Inflection,0,Wages,2023-10
+Upstream,Data labor,Inflection,0,Instructions for creating data,2023-10
+Upstream,Data labor,Inflection,0,Labor protections,2023-10
+Upstream,Data labor,Inflection,0,Third party partners,2023-10
+Upstream,Data access,Inflection,0,Queryable external data access,2023-10
+Upstream,Data access,Inflection,0,Direct external data access,2023-10
+Upstream,Compute,Inflection,0,Compute usage,2023-10
+Upstream,Compute,Inflection,0,Development duration,2023-10
+Upstream,Compute,Inflection,0,Compute hardware,2023-10
+Upstream,Compute,Inflection,0,Hardware owner,2023-10
+Upstream,Compute,Inflection,0,Energy usage,2023-10
+Upstream,Compute,Inflection,0,Carbon emissions,2023-10
+Upstream,Compute,Inflection,0,Broader environmental impact,2023-10
+Upstream,Methods,Inflection,0,Model stages,2023-10
+Upstream,Methods,Inflection,0,Model objectives,2023-10
+Upstream,Methods,Inflection,0,Core frameworks,2023-10
+Upstream,Methods,Inflection,0,Additional dependencies,2023-10
+Upstream,Data Mitigations,Inflection,0,Mitigations for privacy,2023-10
+Upstream,Data Mitigations,Inflection,0,Mitigations for copyright,2023-10
+Model,Model basics,Inflection,1,Input modality,2023-10
+Model,Model basics,Inflection,1,Output modality,2023-10
+Model,Model basics,Inflection,0,Model components,2023-10
+Model,Model basics,Inflection,0,Model size,2023-10
+Model,Model basics,Inflection,0,Model architecture,2023-10
+Model,Model basics,Inflection,1,Centralized model documentation,2023-10
+Model,Model access,Inflection,0,External model access protocol,2023-10
+Model,Model access,Inflection,0,Blackbox external model access,2023-10
+Model,Model access,Inflection,0,Full external model access,2023-10
+Model,Capabilities,Inflection,1,Capabilities description,2023-10
+Model,Capabilities,Inflection,0,Capabilities demonstration,2023-10
+Model,Capabilities,Inflection,1,Evaluation of capabilities,2023-10
+Model,Capabilities,Inflection,0,External reproducibility of capabilities evaluation,2023-10
+Model,Capabilities,Inflection,0,Third-party capabilities evaluation,2023-10
+Model,Limitations,Inflection,1,Limitations description,2023-10
+Model,Limitations,Inflection,0,Limitations demonstration,2023-10
+Model,Limitations,Inflection,0,Third-party evaluation of limitations,2023-10
+Model,Risks,Inflection,0,Risks description,2023-10
+Model,Risks,Inflection,0,Risks demonstration,2023-10
+Model,Risks,Inflection,0,Unintentional harm evaluation,2023-10
+Model,Risks,Inflection,0,External reproducibility of unintentional harm evaluation,2023-10
+Model,Risks,Inflection,0,Intentional harm evaluation,2023-10
+Model,Risks,Inflection,0,External reproducibility of intentional harm evaluation,2023-10
+Model,Risks,Inflection,0,Third-party risks evaluation,2023-10
+Model,Model Mitigations,Inflection,1,Mitigations description,2023-10
+Model,Model Mitigations,Inflection,0,Mitigations demonstration,2023-10
+Model,Model Mitigations,Inflection,0,Mitigations evaluation,2023-10
+Model,Model Mitigations,Inflection,0,External reproducibility of mitigations evaluation,2023-10
+Model,Model Mitigations,Inflection,0,Third-party mitigations evaluation,2023-10
+Model,Trustworthiness,Inflection,0,Trustworthiness evaluation,2023-10
+Model,Trustworthiness,Inflection,0,External reproducibility of trustworthiness evaluation,2023-10
+Model,Inference,Inflection,0,Inference duration evaluation,2023-10
+Model,Inference,Inflection,0,Inference compute evaluation,2023-10
+Downstream,Distribution,Inflection,0,Release decision-making protocol,2023-10
+Downstream,Distribution,Inflection,0,Release process,2023-10
+Downstream,Distribution,Inflection,1,Distribution channels,2023-10
+Downstream,Distribution,Inflection,1,Products and services,2023-10
+Downstream,Distribution,Inflection,0,Machine-generated content,2023-10
+Downstream,Distribution,Inflection,0,Model Asset License,2023-10
+Downstream,Distribution,Inflection,1,Terms of service,2023-10
+Downstream,Usage policy,Inflection,0,Permitted and prohibited users,2023-10
+Downstream,Usage policy,Inflection,1,"Permitted, restricted, and prohibited uses",2023-10
+Downstream,Usage policy,Inflection,0,Usage policy enforcement,2023-10
+Downstream,Usage policy,Inflection,1,Justification for enforcement action,2023-10
+Downstream,Usage policy,Inflection,1,Usage policy violation appeals mechanism,2023-10
+Downstream,Model behavior policy,Inflection,1,"Permitted, restricted, and prohibited model behaviors",2023-10
+Downstream,Model behavior policy,Inflection,1,Model behavior policy enforcement,2023-10
+Downstream,Model behavior policy,Inflection,0,Interoperability of usage and model behavior policies,2023-10
+Downstream,User Interface,Inflection,1,User interaction with AI system,2023-10
+Downstream,User Interface,Inflection,1,Usage disclaimers,2023-10
+Downstream,User data protection,Inflection,1,User data protection policy,2023-10
+Downstream,User data protection,Inflection,1,Permitted and prohibited use of user data,2023-10
+Downstream,User data protection,Inflection,0,Usage data access protocol,2023-10
+Downstream,Model Updates,Inflection,0,Versioning protocol,2023-10
+Downstream,Model Updates,Inflection,0,Change log,2023-10
+Downstream,Model Updates,Inflection,0,Deprecation policy,2023-10
+Downstream,Feedback,Inflection,1,Feedback mechanism,2023-10
+Downstream,Feedback,Inflection,0,Feedback summary,2023-10
+Downstream,Feedback,Inflection,0,Government inquiries,2023-10
+Downstream,Impact,Inflection,1,Monitoring mechanism,2023-10
+Downstream,Impact,Inflection,0,Downstream applications,2023-10
+Downstream,Impact,Inflection,0,Affected market sectors,2023-10
+Downstream,Impact,Inflection,0,Affected individuals,2023-10
+Downstream,Impact,Inflection,0,Usage reports,2023-10
+Downstream,Impact,Inflection,0,Geographic statistics,2023-10
+Downstream,Impact,Inflection,0,Redress mechanism,2023-10
+Downstream,Documentation for Deployers,Inflection,0,Centralized documentation for downstream use,2023-10
+Downstream,Documentation for Deployers,Inflection,0,Documentation for responsible downstream use,2023-10
+Upstream,Data,Amazon,0,Data size,2023-10
+Upstream,Data,Amazon,0,Data sources,2023-10
+Upstream,Data,Amazon,0,Data creators,2023-10
+Upstream,Data,Amazon,0,Data source selection,2023-10
+Upstream,Data,Amazon,0,Data curation,2023-10
+Upstream,Data,Amazon,0,Data augmentation,2023-10
+Upstream,Data,Amazon,0,Harmful data filtration,2023-10
+Upstream,Data,Amazon,0,Data copyright status,2023-10
+Upstream,Data,Amazon,0,Data license status,2023-10
+Upstream,Data,Amazon,0,Personal information in data,2023-10
+Upstream,Data labor,Amazon,0,Use of human labor,2023-10
+Upstream,Data labor,Amazon,0,Employment of data laborers,2023-10
+Upstream,Data labor,Amazon,0,Geographic distribution of data laborers,2023-10
+Upstream,Data labor,Amazon,0,Wages,2023-10
+Upstream,Data labor,Amazon,0,Instructions for creating data,2023-10
+Upstream,Data labor,Amazon,0,Labor protections,2023-10
+Upstream,Data labor,Amazon,0,Third party partners,2023-10
+Upstream,Data access,Amazon,0,Queryable external data access,2023-10
+Upstream,Data access,Amazon,0,Direct external data access,2023-10
+Upstream,Compute,Amazon,0,Compute usage,2023-10
+Upstream,Compute,Amazon,0,Development duration,2023-10
+Upstream,Compute,Amazon,0,Compute hardware,2023-10
+Upstream,Compute,Amazon,0,Hardware owner,2023-10
+Upstream,Compute,Amazon,0,Energy usage,2023-10
+Upstream,Compute,Amazon,0,Carbon emissions,2023-10
+Upstream,Compute,Amazon,0,Broader environmental impact,2023-10
+Upstream,Methods,Amazon,0,Model stages,2023-10
+Upstream,Methods,Amazon,0,Model objectives,2023-10
+Upstream,Methods,Amazon,0,Core frameworks,2023-10
+Upstream,Methods,Amazon,0,Additional dependencies,2023-10
+Upstream,Data Mitigations,Amazon,0,Mitigations for privacy,2023-10
+Upstream,Data Mitigations,Amazon,0,Mitigations for copyright,2023-10
+Model,Model basics,Amazon,1,Input modality,2023-10
+Model,Model basics,Amazon,1,Output modality,2023-10
+Model,Model basics,Amazon,0,Model components,2023-10
+Model,Model basics,Amazon,0,Model size,2023-10
+Model,Model basics,Amazon,0,Model architecture,2023-10
+Model,Model basics,Amazon,0,Centralized model documentation,2023-10
+Model,Model access,Amazon,0,External model access protocol,2023-10
+Model,Model access,Amazon,1,Blackbox external model access,2023-10
+Model,Model access,Amazon,0,Full external model access,2023-10
+Model,Capabilities,Amazon,1,Capabilities description,2023-10
+Model,Capabilities,Amazon,0,Capabilities demonstration,2023-10
+Model,Capabilities,Amazon,0,Evaluation of capabilities,2023-10
+Model,Capabilities,Amazon,0,External reproducibility of capabilities evaluation,2023-10
+Model,Capabilities,Amazon,0,Third-party capabilities evaluation,2023-10
+Model,Limitations,Amazon,0,Limitations description,2023-10
+Model,Limitations,Amazon,0,Limitations demonstration,2023-10
+Model,Limitations,Amazon,1,Third-party evaluation of limitations,2023-10
+Model,Risks,Amazon,0,Risks description,2023-10
+Model,Risks,Amazon,0,Risks demonstration,2023-10
+Model,Risks,Amazon,0,Unintentional harm evaluation,2023-10
+Model,Risks,Amazon,0,External reproducibility of unintentional harm evaluation,2023-10
+Model,Risks,Amazon,0,Intentional harm evaluation,2023-10
+Model,Risks,Amazon,0,External reproducibility of intentional harm evaluation,2023-10
+Model,Risks,Amazon,0,Third-party risks evaluation,2023-10
+Model,Model Mitigations,Amazon,1,Mitigations description,2023-10
+Model,Model Mitigations,Amazon,0,Mitigations demonstration,2023-10
+Model,Model Mitigations,Amazon,0,Mitigations evaluation,2023-10
+Model,Model Mitigations,Amazon,0,External reproducibility of mitigations evaluation,2023-10
+Model,Model Mitigations,Amazon,0,Third-party mitigations evaluation,2023-10
+Model,Trustworthiness,Amazon,0,Trustworthiness evaluation,2023-10
+Model,Trustworthiness,Amazon,0,External reproducibility of trustworthiness evaluation,2023-10
+Model,Inference,Amazon,0,Inference duration evaluation,2023-10
+Model,Inference,Amazon,0,Inference compute evaluation,2023-10
+Downstream,Distribution,Amazon,0,Release decision-making protocol,2023-10
+Downstream,Distribution,Amazon,1,Release process,2023-10
+Downstream,Distribution,Amazon,1,Distribution channels,2023-10
+Downstream,Distribution,Amazon,0,Products and services,2023-10
+Downstream,Distribution,Amazon,0,Machine-generated content,2023-10
+Downstream,Distribution,Amazon,0,Model Asset License,2023-10
+Downstream,Distribution,Amazon,1,Terms of service,2023-10
+Downstream,Usage policy,Amazon,0,Permitted and prohibited users,2023-10
+Downstream,Usage policy,Amazon,1,"Permitted, restricted, and prohibited uses",2023-10
+Downstream,Usage policy,Amazon,0,Usage policy enforcement,2023-10
+Downstream,Usage policy,Amazon,0,Justification for enforcement action,2023-10
+Downstream,Usage policy,Amazon,0,Usage policy violation appeals mechanism,2023-10
+Downstream,Model behavior policy,Amazon,0,"Permitted, restricted, and prohibited model behaviors",2023-10
+Downstream,Model behavior policy,Amazon,0,Model behavior policy enforcement,2023-10
+Downstream,Model behavior policy,Amazon,0,Interoperability of usage and model behavior policies,2023-10
+Downstream,User Interface,Amazon,0,User interaction with AI system,2023-10
+Downstream,User Interface,Amazon,0,Usage disclaimers,2023-10
+Downstream,User data protection,Amazon,1,User data protection policy,2023-10
+Downstream,User data protection,Amazon,1,Permitted and prohibited use of user data,2023-10
+Downstream,User data protection,Amazon,0,Usage data access protocol,2023-10
+Downstream,Model Updates,Amazon,0,Versioning protocol,2023-10
+Downstream,Model Updates,Amazon,0,Change log,2023-10
+Downstream,Model Updates,Amazon,0,Deprecation policy,2023-10
+Downstream,Feedback,Amazon,0,Feedback mechanism,2023-10
+Downstream,Feedback,Amazon,0,Feedback summary,2023-10
+Downstream,Feedback,Amazon,0,Government inquiries,2023-10
+Downstream,Impact,Amazon,0,Monitoring mechanism,2023-10
+Downstream,Impact,Amazon,0,Downstream applications,2023-10
+Downstream,Impact,Amazon,0,Affected market sectors,2023-10
+Downstream,Impact,Amazon,0,Affected individuals,2023-10
+Downstream,Impact,Amazon,0,Usage reports,2023-10
+Downstream,Impact,Amazon,0,Geographic statistics,2023-10
+Downstream,Impact,Amazon,0,Redress mechanism,2023-10
+Downstream,Documentation for Deployers,Amazon,0,Centralized documentation for downstream use,2023-10
+Downstream,Documentation for Deployers,Amazon,0,Documentation for responsible downstream use,2023-10
+,,Adept,0,Data size,2024-05
+,,Adept,0,Data sources,2024-05
+,,Adept,0,Data creators,2024-05
+,,Adept,0,Data source selection,2024-05
+,,Adept,0,Data curation,2024-05
+,,Adept,0,Data augmentation,2024-05
+,,Adept,0,Harmful data filtration,2024-05
+,,Adept,0,Data copyright status,2024-05
+,,Adept,0,Data license status,2024-05
+,,Adept,0,Personal information in data,2024-05
+,,Adept,0,Use of human labor,2024-05
+,,Adept,0,Employment of data laborers,2024-05
+,,Adept,0,Geographic distribution of data laborers,2024-05
+,,Adept,0,Wages,2024-05
+,,Adept,0,Instructions for creating data,2024-05
+,,Adept,0,Labor protections,2024-05
+,,Adept,0,Third party partners,2024-05
+,,Adept,0,Queryable external data access,2024-05
+,,Adept,0,Direct external data access,2024-05
+,,Adept,0,Compute usage,2024-05
+,,Adept,0,Development duration,2024-05
+,,Adept,0,Compute hardware,2024-05
+,,Adept,1,Hardware owner,2024-05
+,,Adept,0,Energy usage,2024-05
+,,Adept,0,Carbon emissions,2024-05
+,,Adept,0,Broader environmental impact,2024-05
+,,Adept,0,Model stages,2024-05
+,,Adept,0,Model objectives,2024-05
+,,Adept,0,Core frameworks,2024-05
+,,Adept,0,Additional dependencies,2024-05
+,,Adept,0,Mitigations for privacy,2024-05
+,,Adept,0,Mitigations for copyright,2024-05
+,,Adept,1,Input modality,2024-05
+,,Adept,1,Output modality,2024-05
+,,Adept,0,Model components,2024-05
+,,Adept,1,Model size,2024-05
+,,Adept,1,Model architecture,2024-05
+,,Adept,1,Centralized model documentation,2024-05
+,,Adept,1,External model access protocol,2024-05
+,,Adept,1,Blackbox external model access,2024-05
+,,Adept,1,Full external model access,2024-05
+,,Adept,1,Capabilities description,2024-05
+,,Adept,1,Capabilities demonstration,2024-05
+,,Adept,1,Evaluation of capabilities,2024-05
+,,Adept,1,External reproducibility of capabilities evaluation,2024-05
+,,Adept,0,Third-party capabilities evaluation,2024-05
+,,Adept,1,Limitations description,2024-05
+,,Adept,0,Limitations demonstration,2024-05
+,,Adept,1,Third-party evaluation of limitations,2024-05
+,,Adept,0,Risks description,2024-05
+,,Adept,0,Risks demonstration,2024-05
+,,Adept,0,Unintentional harm evaluation,2024-05
+,,Adept,0,External reproducibility of unintentional harm evaluation,2024-05
+,,Adept,0,Intentional harm evaluation,2024-05
+,,Adept,0,External reproducibility of intentional harm evaluation,2024-05
+,,Adept,0,Third-party risks evaluation,2024-05
+,,Adept,0,Mitigations description,2024-05
+,,Adept,0,Mitigations demonstration,2024-05
+,,Adept,0,Mitigations evaluation,2024-05
+,,Adept,0,External reproducibility of mitigations evaluation,2024-05
+,,Adept,0,Third-party mitigations evaluation,2024-05
+,,Adept,0,Trustworthiness evaluation,2024-05
+,,Adept,0,External reproducibility of trustworthiness evaluation,2024-05
+,,Adept,0,Inference duration evaluation,2024-05
+,,Adept,0,Inference compute evaluation,2024-05
+,,Adept,0,Release decision-making,2024-05
+,,Adept,0,Release process,2024-05
+,,Adept,1,Distribution channels,2024-05
+,,Adept,1,Products and services,2024-05
+,,Adept,0,Machine-generated content,2024-05
+,,Adept,1,License,2024-05
+,,Adept,1,Terms of service,2024-05
+,,Adept,1,Permitted and prohibited users,2024-05
+,,Adept,1,"Permitted, restricted, and prohibited uses",2024-05
+,,Adept,0,Usage policy enforcement,2024-05
+,,Adept,0,Justification for enforcement action,2024-05
+,,Adept,0,Usage policy violation appeals mechanism,2024-05
+,,Adept,0,"Permitted, restricted, and prohibited model behaviors",2024-05
+,,Adept,0,Model behavior policy enforcement,2024-05
+,,Adept,0,Interoperability of usage and model behavior policies,2024-05
+,,Adept,1,User interaction with AI system,2024-05
+,,Adept,1,Usage disclaimers,2024-05
+,,Adept,1,User data protection policy,2024-05
+,,Adept,1,Permitted and prohibited use of user data,2024-05
+,,Adept,1,Usage data access protocol,2024-05
+,,Adept,1,Versioning protocol,2024-05
+,,Adept,1,Change log,2024-05
+,,Adept,1,Deprecation policy,2024-05
+,,Adept,1,Feedback mechanism,2024-05
+,,Adept,1,Feedback summary,2024-05
+,,Adept,0,Government inquiries,2024-05
+,,Adept,1,Monitoring mechanism,2024-05
+,,Adept,1,Downstream applications,2024-05
+,,Adept,0,Affected market sectors,2024-05
+,,Adept,0,Affected individuals,2024-05
+,,Adept,0,Usage reports,2024-05
+,,Adept,0,Geographic statistics,2024-05
+,,Adept,0,Redress mechanism,2024-05
+,,Adept,0,Centralized documentation for downstream use,2024-05
+,,Adept,0,Documentation for responsible downstream use,2024-05
+,,AI21 Labs,1,Data size,2024-05
+,,AI21 Labs,1,Data sources,2024-05
+,,AI21 Labs,0,Data creators,2024-05
+,,AI21 Labs,1,Data source selection,2024-05
+,,AI21 Labs,1,Data curation,2024-05
+,,AI21 Labs,1,Data augmentation,2024-05
+,,AI21 Labs,1,Harmful data filtration,2024-05
+,,AI21 Labs,0,Data copyright status,2024-05
+,,AI21 Labs,0,Data license status,2024-05
+,,AI21 Labs,0,Personal information in data,2024-05
+,,AI21 Labs,1,Use of human labor,2024-05
+,,AI21 Labs,0,Employment of data laborers,2024-05
+,,AI21 Labs,0,Geographic distribution of data laborers,2024-05
+,,AI21 Labs,0,Wages,2024-05
+,,AI21 Labs,1,Instructions for creating data,2024-05
+,,AI21 Labs,0,Labor protections,2024-05
+,,AI21 Labs,1,Third party partners,2024-05
+,,AI21 Labs,0,Queryable external data access,2024-05
+,,AI21 Labs,0,Direct external data access,2024-05
+,,AI21 Labs,1,Compute usage,2024-05
+,,AI21 Labs,1,Development duration,2024-05
+,,AI21 Labs,1,Compute hardware,2024-05
+,,AI21 Labs,1,Hardware owner,2024-05
+,,AI21 Labs,1,Energy usage,2024-05
+,,AI21 Labs,1,Carbon emissions,2024-05
+,,AI21 Labs,0,Broader environmental impact,2024-05
+,,AI21 Labs,1,Model stages,2024-05
+,,AI21 Labs,1,Model objectives,2024-05
+,,AI21 Labs,1,Core frameworks,2024-05
+,,AI21 Labs,1,Additional dependencies,2024-05
+,,AI21 Labs,1,Mitigations for privacy,2024-05
+,,AI21 Labs,1,Mitigations for copyright,2024-05
+,,AI21 Labs,1,Input modality,2024-05
+,,AI21 Labs,1,Output modality,2024-05
+,,AI21 Labs,1,Model components,2024-05
+,,AI21 Labs,1,Model size,2024-05
+,,AI21 Labs,1,Model architecture,2024-05
+,,AI21 Labs,1,Centralized model documentation,2024-05
+,,AI21 Labs,1,External model access protocol,2024-05
+,,AI21 Labs,1,Blackbox external model access,2024-05
+,,AI21 Labs,0,Full external model access,2024-05
+,,AI21 Labs,1,Capabilities description,2024-05
+,,AI21 Labs,1,Capabilities demonstration,2024-05
+,,AI21 Labs,0,Evaluation of capabilities,2024-05
+,,AI21 Labs,1,External reproducibility of capabilities evaluation,2024-05
+,,AI21 Labs,1,Third-party capabilities evaluation,2024-05
+,,AI21 Labs,1,Limitations description,2024-05
+,,AI21 Labs,1,Limitations demonstration,2024-05
+,,AI21 Labs,1,Third-party evaluation of limitations,2024-05
+,,AI21 Labs,1,Risks description,2024-05
+,,AI21 Labs,1,Risks demonstration,2024-05
+,,AI21 Labs,0,Unintentional harm evaluation,2024-05
+,,AI21 Labs,1,External reproducibility of unintentional harm evaluation,2024-05
+,,AI21 Labs,0,Intentional harm evaluation,2024-05
+,,AI21 Labs,0,External reproducibility of intentional harm evaluation,2024-05
+,,AI21 Labs,1,Third-party risks evaluation,2024-05
+,,AI21 Labs,1,Mitigations description,2024-05
+,,AI21 Labs,1,Mitigations demonstration,2024-05
+,,AI21 Labs,0,Mitigations evaluation,2024-05
+,,AI21 Labs,0,External reproducibility of mitigations evaluation,2024-05
+,,AI21 Labs,0,Third-party mitigations evaluation,2024-05
+,,AI21 Labs,1,Trustworthiness evaluation,2024-05
+,,AI21 Labs,1,External reproducibility of trustworthiness evaluation,2024-05
+,,AI21 Labs,1,Inference duration evaluation,2024-05
+,,AI21 Labs,1,Inference compute evaluation,2024-05
+,,AI21 Labs,1,Release decision-making,2024-05
+,,AI21 Labs,1,Release process,2024-05
+,,AI21 Labs,1,Distribution channels,2024-05
+,,AI21 Labs,1,Products and services,2024-05
+,,AI21 Labs,0,Machine-generated content,2024-05
+,,AI21 Labs,1,License,2024-05
+,,AI21 Labs,1,Terms of service,2024-05
+,,AI21 Labs,1,Permitted and prohibited users,2024-05
+,,AI21 Labs,1,"Permitted, restricted, and prohibited uses",2024-05
+,,AI21 Labs,1,Usage policy enforcement,2024-05
+,,AI21 Labs,1,Justification for enforcement action,2024-05
+,,AI21 Labs,1,Usage policy violation appeals mechanism,2024-05
+,,AI21 Labs,1,"Permitted, restricted, and prohibited model behaviors",2024-05
+,,AI21 Labs,1,Model behavior policy enforcement,2024-05
+,,AI21 Labs,1,Interoperability of usage and model behavior policies,2024-05
+,,AI21 Labs,1,User interaction with AI system,2024-05
+,,AI21 Labs,1,Usage disclaimers,2024-05
+,,AI21 Labs,1,User data protection policy,2024-05
+,,AI21 Labs,1,Permitted and prohibited use of user data,2024-05
+,,AI21 Labs,1,Usage data access protocol,2024-05
+,,AI21 Labs,1,Versioning protocol,2024-05
+,,AI21 Labs,1,Change log,2024-05
+,,AI21 Labs,1,Deprecation policy,2024-05
+,,AI21 Labs,1,Feedback mechanism,2024-05
+,,AI21 Labs,1,Feedback summary,2024-05
+,,AI21 Labs,1,Government inquiries,2024-05
+,,AI21 Labs,1,Monitoring mechanism,2024-05
+,,AI21 Labs,0,Downstream applications,2024-05
+,,AI21 Labs,0,Affected market sectors,2024-05
+,,AI21 Labs,0,Affected individuals,2024-05
+,,AI21 Labs,0,Usage reports,2024-05
+,,AI21 Labs,0,Geographic statistics,2024-05
+,,AI21 Labs,1,Redress mechanism,2024-05
+,,AI21 Labs,1,Centralized documentation for downstream use,2024-05
+,,AI21 Labs,1,Documentation for responsible downstream use,2024-05
+,,Aleph Alpha,1,Data size,2024-05
+,,Aleph Alpha,0,Data sources,2024-05
+,,Aleph Alpha,0,Data creators,2024-05
+,,Aleph Alpha,0,Data source selection,2024-05
+,,Aleph Alpha,1,Data curation,2024-05
+,,Aleph Alpha,1,Data augmentation,2024-05
+,,Aleph Alpha,1,Harmful data filtration,2024-05
+,,Aleph Alpha,0,Data copyright status,2024-05
+,,Aleph Alpha,0,Data license status,2024-05
+,,Aleph Alpha,0,Personal information in data,2024-05
+,,Aleph Alpha,1,Use of human labor,2024-05
+,,Aleph Alpha,1,Employment of data laborers,2024-05
+,,Aleph Alpha,1,Geographic distribution of data laborers,2024-05
+,,Aleph Alpha,0,Wages,2024-05
+,,Aleph Alpha,0,Instructions for creating data,2024-05
+,,Aleph Alpha,1,Labor protections,2024-05
+,,Aleph Alpha,1,Third party partners,2024-05
+,,Aleph Alpha,0,Queryable external data access,2024-05
+,,Aleph Alpha,0,Direct external data access,2024-05
+,,Aleph Alpha,1,Compute usage,2024-05
+,,Aleph Alpha,1,Development duration,2024-05
+,,Aleph Alpha,1,Compute hardware,2024-05
+,,Aleph Alpha,1,Hardware owner,2024-05
+,,Aleph Alpha,1,Energy usage,2024-05
+,,Aleph Alpha,1,Carbon emissions,2024-05
+,,Aleph Alpha,1,Broader environmental impact,2024-05
+,,Aleph Alpha,1,Model stages,2024-05
+,,Aleph Alpha,1,Model objectives,2024-05
+,,Aleph Alpha,1,Core frameworks,2024-05
+,,Aleph Alpha,1,Additional dependencies,2024-05
+,,Aleph Alpha,1,Mitigations for privacy,2024-05
+,,Aleph Alpha,0,Mitigations for copyright,2024-05
+,,Aleph Alpha,1,Input modality,2024-05
+,,Aleph Alpha,1,Output modality,2024-05
+,,Aleph Alpha,1,Model components,2024-05
+,,Aleph Alpha,1,Model size,2024-05
+,,Aleph Alpha,1,Model architecture,2024-05
+,,Aleph Alpha,1,Centralized model documentation,2024-05
+,,Aleph Alpha,1,External model access protocol,2024-05
+,,Aleph Alpha,1,Blackbox external model access,2024-05
+,,Aleph Alpha,1,Full external model access,2024-05
+,,Aleph Alpha,1,Capabilities description,2024-05
+,,Aleph Alpha,1,Capabilities demonstration,2024-05
+,,Aleph Alpha,1,Evaluation of capabilities,2024-05
+,,Aleph Alpha,1,External reproducibility of capabilities evaluation,2024-05
+,,Aleph Alpha,1,Third-party capabilities evaluation,2024-05
+,,Aleph Alpha,1,Limitations description,2024-05
+,,Aleph Alpha,1,Limitations demonstration,2024-05
+,,Aleph Alpha,1,Third-party evaluation of limitations,2024-05
+,,Aleph Alpha,1,Risks description,2024-05
+,,Aleph Alpha,1,Risks demonstration,2024-05
+,,Aleph Alpha,0,Unintentional harm evaluation,2024-05
+,,Aleph Alpha,1,External reproducibility of unintentional harm evaluation,2024-05
+,,Aleph Alpha,0,Intentional harm evaluation,2024-05
+,,Aleph Alpha,0,External reproducibility of intentional harm evaluation,2024-05
+,,Aleph Alpha,1,Third-party risks evaluation,2024-05
+,,Aleph Alpha,1,Mitigations description,2024-05
+,,Aleph Alpha,0,Mitigations demonstration,2024-05
+,,Aleph Alpha,0,Mitigations evaluation,2024-05
+,,Aleph Alpha,0,External reproducibility of mitigations evaluation,2024-05
+,,Aleph Alpha,0,Third-party mitigations evaluation,2024-05
+,,Aleph Alpha,1,Trustworthiness evaluation,2024-05
+,,Aleph Alpha,1,External reproducibility of trustworthiness evaluation,2024-05
+,,Aleph Alpha,1,Inference duration evaluation,2024-05
+,,Aleph Alpha,0,Inference compute evaluation,2024-05
+,,Aleph Alpha,1,Release decision-making,2024-05
+,,Aleph Alpha,1,Release process,2024-05
+,,Aleph Alpha,1,Distribution channels,2024-05
+,,Aleph Alpha,1,Products and services,2024-05
+,,Aleph Alpha,1,Machine-generated content,2024-05
+,,Aleph Alpha,1,License,2024-05
+,,Aleph Alpha,1,Terms of service,2024-05
+,,Aleph Alpha,1,Permitted and prohibited users,2024-05
+,,Aleph Alpha,1,"Permitted, restricted, and prohibited uses",2024-05
+,,Aleph Alpha,1,Usage policy enforcement,2024-05
+,,Aleph Alpha,1,Justification for enforcement action,2024-05
+,,Aleph Alpha,1,Usage policy violation appeals mechanism,2024-05
+,,Aleph Alpha,1,"Permitted, restricted, and prohibited model behaviors",2024-05
+,,Aleph Alpha,1,Model behavior policy enforcement,2024-05
+,,Aleph Alpha,1,Interoperability of usage and model behavior policies,2024-05
+,,Aleph Alpha,1,User interaction with AI system,2024-05
+,,Aleph Alpha,1,Usage disclaimers,2024-05
+,,Aleph Alpha,1,User data protection policy,2024-05
+,,Aleph Alpha,1,Permitted and prohibited use of user data,2024-05
+,,Aleph Alpha,1,Usage data access protocol,2024-05
+,,Aleph Alpha,1,Versioning protocol,2024-05
+,,Aleph Alpha,1,Change log,2024-05
+,,Aleph Alpha,1,Deprecation policy,2024-05
+,,Aleph Alpha,1,Feedback mechanism,2024-05
+,,Aleph Alpha,0,Feedback summary,2024-05
+,,Aleph Alpha,1,Government inquiries,2024-05
+,,Aleph Alpha,1,Monitoring mechanism,2024-05
+,,Aleph Alpha,0,Downstream applications,2024-05
+,,Aleph Alpha,0,Affected market sectors,2024-05
+,,Aleph Alpha,0,Affected individuals,2024-05
+,,Aleph Alpha,0,Usage reports,2024-05
+,,Aleph Alpha,0,Geographic statistics,2024-05
+,,Aleph Alpha,1,Redress mechanism,2024-05
+,,Aleph Alpha,1,Centralized documentation for downstream use,2024-05
+,,Aleph Alpha,1,Documentation for responsible downstream use,2024-05
+,,Amazon,0,Data size,2024-05
+,,Amazon,0,Data sources,2024-05
+,,Amazon,0,Data creators,2024-05
+,,Amazon,0,Data source selection,2024-05
+,,Amazon,0,Data curation,2024-05
+,,Amazon,0,Data augmentation,2024-05
+,,Amazon,0,Harmful data filtration,2024-05
+,,Amazon,0,Data copyright status,2024-05
+,,Amazon,0,Data license status,2024-05
+,,Amazon,0,Personal information in data,2024-05
+,,Amazon,1,Use of human labor,2024-05
+,,Amazon,0,Employment of data laborers,2024-05
+,,Amazon,0,Geographic distribution of data laborers,2024-05
+,,Amazon,0,Wages,2024-05
+,,Amazon,0,Instructions for creating data,2024-05
+,,Amazon,0,Labor protections,2024-05
+,,Amazon,0,Third party partners,2024-05
+,,Amazon,0,Queryable external data access,2024-05
+,,Amazon,0,Direct external data access,2024-05
+,,Amazon,0,Compute usage,2024-05
+,,Amazon,0,Development duration,2024-05
+,,Amazon,0,Compute hardware,2024-05
+,,Amazon,0,Hardware owner,2024-05
+,,Amazon,0,Energy usage,2024-05
+,,Amazon,0,Carbon emissions,2024-05
+,,Amazon,0,Broader environmental impact,2024-05
+,,Amazon,1,Model stages,2024-05
+,,Amazon,1,Model objectives,2024-05
+,,Amazon,0,Core frameworks,2024-05
+,,Amazon,0,Additional dependencies,2024-05
+,,Amazon,0,Mitigations for privacy,2024-05
+,,Amazon,0,Mitigations for copyright,2024-05
+,,Amazon,1,Input modality,2024-05
+,,Amazon,1,Output modality,2024-05
+,,Amazon,1,Model components,2024-05
+,,Amazon,0,Model size,2024-05
+,,Amazon,1,Model architecture,2024-05
+,,Amazon,1,Centralized model documentation,2024-05
+,,Amazon,1,External model access protocol,2024-05
+,,Amazon,1,Blackbox external model access,2024-05
+,,Amazon,0,Full external model access,2024-05
+,,Amazon,1,Capabilities description,2024-05
+,,Amazon,1,Capabilities demonstration,2024-05
+,,Amazon,1,Evaluation of capabilities,2024-05
+,,Amazon,1,External reproducibility of capabilities evaluation,2024-05
+,,Amazon,0,Third-party capabilities evaluation,2024-05
+,,Amazon,1,Limitations description,2024-05
+,,Amazon,1,Limitations demonstration,2024-05
+,,Amazon,1,Third-party evaluation of limitations,2024-05
+,,Amazon,1,Risks description,2024-05
+,,Amazon,1,Risks demonstration,2024-05
+,,Amazon,0,Unintentional harm evaluation,2024-05
+,,Amazon,1,External reproducibility of unintentional harm evaluation,2024-05
+,,Amazon,0,Intentional harm evaluation,2024-05
+,,Amazon,0,External reproducibility of intentional harm evaluation,2024-05
+,,Amazon,0,Third-party risks evaluation,2024-05
+,,Amazon,1,Mitigations description,2024-05
+,,Amazon,0,Mitigations demonstration,2024-05
+,,Amazon,0,Mitigations evaluation,2024-05
+,,Amazon,0,External reproducibility of mitigations evaluation,2024-05
+,,Amazon,0,Third-party mitigations evaluation,2024-05
+,,Amazon,1,Trustworthiness evaluation,2024-05
+,,Amazon,0,External reproducibility of trustworthiness evaluation,2024-05
+,,Amazon,0,Inference duration evaluation,2024-05
+,,Amazon,0,Inference compute evaluation,2024-05
+,,Amazon,0,Release decision-making,2024-05
+,,Amazon,1,Release process,2024-05
+,,Amazon,1,Distribution channels,2024-05
+,,Amazon,0,Products and services,2024-05
+,,Amazon,0,Machine-generated content,2024-05
+,,Amazon,1,License,2024-05
+,,Amazon,1,Terms of service,2024-05
+,,Amazon,1,Permitted and prohibited users,2024-05
+,,Amazon,1,"Permitted, restricted, and prohibited uses",2024-05
+,,Amazon,1,Usage policy enforcement,2024-05
+,,Amazon,1,Justification for enforcement action,2024-05
+,,Amazon,0,Usage policy violation appeals mechanism,2024-05
+,,Amazon,1,"Permitted, restricted, and prohibited model behaviors",2024-05
+,,Amazon,1,Model behavior policy enforcement,2024-05
+,,Amazon,1,Interoperability of usage and model behavior policies,2024-05
+,,Amazon,1,User interaction with AI system,2024-05
+,,Amazon,1,Usage disclaimers,2024-05
+,,Amazon,1,User data protection policy,2024-05
+,,Amazon,1,Permitted and prohibited use of user data,2024-05
+,,Amazon,0,Usage data access protocol,2024-05
+,,Amazon,1,Versioning protocol,2024-05
+,,Amazon,0,Change log,2024-05
+,,Amazon,0,Deprecation policy,2024-05
+,,Amazon,1,Feedback mechanism,2024-05
+,,Amazon,0,Feedback summary,2024-05
+,,Amazon,0,Government inquiries,2024-05
+,,Amazon,0,Monitoring mechanism,2024-05
+,,Amazon,0,Downstream applications,2024-05
+,,Amazon,0,Affected market sectors,2024-05
+,,Amazon,0,Affected individuals,2024-05
+,,Amazon,0,Usage reports,2024-05
+,,Amazon,0,Geographic statistics,2024-05
+,,Amazon,0,Redress mechanism,2024-05
+,,Amazon,1,Centralized documentation for downstream use,2024-05
+,,Amazon,1,Documentation for responsible downstream use,2024-05
+,,Anthropic,0,Data size,2024-05
+,,Anthropic,0,Data sources,2024-05
+,,Anthropic,0,Data creators,2024-05
+,,Anthropic,0,Data source selection,2024-05
+,,Anthropic,1,Data curation,2024-05
+,,Anthropic,0,Data augmentation,2024-05
+,,Anthropic,0,Harmful data filtration,2024-05
+,,Anthropic,0,Data copyright status,2024-05
+,,Anthropic,0,Data license status,2024-05
+,,Anthropic,0,Personal information in data,2024-05
+,,Anthropic,0,Use of human labor,2024-05
+,,Anthropic,0,Employment of data laborers,2024-05
+,,Anthropic,0,Geographic distribution of data laborers,2024-05
+,,Anthropic,0,Wages,2024-05
+,,Anthropic,1,Instructions for creating data,2024-05
+,,Anthropic,0,Labor protections,2024-05
+,,Anthropic,0,Third party partners,2024-05
+,,Anthropic,0,Queryable external data access,2024-05
+,,Anthropic,0,Direct external data access,2024-05
+,,Anthropic,0,Compute usage,2024-05
+,,Anthropic,0,Development duration,2024-05
+,,Anthropic,0,Compute hardware,2024-05
+,,Anthropic,1,Hardware owner,2024-05
+,,Anthropic,0,Energy usage,2024-05
+,,Anthropic,0,Carbon emissions,2024-05
+,,Anthropic,0,Broader environmental impact,2024-05
+,,Anthropic,0,Model stages,2024-05
+,,Anthropic,1,Model objectives,2024-05
+,,Anthropic,1,Core frameworks,2024-05
+,,Anthropic,1,Additional dependencies,2024-05
+,,Anthropic,1,Mitigations for privacy,2024-05
+,,Anthropic,0,Mitigations for copyright,2024-05
+,,Anthropic,1,Input modality,2024-05
+,,Anthropic,1,Output modality,2024-05
+,,Anthropic,0,Model components,2024-05
+,,Anthropic,0,Model size,2024-05
+,,Anthropic,0,Model architecture,2024-05
+,,Anthropic,1,Centralized model documentation,2024-05
+,,Anthropic,1,External model access protocol,2024-05
+,,Anthropic,1,Blackbox external model access,2024-05
+,,Anthropic,0,Full external model access,2024-05
+,,Anthropic,1,Capabilities description,2024-05
+,,Anthropic,1,Capabilities demonstration,2024-05
+,,Anthropic,1,Evaluation of capabilities,2024-05
+,,Anthropic,1,External reproducibility of capabilities evaluation,2024-05
+,,Anthropic,1,Third-party capabilities evaluation,2024-05
+,,Anthropic,1,Limitations description,2024-05
+,,Anthropic,0,Limitations demonstration,2024-05
+,,Anthropic,1,Third-party evaluation of limitations,2024-05
+,,Anthropic,1,Risks description,2024-05
+,,Anthropic,1,Risks demonstration,2024-05
+,,Anthropic,1,Unintentional harm evaluation,2024-05
+,,Anthropic,1,External reproducibility of unintentional harm evaluation,2024-05
+,,Anthropic,1,Intentional harm evaluation,2024-05
+,,Anthropic,0,External reproducibility of intentional harm evaluation,2024-05
+,,Anthropic,1,Third-party risks evaluation,2024-05
+,,Anthropic,1,Mitigations description,2024-05
+,,Anthropic,1,Mitigations demonstration,2024-05
+,,Anthropic,0,Mitigations evaluation,2024-05
+,,Anthropic,0,External reproducibility of mitigations evaluation,2024-05
+,,Anthropic,0,Third-party mitigations evaluation,2024-05
+,,Anthropic,1,Trustworthiness evaluation,2024-05
+,,Anthropic,0,External reproducibility of trustworthiness evaluation,2024-05
+,,Anthropic,0,Inference duration evaluation,2024-05
+,,Anthropic,0,Inference compute evaluation,2024-05
+,,Anthropic,1,Release decision-making,2024-05
+,,Anthropic,1,Release process,2024-05
+,,Anthropic,1,Distribution channels,2024-05
+,,Anthropic,1,Products and services,2024-05
+,,Anthropic,0,Machine-generated content,2024-05
+,,Anthropic,1,License,2024-05
+,,Anthropic,1,Terms of service,2024-05
+,,Anthropic,1,Permitted and prohibited users,2024-05
+,,Anthropic,1,"Permitted, restricted, and prohibited uses",2024-05
+,,Anthropic,1,Usage policy enforcement,2024-05
+,,Anthropic,1,Justification for enforcement action,2024-05
+,,Anthropic,1,Usage policy violation appeals mechanism,2024-05
+,,Anthropic,1,"Permitted, restricted, and prohibited model behaviors",2024-05
+,,Anthropic,1,Model behavior policy enforcement,2024-05
+,,Anthropic,1,Interoperability of usage and model behavior policies,2024-05
+,,Anthropic,1,User interaction with AI system,2024-05
+,,Anthropic,1,Usage disclaimers,2024-05
+,,Anthropic,1,User data protection policy,2024-05
+,,Anthropic,1,Permitted and prohibited use of user data,2024-05
+,,Anthropic,0,Usage data access protocol,2024-05
+,,Anthropic,1,Versioning protocol,2024-05
+,,Anthropic,0,Change log,2024-05
+,,Anthropic,0,Deprecation policy,2024-05
+,,Anthropic,1,Feedback mechanism,2024-05
+,,Anthropic,0,Feedback summary,2024-05
+,,Anthropic,0,Government inquiries,2024-05
+,,Anthropic,1,Monitoring mechanism,2024-05
+,,Anthropic,0,Downstream applications,2024-05
+,,Anthropic,0,Affected market sectors,2024-05
+,,Anthropic,0,Affected individuals,2024-05
+,,Anthropic,0,Usage reports,2024-05
+,,Anthropic,0,Geographic statistics,2024-05
+,,Anthropic,0,Redress mechanism,2024-05
+,,Anthropic,1,Centralized documentation for downstream use,2024-05
+,,Anthropic,1,Documentation for responsible downstream use,2024-05
+,,BigCode,1,Data size,2024-05
+,,BigCode,1,Data sources,2024-05
+,,BigCode,1,Data creators,2024-05
+,,BigCode,1,Data source selection,2024-05
+,,BigCode,1,Data curation,2024-05
+,,BigCode,1,Data augmentation,2024-05
+,,BigCode,1,Harmful data filtration,2024-05
+,,BigCode,1,Data copyright status,2024-05
+,,BigCode,1,Data license status,2024-05
+,,BigCode,1,Personal information in data,2024-05
+,,BigCode,1,Use of human labor,2024-05
+,,BigCode,1,Employment of data laborers,2024-05
+,,BigCode,1,Geographic distribution of data laborers,2024-05
+,,BigCode,1,Wages,2024-05
+,,BigCode,1,Instructions for creating data,2024-05
+,,BigCode,1,Labor protections,2024-05
+,,BigCode,1,Third party partners,2024-05
+,,BigCode,1,Queryable external data access,2024-05
+,,BigCode,1,Direct external data access,2024-05
+,,BigCode,1,Compute usage,2024-05
+,,BigCode,1,Development duration,2024-05
+,,BigCode,1,Compute hardware,2024-05
+,,BigCode,1,Hardware owner,2024-05
+,,BigCode,1,Energy usage,2024-05
+,,BigCode,1,Carbon emissions,2024-05
+,,BigCode,1,Broader environmental impact,2024-05
+,,BigCode,1,Model stages,2024-05
+,,BigCode,1,Model objectives,2024-05
+,,BigCode,1,Core frameworks,2024-05
+,,BigCode,1,Additional dependencies,2024-05
+,,BigCode,1,Mitigations for privacy,2024-05
+,,BigCode,1,Mitigations for copyright,2024-05
+,,BigCode,1,Input modality,2024-05
+,,BigCode,1,Output modality,2024-05
+,,BigCode,1,Model components,2024-05
+,,BigCode,1,Model size,2024-05
+,,BigCode,1,Model architecture,2024-05
+,,BigCode,1,Centralized model documentation,2024-05
+,,BigCode,1,External model access protocol,2024-05
+,,BigCode,1,Blackbox external model access,2024-05
+,,BigCode,1,Full external model access,2024-05
+,,BigCode,1,Capabilities description,2024-05
+,,BigCode,1,Capabilities demonstration,2024-05
+,,BigCode,1,Evaluation of capabilities,2024-05
+,,BigCode,1,External reproducibility of capabilities evaluation,2024-05
+,,BigCode,1,Third-party capabilities evaluation,2024-05
+,,BigCode,1,Limitations description,2024-05
+,,BigCode,0,Limitations demonstration,2024-05
+,,BigCode,1,Third-party evaluation of limitations,2024-05
+,,BigCode,1,Risks description,2024-05
+,,BigCode,1,Risks demonstration,2024-05
+,,BigCode,1,Unintentional harm evaluation,2024-05
+,,BigCode,1,External reproducibility of unintentional harm evaluation,2024-05
+,,BigCode,1,Intentional harm evaluation,2024-05
+,,BigCode,1,External reproducibility of intentional harm evaluation,2024-05
+,,BigCode,1,Third-party risks evaluation,2024-05
+,,BigCode,0,Mitigations description,2024-05
+,,BigCode,0,Mitigations demonstration,2024-05
+,,BigCode,0,Mitigations evaluation,2024-05
+,,BigCode,0,External reproducibility of mitigations evaluation,2024-05
+,,BigCode,0,Third-party mitigations evaluation,2024-05
+,,BigCode,0,Trustworthiness evaluation,2024-05
+,,BigCode,0,External reproducibility of trustworthiness evaluation,2024-05
+,,BigCode,1,Inference duration evaluation,2024-05
+,,BigCode,1,Inference compute evaluation,2024-05
+,,BigCode,1,Release decision-making,2024-05
+,,BigCode,1,Release process,2024-05
+,,BigCode,1,Distribution channels,2024-05
+,,BigCode,1,Products and services,2024-05
+,,BigCode,1,Machine-generated content,2024-05
+,,BigCode,1,License,2024-05
+,,BigCode,1,Terms of service,2024-05
+,,BigCode,1,Permitted and prohibited users,2024-05
+,,BigCode,1,"Permitted, restricted, and prohibited uses",2024-05
+,,BigCode,1,Usage policy enforcement,2024-05
+,,BigCode,1,Justification for enforcement action,2024-05
+,,BigCode,1,Usage policy violation appeals mechanism,2024-05
+,,BigCode,1,"Permitted, restricted, and prohibited model behaviors",2024-05
+,,BigCode,1,Model behavior policy enforcement,2024-05
+,,BigCode,1,Interoperability of usage and model behavior policies,2024-05
+,,BigCode,1,User interaction with AI system,2024-05
+,,BigCode,1,Usage disclaimers,2024-05
+,,BigCode,1,User data protection policy,2024-05
+,,BigCode,1,Permitted and prohibited use of user data,2024-05
+,,BigCode,0,Usage data access protocol,2024-05
+,,BigCode,1,Versioning protocol,2024-05
+,,BigCode,1,Change log,2024-05
+,,BigCode,1,Deprecation policy,2024-05
+,,BigCode,1,Feedback mechanism,2024-05
+,,BigCode,1,Feedback summary,2024-05
+,,BigCode,1,Government inquiries,2024-05
+,,BigCode,0,Monitoring mechanism,2024-05
+,,BigCode,1,Downstream applications,2024-05
+,,BigCode,0,Affected market sectors,2024-05
+,,BigCode,0,Affected individuals,2024-05
+,,BigCode,0,Usage reports,2024-05
+,,BigCode,0,Geographic statistics,2024-05
+,,BigCode,0,Redress mechanism,2024-05
+,,BigCode,1,Centralized documentation for downstream use,2024-05
+,,BigCode,1,Documentation for responsible downstream use,2024-05
+,,Google,0,Data size,2024-05
+,,Google,0,Data sources,2024-05
+,,Google,0,Data creators,2024-05
+,,Google,0,Data source selection,2024-05
+,,Google,0,Data curation,2024-05
+,,Google,0,Data augmentation,2024-05
+,,Google,0,Harmful data filtration,2024-05
+,,Google,0,Data copyright status,2024-05
+,,Google,0,Data license status,2024-05
+,,Google,0,Personal information in data,2024-05
+,,Google,1,Use of human labor,2024-05
+,,Google,0,Employment of data laborers,2024-05
+,,Google,0,Geographic distribution of data laborers,2024-05
+,,Google,0,Wages,2024-05
+,,Google,0,Instructions for creating data,2024-05
+,,Google,1,Labor protections,2024-05
+,,Google,0,Third party partners,2024-05
+,,Google,0,Queryable external data access,2024-05
+,,Google,0,Direct external data access,2024-05
+,,Google,0,Compute usage,2024-05
+,,Google,0,Development duration,2024-05
+,,Google,0,Compute hardware,2024-05
+,,Google,1,Hardware owner,2024-05
+,,Google,0,Energy usage,2024-05
+,,Google,0,Carbon emissions,2024-05
+,,Google,0,Broader environmental impact,2024-05
+,,Google,1,Model stages,2024-05
+,,Google,1,Model objectives,2024-05
+,,Google,1,Core frameworks,2024-05
+,,Google,0,Additional dependencies,2024-05
+,,Google,0,Mitigations for privacy,2024-05
+,,Google,0,Mitigations for copyright,2024-05
+,,Google,1,Input modality,2024-05
+,,Google,1,Output modality,2024-05
+,,Google,1,Model components,2024-05
+,,Google,0,Model size,2024-05
+,,Google,1,Model architecture,2024-05
+,,Google,1,Centralized model documentation,2024-05
+,,Google,1,External model access protocol,2024-05
+,,Google,1,Blackbox external model access,2024-05
+,,Google,0,Full external model access,2024-05
+,,Google,1,Capabilities description,2024-05
+,,Google,1,Capabilities demonstration,2024-05
+,,Google,1,Evaluation of capabilities,2024-05
+,,Google,1,External reproducibility of capabilities evaluation,2024-05
+,,Google,0,Third-party capabilities evaluation,2024-05
+,,Google,0,Limitations description,2024-05
+,,Google,0,Limitations demonstration,2024-05
+,,Google,1,Third-party evaluation of limitations,2024-05
+,,Google,1,Risks description,2024-05
+,,Google,1,Risks demonstration,2024-05
+,,Google,0,Unintentional harm evaluation,2024-05
+,,Google,0,External reproducibility of unintentional harm evaluation,2024-05
+,,Google,1,Intentional harm evaluation,2024-05
+,,Google,0,External reproducibility of intentional harm evaluation,2024-05
+,,Google,0,Third-party risks evaluation,2024-05
+,,Google,1,Mitigations description,2024-05
+,,Google,0,Mitigations demonstration,2024-05
+,,Google,0,Mitigations evaluation,2024-05
+,,Google,0,External reproducibility of mitigations evaluation,2024-05
+,,Google,1,Third-party mitigations evaluation,2024-05
+,,Google,1,Trustworthiness evaluation,2024-05
+,,Google,0,External reproducibility of trustworthiness evaluation,2024-05
+,,Google,0,Inference duration evaluation,2024-05
+,,Google,0,Inference compute evaluation,2024-05
+,,Google,0,Release decision-making,2024-05
+,,Google,0,Release process,2024-05
+,,Google,1,Distribution channels,2024-05
+,,Google,1,Products and services,2024-05
+,,Google,0,Machine-generated content,2024-05
+,,Google,1,License,2024-05
+,,Google,1,Terms of service,2024-05
+,,Google,1,Permitted and prohibited users,2024-05
+,,Google,1,"Permitted, restricted, and prohibited uses",2024-05
+,,Google,1,Usage policy enforcement,2024-05
+,,Google,1,Justification for enforcement action,2024-05
+,,Google,1,Usage policy violation appeals mechanism,2024-05
+,,Google,1,"Permitted, restricted, and prohibited model behaviors",2024-05
+,,Google,0,Model behavior policy enforcement,2024-05
+,,Google,0,Interoperability of usage and model behavior policies,2024-05
+,,Google,1,User interaction with AI system,2024-05
+,,Google,1,Usage disclaimers,2024-05
+,,Google,1,User data protection policy,2024-05
+,,Google,1,Permitted and prohibited use of user data,2024-05
+,,Google,1,Usage data access protocol,2024-05
+,,Google,1,Versioning protocol,2024-05
+,,Google,0,Change log,2024-05
+,,Google,1,Deprecation policy,2024-05
+,,Google,1,Feedback mechanism,2024-05
+,,Google,0,Feedback summary,2024-05
+,,Google,1,Government inquiries,2024-05
+,,Google,1,Monitoring mechanism,2024-05
+,,Google,0,Downstream applications,2024-05
+,,Google,0,Affected market sectors,2024-05
+,,Google,0,Affected individuals,2024-05
+,,Google,0,Usage reports,2024-05
+,,Google,0,Geographic statistics,2024-05
+,,Google,1,Redress mechanism,2024-05
+,,Google,1,Centralized documentation for downstream use,2024-05
+,,Google,1,Documentation for responsible downstream use,2024-05
+,,IBM,1,Data size,2024-05
+,,IBM,1,Data sources,2024-05
+,,IBM,0,Data creators,2024-05
+,,IBM,1,Data source selection,2024-05
+,,IBM,1,Data curation,2024-05
+,,IBM,1,Data augmentation,2024-05
+,,IBM,1,Harmful data filtration,2024-05
+,,IBM,0,Data copyright status,2024-05
+,,IBM,0,Data license status,2024-05
+,,IBM,0,Personal information in data,2024-05
+,,IBM,1,Use of human labor,2024-05
+,,IBM,1,Employment of data laborers,2024-05
+,,IBM,0,Geographic distribution of data laborers,2024-05
+,,IBM,0,Wages,2024-05
+,,IBM,0,Instructions for creating data,2024-05
+,,IBM,0,Labor protections,2024-05
+,,IBM,1,Third party partners,2024-05
+,,IBM,0,Queryable external data access,2024-05
+,,IBM,0,Direct external data access,2024-05
+,,IBM,1,Compute usage,2024-05
+,,IBM,1,Development duration,2024-05
+,,IBM,1,Compute hardware,2024-05
+,,IBM,1,Hardware owner,2024-05
+,,IBM,1,Energy usage,2024-05
+,,IBM,1,Carbon emissions,2024-05
+,,IBM,1,Broader environmental impact,2024-05
+,,IBM,1,Model stages,2024-05
+,,IBM,1,Model objectives,2024-05
+,,IBM,1,Core frameworks,2024-05
+,,IBM,1,Additional dependencies,2024-05
+,,IBM,1,Mitigations for privacy,2024-05
+,,IBM,1,Mitigations for copyright,2024-05
+,,IBM,1,Input modality,2024-05
+,,IBM,1,Output modality,2024-05
+,,IBM,1,Model components,2024-05
+,,IBM,1,Model size,2024-05
+,,IBM,1,Model architecture,2024-05
+,,IBM,1,Centralized model documentation,2024-05
+,,IBM,1,External model access protocol,2024-05
+,,IBM,1,Blackbox external model access,2024-05
+,,IBM,0,Full external model access,2024-05
+,,IBM,1,Capabilities description,2024-05
+,,IBM,0,Capabilities demonstration,2024-05
+,,IBM,1,Evaluation of capabilities,2024-05
+,,IBM,1,External reproducibility of capabilities evaluation,2024-05
+,,IBM,0,Third-party capabilities evaluation,2024-05
+,,IBM,1,Limitations description,2024-05
+,,IBM,0,Limitations demonstration,2024-05
+,,IBM,1,Third-party evaluation of limitations,2024-05
+,,IBM,1,Risks description,2024-05
+,,IBM,0,Risks demonstration,2024-05
+,,IBM,1,Unintentional harm evaluation,2024-05
+,,IBM,1,External reproducibility of unintentional harm evaluation,2024-05
+,,IBM,1,Intentional harm evaluation,2024-05
+,,IBM,1,External reproducibility of intentional harm evaluation,2024-05
+,,IBM,0,Third-party risks evaluation,2024-05
+,,IBM,1,Mitigations description,2024-05
+,,IBM,0,Mitigations demonstration,2024-05
+,,IBM,1,Mitigations evaluation,2024-05
+,,IBM,1,External reproducibility of mitigations evaluation,2024-05
+,,IBM,1,Third-party mitigations evaluation,2024-05
+,,IBM,0,Trustworthiness evaluation,2024-05
+,,IBM,0,External reproducibility of trustworthiness evaluation,2024-05
+,,IBM,0,Inference duration evaluation,2024-05
+,,IBM,0,Inference compute evaluation,2024-05
+,,IBM,0,Release decision-making,2024-05
+,,IBM,1,Release process,2024-05
+,,IBM,1,Distribution channels,2024-05
+,,IBM,1,Products and services,2024-05
+,,IBM,1,Machine-generated content,2024-05
+,,IBM,1,License,2024-05
+,,IBM,1,Terms of service,2024-05
+,,IBM,1,Permitted and prohibited users,2024-05
+,,IBM,1,"Permitted, restricted, and prohibited uses",2024-05
+,,IBM,0,Usage policy enforcement,2024-05
+,,IBM,0,Justification for enforcement action,2024-05
+,,IBM,0,Usage policy violation appeals mechanism,2024-05
+,,IBM,0,"Permitted, restricted, and prohibited model behaviors",2024-05
+,,IBM,0,Model behavior policy enforcement,2024-05
+,,IBM,0,Interoperability of usage and model behavior policies,2024-05
+,,IBM,1,User interaction with AI system,2024-05
+,,IBM,1,Usage disclaimers,2024-05
+,,IBM,1,User data protection policy,2024-05
+,,IBM,1,Permitted and prohibited use of user data,2024-05
+,,IBM,1,Usage data access protocol,2024-05
+,,IBM,1,Versioning protocol,2024-05
+,,IBM,1,Change log,2024-05
+,,IBM,1,Deprecation policy,2024-05
+,,IBM,1,Feedback mechanism,2024-05
+,,IBM,1,Feedback summary,2024-05
+,,IBM,0,Government inquiries,2024-05
+,,IBM,0,Monitoring mechanism,2024-05
+,,IBM,0,Downstream applications,2024-05
+,,IBM,0,Affected market sectors,2024-05
+,,IBM,0,Affected individuals,2024-05
+,,IBM,0,Usage reports,2024-05
+,,IBM,0,Geographic statistics,2024-05
+,,IBM,0,Redress mechanism,2024-05
+,,IBM,1,Centralized documentation for downstream use,2024-05
+,,IBM,1,Documentation for responsible downstream use,2024-05
+,,Meta,1,Data size,2024-05
+,,Meta,0,Data sources,2024-05
+,,Meta,0,Data creators,2024-05
+,,Meta,0,Data source selection,2024-05
+,,Meta,1,Data curation,2024-05
+,,Meta,1,Data augmentation,2024-05
+,,Meta,1,Harmful data filtration,2024-05
+,,Meta,0,Data copyright status,2024-05
+,,Meta,0,Data license status,2024-05
+,,Meta,0,Personal information in data,2024-05
+,,Meta,1,Use of human labor,2024-05
+,,Meta,0,Employment of data laborers,2024-05
+,,Meta,0,Geographic distribution of data laborers,2024-05
+,,Meta,0,Wages,2024-05
+,,Meta,1,Instructions for creating data,2024-05
+,,Meta,0,Labor protections,2024-05
+,,Meta,0,Third party partners,2024-05
+,,Meta,0,Queryable external data access,2024-05
+,,Meta,0,Direct external data access,2024-05
+,,Meta,1,Compute usage,2024-05
+,,Meta,0,Development duration,2024-05
+,,Meta,1,Compute hardware,2024-05
+,,Meta,1,Hardware owner,2024-05
+,,Meta,1,Energy usage,2024-05
+,,Meta,1,Carbon emissions,2024-05
+,,Meta,0,Broader environmental impact,2024-05
+,,Meta,1,Model stages,2024-05
+,,Meta,1,Model objectives,2024-05
+,,Meta,0,Core frameworks,2024-05
+,,Meta,1,Additional dependencies,2024-05
+,,Meta,1,Mitigations for privacy,2024-05
+,,Meta,0,Mitigations for copyright,2024-05
+,,Meta,1,Input modality,2024-05
+,,Meta,1,Output modality,2024-05
+,,Meta,1,Model components,2024-05
+,,Meta,1,Model size,2024-05
+,,Meta,1,Model architecture,2024-05
+,,Meta,1,Centralized model documentation,2024-05
+,,Meta,1,External model access protocol,2024-05
+,,Meta,1,Blackbox external model access,2024-05
+,,Meta,1,Full external model access,2024-05
+,,Meta,1,Capabilities description,2024-05
+,,Meta,1,Capabilities demonstration,2024-05
+,,Meta,1,Evaluation of capabilities,2024-05
+,,Meta,1,External reproducibility of capabilities evaluation,2024-05
+,,Meta,1,Third-party capabilities evaluation,2024-05
+,,Meta,1,Limitations description,2024-05
+,,Meta,0,Limitations demonstration,2024-05
+,,Meta,1,Third-party evaluation of limitations,2024-05
+,,Meta,1,Risks description,2024-05
+,,Meta,1,Risks demonstration,2024-05
+,,Meta,1,Unintentional harm evaluation,2024-05
+,,Meta,1,External reproducibility of unintentional harm evaluation,2024-05
+,,Meta,0,Intentional harm evaluation,2024-05
+,,Meta,0,External reproducibility of intentional harm evaluation,2024-05
+,,Meta,1,Third-party risks evaluation,2024-05
+,,Meta,1,Mitigations description,2024-05
+,,Meta,1,Mitigations demonstration,2024-05
+,,Meta,1,Mitigations evaluation,2024-05
+,,Meta,0,External reproducibility of mitigations evaluation,2024-05
+,,Meta,0,Third-party mitigations evaluation,2024-05
+,,Meta,0,Trustworthiness evaluation,2024-05
+,,Meta,0,External reproducibility of trustworthiness evaluation,2024-05
+,,Meta,1,Inference duration evaluation,2024-05
+,,Meta,0,Inference compute evaluation,2024-05
+,,Meta,0,Release decision-making,2024-05
+,,Meta,1,Release process,2024-05
+,,Meta,1,Distribution channels,2024-05
+,,Meta,1,Products and services,2024-05
+,,Meta,0,Machine-generated content,2024-05
+,,Meta,1,License,2024-05
+,,Meta,1,Terms of service,2024-05
+,,Meta,1,Permitted and prohibited users,2024-05
+,,Meta,1,"Permitted, restricted, and prohibited uses",2024-05
+,,Meta,0,Usage policy enforcement,2024-05
+,,Meta,0,Justification for enforcement action,2024-05
+,,Meta,0,Usage policy violation appeals mechanism,2024-05
+,,Meta,1,"Permitted, restricted, and prohibited model behaviors",2024-05
+,,Meta,0,Model behavior policy enforcement,2024-05
+,,Meta,0,Interoperability of usage and model behavior policies,2024-05
+,,Meta,1,User interaction with AI system,2024-05
+,,Meta,1,Usage disclaimers,2024-05
+,,Meta,1,User data protection policy,2024-05
+,,Meta,1,Permitted and prohibited use of user data,2024-05
+,,Meta,1,Usage data access protocol,2024-05
+,,Meta,1,Versioning protocol,2024-05
+,,Meta,1,Change log,2024-05
+,,Meta,1,Deprecation policy,2024-05
+,,Meta,1,Feedback mechanism,2024-05
+,,Meta,0,Feedback summary,2024-05
+,,Meta,0,Government inquiries,2024-05
+,,Meta,0,Monitoring mechanism,2024-05
+,,Meta,1,Downstream applications,2024-05
+,,Meta,0,Affected market sectors,2024-05
+,,Meta,0,Affected individuals,2024-05
+,,Meta,0,Usage reports,2024-05
+,,Meta,0,Geographic statistics,2024-05
+,,Meta,0,Redress mechanism,2024-05
+,,Meta,1,Centralized documentation for downstream use,2024-05
+,,Meta,1,Documentation for responsible downstream use,2024-05
+,,Microsoft,1,Data size,2024-05
+,,Microsoft,1,Data sources,2024-05
+,,Microsoft,0,Data creators,2024-05
+,,Microsoft,1,Data source selection,2024-05
+,,Microsoft,0,Data curation,2024-05
+,,Microsoft,1,Data augmentation,2024-05
+,,Microsoft,0,Harmful data filtration,2024-05
+,,Microsoft,0,Data copyright status,2024-05
+,,Microsoft,0,Data license status,2024-05
+,,Microsoft,0,Personal information in data,2024-05
+,,Microsoft,1,Use of human labor,2024-05
+,,Microsoft,1,Employment of data laborers,2024-05
+,,Microsoft,1,Geographic distribution of data laborers,2024-05
+,,Microsoft,1,Wages,2024-05
+,,Microsoft,1,Instructions for creating data,2024-05
+,,Microsoft,1,Labor protections,2024-05
+,,Microsoft,1,Third party partners,2024-05
+,,Microsoft,0,Queryable external data access,2024-05
+,,Microsoft,0,Direct external data access,2024-05
+,,Microsoft,1,Compute usage,2024-05
+,,Microsoft,1,Development duration,2024-05
+,,Microsoft,1,Compute hardware,2024-05
+,,Microsoft,1,Hardware owner,2024-05
+,,Microsoft,0,Energy usage,2024-05
+,,Microsoft,0,Carbon emissions,2024-05
+,,Microsoft,0,Broader environmental impact,2024-05
+,,Microsoft,1,Model stages,2024-05
+,,Microsoft,1,Model objectives,2024-05
+,,Microsoft,1,Core frameworks,2024-05
+,,Microsoft,1,Additional dependencies,2024-05
+,,Microsoft,1,Mitigations for privacy,2024-05
+,,Microsoft,0,Mitigations for copyright,2024-05
+,,Microsoft,1,Input modality,2024-05
+,,Microsoft,1,Output modality,2024-05
+,,Microsoft,1,Model components,2024-05
+,,Microsoft,1,Model size,2024-05
+,,Microsoft,1,Model architecture,2024-05
+,,Microsoft,1,Centralized model documentation,2024-05
+,,Microsoft,1,External model access protocol,2024-05
+,,Microsoft,1,Blackbox external model access,2024-05
+,,Microsoft,1,Full external model access,2024-05
+,,Microsoft,1,Capabilities description,2024-05
+,,Microsoft,1,Capabilities demonstration,2024-05
+,,Microsoft,1,Evaluation of capabilities,2024-05
+,,Microsoft,1,External reproducibility of capabilities evaluation,2024-05
+,,Microsoft,1,Third-party capabilities evaluation,2024-05
+,,Microsoft,1,Limitations description,2024-05
+,,Microsoft,0,Limitations demonstration,2024-05
+,,Microsoft,1,Third-party evaluation of limitations,2024-05
+,,Microsoft,0,Risks description,2024-05
+,,Microsoft,0,Risks demonstration,2024-05
+,,Microsoft,1,Unintentional harm evaluation,2024-05
+,,Microsoft,1,External reproducibility of unintentional harm evaluation,2024-05
+,,Microsoft,0,Intentional harm evaluation,2024-05
+,,Microsoft,0,External reproducibility of intentional harm evaluation,2024-05
+,,Microsoft,0,Third-party risks evaluation,2024-05
+,,Microsoft,0,Mitigations description,2024-05
+,,Microsoft,0,Mitigations demonstration,2024-05
+,,Microsoft,0,Mitigations evaluation,2024-05
+,,Microsoft,0,External reproducibility of mitigations evaluation,2024-05
+,,Microsoft,0,Third-party mitigations evaluation,2024-05
+,,Microsoft,0,Trustworthiness evaluation,2024-05
+,,Microsoft,0,External reproducibility of trustworthiness evaluation,2024-05
+,,Microsoft,0,Inference duration evaluation,2024-05
+,,Microsoft,0,Inference compute evaluation,2024-05
+,,Microsoft,0,Release decision-making,2024-05
+,,Microsoft,1,Release process,2024-05
+,,Microsoft,1,Distribution channels,2024-05
+,,Microsoft,0,Products and services,2024-05
+,,Microsoft,1,Machine-generated content,2024-05
+,,Microsoft,1,License,2024-05
+,,Microsoft,1,Terms of service,2024-05
+,,Microsoft,1,Permitted and prohibited users,2024-05
+,,Microsoft,1,"Permitted, restricted, and prohibited uses",2024-05
+,,Microsoft,1,Usage policy enforcement,2024-05
+,,Microsoft,1,Justification for enforcement action,2024-05
+,,Microsoft,1,Usage policy violation appeals mechanism,2024-05
+,,Microsoft,1,"Permitted, restricted, and prohibited model behaviors",2024-05
+,,Microsoft,1,Model behavior policy enforcement,2024-05
+,,Microsoft,1,Interoperability of usage and model behavior policies,2024-05
+,,Microsoft,1,User interaction with AI system,2024-05
+,,Microsoft,1,Usage disclaimers,2024-05
+,,Microsoft,1,User data protection policy,2024-05
+,,Microsoft,1,Permitted and prohibited use of user data,2024-05
+,,Microsoft,1,Usage data access protocol,2024-05
+,,Microsoft,1,Versioning protocol,2024-05
+,,Microsoft,1,Change log,2024-05
+,,Microsoft,1,Deprecation policy,2024-05
+,,Microsoft,1,Feedback mechanism,2024-05
+,,Microsoft,1,Feedback summary,2024-05
+,,Microsoft,0,Government inquiries,2024-05
+,,Microsoft,0,Monitoring mechanism,2024-05
+,,Microsoft,0,Downstream applications,2024-05
+,,Microsoft,0,Affected market sectors,2024-05
+,,Microsoft,0,Affected individuals,2024-05
+,,Microsoft,0,Usage reports,2024-05
+,,Microsoft,0,Geographic statistics,2024-05
+,,Microsoft,0,Redress mechanism,2024-05
+,,Microsoft,1,Centralized documentation for downstream use,2024-05
+,,Microsoft,0,Documentation for responsible downstream use,2024-05
+,,Mistral,0,Data size,2024-05
+,,Mistral,0,Data sources,2024-05
+,,Mistral,0,Data creators,2024-05
+,,Mistral,0,Data source selection,2024-05
+,,Mistral,0,Data curation,2024-05
+,,Mistral,1,Data augmentation,2024-05
+,,Mistral,1,Harmful data filtration,2024-05
+,,Mistral,0,Data copyright status,2024-05
+,,Mistral,0,Data license status,2024-05
+,,Mistral,0,Personal information in data,2024-05
+,,Mistral,1,Use of human labor,2024-05
+,,Mistral,1,Employment of data laborers,2024-05
+,,Mistral,1,Geographic distribution of data laborers,2024-05
+,,Mistral,1,Wages,2024-05
+,,Mistral,1,Instructions for creating data,2024-05
+,,Mistral,1,Labor protections,2024-05
+,,Mistral,1,Third party partners,2024-05
+,,Mistral,0,Queryable external data access,2024-05
+,,Mistral,0,Direct external data access,2024-05
+,,Mistral,0,Compute usage,2024-05
+,,Mistral,0,Development duration,2024-05
+,,Mistral,0,Compute hardware,2024-05
+,,Mistral,1,Hardware owner,2024-05
+,,Mistral,0,Energy usage,2024-05
+,,Mistral,0,Carbon emissions,2024-05
+,,Mistral,0,Broader environmental impact,2024-05
+,,Mistral,1,Model stages,2024-05
+,,Mistral,1,Model objectives,2024-05
+,,Mistral,1,Core frameworks,2024-05
+,,Mistral,1,Additional dependencies,2024-05
+,,Mistral,1,Mitigations for privacy,2024-05
+,,Mistral,0,Mitigations for copyright,2024-05
+,,Mistral,1,Input modality,2024-05
+,,Mistral,1,Output modality,2024-05
+,,Mistral,1,Model components,2024-05
+,,Mistral,1,Model size,2024-05
+,,Mistral,1,Model architecture,2024-05
+,,Mistral,1,Centralized model documentation,2024-05
+,,Mistral,1,External model access protocol,2024-05
+,,Mistral,1,Blackbox external model access,2024-05
+,,Mistral,1,Full external model access,2024-05
+,,Mistral,1,Capabilities description,2024-05
+,,Mistral,1,Capabilities demonstration,2024-05
+,,Mistral,1,Evaluation of capabilities,2024-05
+,,Mistral,1,External reproducibility of capabilities evaluation,2024-05
+,,Mistral,1,Third-party capabilities evaluation,2024-05
+,,Mistral,0,Limitations description,2024-05
+,,Mistral,0,Limitations demonstration,2024-05
+,,Mistral,1,Third-party evaluation of limitations,2024-05
+,,Mistral,1,Risks description,2024-05
+,,Mistral,0,Risks demonstration,2024-05
+,,Mistral,0,Unintentional harm evaluation,2024-05
+,,Mistral,0,External reproducibility of unintentional harm evaluation,2024-05
+,,Mistral,0,Intentional harm evaluation,2024-05
+,,Mistral,0,External reproducibility of intentional harm evaluation,2024-05
+,,Mistral,0,Third-party risks evaluation,2024-05
+,,Mistral,1,Mitigations description,2024-05
+,,Mistral,1,Mitigations demonstration,2024-05
+,,Mistral,1,Mitigations evaluation,2024-05
+,,Mistral,0,External reproducibility of mitigations evaluation,2024-05
+,,Mistral,0,Third-party mitigations evaluation,2024-05
+,,Mistral,0,Trustworthiness evaluation,2024-05
+,,Mistral,0,External reproducibility of trustworthiness evaluation,2024-05
+,,Mistral,0,Inference duration evaluation,2024-05
+,,Mistral,0,Inference compute evaluation,2024-05
+,,Mistral,0,Release decision-making,2024-05
+,,Mistral,1,Release process,2024-05
+,,Mistral,1,Distribution channels,2024-05
+,,Mistral,1,Products and services,2024-05
+,,Mistral,0,Machine-generated content,2024-05
+,,Mistral,1,License,2024-05
+,,Mistral,1,Terms of service,2024-05
+,,Mistral,1,Permitted and prohibited users,2024-05
+,,Mistral,1,"Permitted, restricted, and prohibited uses",2024-05
+,,Mistral,0,Usage policy enforcement,2024-05
+,,Mistral,0,Justification for enforcement action,2024-05
+,,Mistral,0,Usage policy violation appeals mechanism,2024-05
+,,Mistral,1,"Permitted, restricted, and prohibited model behaviors",2024-05
+,,Mistral,0,Model behavior policy enforcement,2024-05
+,,Mistral,0,Interoperability of usage and model behavior policies,2024-05
+,,Mistral,1,User interaction with AI system,2024-05
+,,Mistral,1,Usage disclaimers,2024-05
+,,Mistral,1,User data protection policy,2024-05
+,,Mistral,1,Permitted and prohibited use of user data,2024-05
+,,Mistral,1,Usage data access protocol,2024-05
+,,Mistral,1,Versioning protocol,2024-05
+,,Mistral,1,Change log,2024-05
+,,Mistral,1,Deprecation policy,2024-05
+,,Mistral,1,Feedback mechanism,2024-05
+,,Mistral,1,Feedback summary,2024-05
+,,Mistral,0,Government inquiries,2024-05
+,,Mistral,1,Monitoring mechanism,2024-05
+,,Mistral,0,Downstream applications,2024-05
+,,Mistral,0,Affected market sectors,2024-05
+,,Mistral,0,Affected individuals,2024-05
+,,Mistral,0,Usage reports,2024-05
+,,Mistral,0,Geographic statistics,2024-05
+,,Mistral,0,Redress mechanism,2024-05
+,,Mistral,1,Centralized documentation for downstream use,2024-05
+,,Mistral,1,Documentation for responsible downstream use,2024-05
+,,OpenAI,0,Data size,2024-05
+,,OpenAI,0,Data sources,2024-05
+,,OpenAI,0,Data creators,2024-05
+,,OpenAI,0,Data source selection,2024-05
+,,OpenAI,1,Data curation,2024-05
+,,OpenAI,0,Data augmentation,2024-05
+,,OpenAI,1,Harmful data filtration,2024-05
+,,OpenAI,0,Data copyright status,2024-05
+,,OpenAI,0,Data license status,2024-05
+,,OpenAI,0,Personal information in data,2024-05
+,,OpenAI,0,Use of human labor,2024-05
+,,OpenAI,0,Employment of data laborers,2024-05
+,,OpenAI,0,Geographic distribution of data laborers,2024-05
+,,OpenAI,0,Wages,2024-05
+,,OpenAI,0,Instructions for creating data,2024-05
+,,OpenAI,1,Labor protections,2024-05
+,,OpenAI,0,Third party partners,2024-05
+,,OpenAI,0,Queryable external data access,2024-05
+,,OpenAI,0,Direct external data access,2024-05
+,,OpenAI,0,Compute usage,2024-05
+,,OpenAI,0,Development duration,2024-05
+,,OpenAI,0,Compute hardware,2024-05
+,,OpenAI,1,Hardware owner,2024-05
+,,OpenAI,0,Energy usage,2024-05
+,,OpenAI,0,Carbon emissions,2024-05
+,,OpenAI,0,Broader environmental impact,2024-05
+,,OpenAI,1,Model stages,2024-05
+,,OpenAI,1,Model objectives,2024-05
+,,OpenAI,0,Core frameworks,2024-05
+,,OpenAI,0,Additional dependencies,2024-05
+,,OpenAI,1,Mitigations for privacy,2024-05
+,,OpenAI,0,Mitigations for copyright,2024-05
+,,OpenAI,1,Input modality,2024-05
+,,OpenAI,1,Output modality,2024-05
+,,OpenAI,0,Model components,2024-05
+,,OpenAI,0,Model size,2024-05
+,,OpenAI,0,Model architecture,2024-05
+,,OpenAI,1,Centralized model documentation,2024-05
+,,OpenAI,1,External model access protocol,2024-05
+,,OpenAI,1,Blackbox external model access,2024-05
+,,OpenAI,0,Full external model access,2024-05
+,,OpenAI,1,Capabilities description,2024-05
+,,OpenAI,1,Capabilities demonstration,2024-05
+,,OpenAI,1,Evaluation of capabilities,2024-05
+,,OpenAI,1,External reproducibility of capabilities evaluation,2024-05
+,,OpenAI,1,Third-party capabilities evaluation,2024-05
+,,OpenAI,1,Limitations description,2024-05
+,,OpenAI,0,Limitations demonstration,2024-05
+,,OpenAI,1,Third-party evaluation of limitations,2024-05
+,,OpenAI,1,Risks description,2024-05
+,,OpenAI,1,Risks demonstration,2024-05
+,,OpenAI,0,Unintentional harm evaluation,2024-05
+,,OpenAI,0,External reproducibility of unintentional harm evaluation,2024-05
+,,OpenAI,0,Intentional harm evaluation,2024-05
+,,OpenAI,1,External reproducibility of intentional harm evaluation,2024-05
+,,OpenAI,1,Third-party risks evaluation,2024-05
+,,OpenAI,1,Mitigations description,2024-05
+,,OpenAI,1,Mitigations demonstration,2024-05
+,,OpenAI,1,Mitigations evaluation,2024-05
+,,OpenAI,0,External reproducibility of mitigations evaluation,2024-05
+,,OpenAI,0,Third-party mitigations evaluation,2024-05
+,,OpenAI,1,Trustworthiness evaluation,2024-05
+,,OpenAI,0,External reproducibility of trustworthiness evaluation,2024-05
+,,OpenAI,0,Inference duration evaluation,2024-05
+,,OpenAI,0,Inference compute evaluation,2024-05
+,,OpenAI,0,Release decision-making,2024-05
+,,OpenAI,1,Release process,2024-05
+,,OpenAI,1,Distribution channels,2024-05
+,,OpenAI,1,Products and services,2024-05
+,,OpenAI,1,Machine-generated content,2024-05
+,,OpenAI,0,License,2024-05
+,,OpenAI,1,Terms of service,2024-05
+,,OpenAI,1,Permitted and prohibited users,2024-05
+,,OpenAI,1,"Permitted, restricted, and prohibited uses",2024-05
+,,OpenAI,1,Usage policy enforcement,2024-05
+,,OpenAI,0,Justification for enforcement action,2024-05
+,,OpenAI,1,Usage policy violation appeals mechanism,2024-05
+,,OpenAI,1,"Permitted, restricted, and prohibited model behaviors",2024-05
+,,OpenAI,0,Model behavior policy enforcement,2024-05
+,,OpenAI,1,Interoperability of usage and model behavior policies,2024-05
+,,OpenAI,1,User interaction with AI system,2024-05
+,,OpenAI,1,Usage disclaimers,2024-05
+,,OpenAI,1,User data protection policy,2024-05
+,,OpenAI,1,Permitted and prohibited use of user data,2024-05
+,,OpenAI,0,Usage data access protocol,2024-05
+,,OpenAI,1,Versioning protocol,2024-05
+,,OpenAI,1,Change log,2024-05
+,,OpenAI,1,Deprecation policy,2024-05
+,,OpenAI,1,Feedback mechanism,2024-05
+,,OpenAI,0,Feedback summary,2024-05
+,,OpenAI,0,Government inquiries,2024-05
+,,OpenAI,1,Monitoring mechanism,2024-05
+,,OpenAI,0,Downstream applications,2024-05
+,,OpenAI,0,Affected market sectors,2024-05
+,,OpenAI,0,Affected individuals,2024-05
+,,OpenAI,0,Usage reports,2024-05
+,,OpenAI,0,Geographic statistics,2024-05
+,,OpenAI,0,Redress mechanism,2024-05
+,,OpenAI,1,Centralized documentation for downstream use,2024-05
+,,OpenAI,1,Documentation for responsible downstream use,2024-05
+,,Stability,1,Data size,2024-05
+,,Stability,0,Data sources,2024-05
+,,Stability,0,Data creators,2024-05
+,,Stability,0,Data source selection,2024-05
+,,Stability,1,Data curation,2024-05
+,,Stability,1,Data augmentation,2024-05
+,,Stability,1,Harmful data filtration,2024-05
+,,Stability,0,Data copyright status,2024-05
+,,Stability,0,Data license status,2024-05
+,,Stability,0,Personal information in data,2024-05
+,,Stability,1,Use of human labor,2024-05
+,,Stability,1,Employment of data laborers,2024-05
+,,Stability,1,Geographic distribution of data laborers,2024-05
+,,Stability,1,Wages,2024-05
+,,Stability,1,Instructions for creating data,2024-05
+,,Stability,1,Labor protections,2024-05
+,,Stability,1,Third party partners,2024-05
+,,Stability,0,Queryable external data access,2024-05
+,,Stability,0,Direct external data access,2024-05
+,,Stability,0,Compute usage,2024-05
+,,Stability,0,Development duration,2024-05
+,,Stability,1,Compute hardware,2024-05
+,,Stability,0,Hardware owner,2024-05
+,,Stability,1,Energy usage,2024-05
+,,Stability,1,Carbon emissions,2024-05
+,,Stability,0,Broader environmental impact,2024-05
+,,Stability,1,Model stages,2024-05
+,,Stability,1,Model objectives,2024-05
+,,Stability,0,Core frameworks,2024-05
+,,Stability,1,Additional dependencies,2024-05
+,,Stability,0,Mitigations for privacy,2024-05
+,,Stability,0,Mitigations for copyright,2024-05
+,,Stability,1,Input modality,2024-05
+,,Stability,1,Output modality,2024-05
+,,Stability,1,Model components,2024-05
+,,Stability,1,Model size,2024-05
+,,Stability,1,Model architecture,2024-05
+,,Stability,1,Centralized model documentation,2024-05
+,,Stability,1,External model access protocol,2024-05
+,,Stability,1,Blackbox external model access,2024-05
+,,Stability,1,Full external model access,2024-05
+,,Stability,1,Capabilities description,2024-05
+,,Stability,0,Capabilities demonstration,2024-05
+,,Stability,1,Evaluation of capabilities,2024-05
+,,Stability,1,External reproducibility of capabilities evaluation,2024-05
+,,Stability,0,Third-party capabilities evaluation,2024-05
+,,Stability,1,Limitations description,2024-05
+,,Stability,0,Limitations demonstration,2024-05
+,,Stability,1,Third-party evaluation of limitations,2024-05
+,,Stability,1,Risks description,2024-05
+,,Stability,0,Risks demonstration,2024-05
+,,Stability,0,Unintentional harm evaluation,2024-05
+,,Stability,0,External reproducibility of unintentional harm evaluation,2024-05
+,,Stability,0,Intentional harm evaluation,2024-05
+,,Stability,0,External reproducibility of intentional harm evaluation,2024-05
+,,Stability,0,Third-party risks evaluation,2024-05
+,,Stability,0,Mitigations description,2024-05
+,,Stability,0,Mitigations demonstration,2024-05
+,,Stability,0,Mitigations evaluation,2024-05
+,,Stability,0,External reproducibility of mitigations evaluation,2024-05
+,,Stability,0,Third-party mitigations evaluation,2024-05
+,,Stability,0,Trustworthiness evaluation,2024-05
+,,Stability,0,External reproducibility of trustworthiness evaluation,2024-05
+,,Stability,1,Inference duration evaluation,2024-05
+,,Stability,0,Inference compute evaluation,2024-05
+,,Stability,0,Release decision-making,2024-05
+,,Stability,1,Release process,2024-05
+,,Stability,1,Distribution channels,2024-05
+,,Stability,1,Products and services,2024-05
+,,Stability,1,Machine-generated content,2024-05
+,,Stability,1,License,2024-05
+,,Stability,1,Terms of service,2024-05
+,,Stability,1,Permitted and prohibited users,2024-05
+,,Stability,1,"Permitted, restricted, and prohibited uses",2024-05
+,,Stability,1,Usage policy enforcement,2024-05
+,,Stability,0,Justification for enforcement action,2024-05
+,,Stability,0,Usage policy violation appeals mechanism,2024-05
+,,Stability,1,"Permitted, restricted, and prohibited model behaviors",2024-05
+,,Stability,1,Model behavior policy enforcement,2024-05
+,,Stability,1,Interoperability of usage and model behavior policies,2024-05
+,,Stability,1,User interaction with AI system,2024-05
+,,Stability,1,Usage disclaimers,2024-05
+,,Stability,1,User data protection policy,2024-05
+,,Stability,1,Permitted and prohibited use of user data,2024-05
+,,Stability,1,Usage data access protocol,2024-05
+,,Stability,1,Versioning protocol,2024-05
+,,Stability,1,Change log,2024-05
+,,Stability,1,Deprecation policy,2024-05
+,,Stability,1,Feedback mechanism,2024-05
+,,Stability,1,Feedback summary,2024-05
+,,Stability,0,Government inquiries,2024-05
+,,Stability,0,Monitoring mechanism,2024-05
+,,Stability,1,Downstream applications,2024-05
+,,Stability,0,Affected market sectors,2024-05
+,,Stability,0,Affected individuals,2024-05
+,,Stability,0,Usage reports,2024-05
+,,Stability,0,Geographic statistics,2024-05
+,,Stability,0,Redress mechanism,2024-05
+,,Stability,1,Centralized documentation for downstream use,2024-05
+,,Stability,1,Documentation for responsible downstream use,2024-05
+,,Writer,1,Data size,2024-05
+,,Writer,1,Data sources,2024-05
+,,Writer,0,Data creators,2024-05
+,,Writer,0,Data source selection,2024-05
+,,Writer,1,Data curation,2024-05
+,,Writer,1,Data augmentation,2024-05
+,,Writer,1,Harmful data filtration,2024-05
+,,Writer,0,Data copyright status,2024-05
+,,Writer,0,Data license status,2024-05
+,,Writer,0,Personal information in data,2024-05
+,,Writer,1,Use of human labor,2024-05
+,,Writer,1,Employment of data laborers,2024-05
+,,Writer,1,Geographic distribution of data laborers,2024-05
+,,Writer,0,Wages,2024-05
+,,Writer,0,Instructions for creating data,2024-05
+,,Writer,0,Labor protections,2024-05
+,,Writer,0,Third party partners,2024-05
+,,Writer,0,Queryable external data access,2024-05
+,,Writer,0,Direct external data access,2024-05
+,,Writer,1,Compute usage,2024-05
+,,Writer,1,Development duration,2024-05
+,,Writer,1,Compute hardware,2024-05
+,,Writer,1,Hardware owner,2024-05
+,,Writer,1,Energy usage,2024-05
+,,Writer,1,Carbon emissions,2024-05
+,,Writer,0,Broader environmental impact,2024-05
+,,Writer,1,Model stages,2024-05
+,,Writer,1,Model objectives,2024-05
+,,Writer,1,Core frameworks,2024-05
+,,Writer,1,Additional dependencies,2024-05
+,,Writer,1,Mitigations for privacy,2024-05
+,,Writer,1,Mitigations for copyright,2024-05
+,,Writer,1,Input modality,2024-05
+,,Writer,1,Output modality,2024-05
+,,Writer,1,Model components,2024-05
+,,Writer,1,Model size,2024-05
+,,Writer,1,Model architecture,2024-05
+,,Writer,1,Centralized model documentation,2024-05
+,,Writer,1,External model access protocol,2024-05
+,,Writer,0,Blackbox external model access,2024-05
+,,Writer,0,Full external model access,2024-05
+,,Writer,1,Capabilities description,2024-05
+,,Writer,1,Capabilities demonstration,2024-05
+,,Writer,1,Evaluation of capabilities,2024-05
+,,Writer,1,External reproducibility of capabilities evaluation,2024-05
+,,Writer,1,Third-party capabilities evaluation,2024-05
+,,Writer,1,Limitations description,2024-05
+,,Writer,0,Limitations demonstration,2024-05
+,,Writer,0,Third-party evaluation of limitations,2024-05
+,,Writer,1,Risks description,2024-05
+,,Writer,0,Risks demonstration,2024-05
+,,Writer,0,Unintentional harm evaluation,2024-05
+,,Writer,0,External reproducibility of unintentional harm evaluation,2024-05
+,,Writer,0,Intentional harm evaluation,2024-05
+,,Writer,0,External reproducibility of intentional harm evaluation,2024-05
+,,Writer,0,Third-party risks evaluation,2024-05
+,,Writer,1,Mitigations description,2024-05
+,,Writer,0,Mitigations demonstration,2024-05
+,,Writer,0,Mitigations evaluation,2024-05
+,,Writer,0,External reproducibility of mitigations evaluation,2024-05
+,,Writer,0,Third-party mitigations evaluation,2024-05
+,,Writer,0,Trustworthiness evaluation,2024-05
+,,Writer,0,External reproducibility of trustworthiness evaluation,2024-05
+,,Writer,1,Inference duration evaluation,2024-05
+,,Writer,1,Inference compute evaluation,2024-05
+,,Writer,0,Release decision-making,2024-05
+,,Writer,0,Release process,2024-05
+,,Writer,1,Distribution channels,2024-05
+,,Writer,1,Products and services,2024-05
+,,Writer,1,Machine-generated content,2024-05
+,,Writer,1,License,2024-05
+,,Writer,1,Terms of service,2024-05
+,,Writer,1,Permitted and prohibited users,2024-05
+,,Writer,1,"Permitted, restricted, and prohibited uses",2024-05
+,,Writer,1,Usage policy enforcement,2024-05
+,,Writer,0,Justification for enforcement action,2024-05
+,,Writer,1,Usage policy violation appeals mechanism,2024-05
+,,Writer,1,"Permitted, restricted, and prohibited model behaviors",2024-05
+,,Writer,1,Model behavior policy enforcement,2024-05
+,,Writer,1,Interoperability of usage and model behavior policies,2024-05
+,,Writer,0,User interaction with AI system,2024-05
+,,Writer,0,Usage disclaimers,2024-05
+,,Writer,1,User data protection policy,2024-05
+,,Writer,1,Permitted and prohibited use of user data,2024-05
+,,Writer,0,Usage data access protocol,2024-05
+,,Writer,0,Versioning protocol,2024-05
+,,Writer,0,Change log,2024-05
+,,Writer,1,Deprecation policy,2024-05
+,,Writer,1,Feedback mechanism,2024-05
+,,Writer,0,Feedback summary,2024-05
+,,Writer,0,Government inquiries,2024-05
+,,Writer,1,Monitoring mechanism,2024-05
+,,Writer,0,Downstream applications,2024-05
+,,Writer,0,Affected market sectors,2024-05
+,,Writer,0,Affected individuals,2024-05
+,,Writer,0,Usage reports,2024-05
+,,Writer,0,Geographic statistics,2024-05
+,,Writer,0,Redress mechanism,2024-05
+,,Writer,1,Centralized documentation for downstream use,2024-05
+,,Writer,1,Documentation for responsible downstream use,2024-05
+,,AI21 Labs,1,Data acquisition methods,2025-12
+,,AI21 Labs,1,Public datasets,2025-12
+,,AI21 Labs,1,Crawling,2025-12
+,,AI21 Labs,1,Usage data used in training,2025-12
+,,AI21 Labs,1,Notice of usage data used in training,2025-12
+,,AI21 Labs,0,Licensed data sources,2025-12
+,,AI21 Labs,1,Licensed data compensation,2025-12
+,,AI21 Labs,1,New human-generated data sources,2025-12
+,,AI21 Labs,1,Instructions for data generation,2025-12
+,,AI21 Labs,1,Data laborer practices,2025-12
+,,AI21 Labs,1,Synthetic data sources,2025-12
+,,AI21 Labs,1,Synthetic data purpose,2025-12
+,,AI21 Labs,1,Data processing methods,2025-12
+,,AI21 Labs,1,Data processing purpose,2025-12
+,,AI21 Labs,0,Data processing techniques,2025-12
+,,AI21 Labs,0,Data size,2025-12
+,,AI21 Labs,0,Data language composition,2025-12
+,,AI21 Labs,0,Data domain composition,2025-12
+,,AI21 Labs,0,External data access,2025-12
+,,AI21 Labs,0,Data replicability,2025-12
+,,AI21 Labs,0,Compute usage for final training run,2025-12
+,,AI21 Labs,0,Compute usage including R&D,2025-12
+,,AI21 Labs,0,Development duration for final training run,2025-12
+,,AI21 Labs,1,Compute hardware for final training run,2025-12
+,,AI21 Labs,1,Compute provider,2025-12
+,,AI21 Labs,0,Energy usage for final training run,2025-12
+,,AI21 Labs,0,Carbon emissions for final training run,2025-12
+,,AI21 Labs,0,Water usage for final training run,2025-12
+,,AI21 Labs,0,Internal compute allocation,2025-12
+,,AI21 Labs,1,Model stages,2025-12
+,,AI21 Labs,1,Model objectives,2025-12
+,,AI21 Labs,0,Code access,2025-12
+,,AI21 Labs,1,Organization chart,2025-12
+,,AI21 Labs,0,Model cost,2025-12
+,,AI21 Labs,1,Basic model properties,2025-12
+,,AI21 Labs,1,Deeper model properties,2025-12
+,,AI21 Labs,1,Model dependencies,2025-12
+,,AI21 Labs,0,Benchmarked inference,2025-12
+,,AI21 Labs,0,Researcher credits,2025-12
+,,AI21 Labs,0,Specialized access,2025-12
+,,AI21 Labs,1,Open weights,2025-12
+,,AI21 Labs,1,Agent Protocols,2025-12
+,,AI21 Labs,1,Capabilities taxonomy,2025-12
+,,AI21 Labs,1,Capabilities evaluation,2025-12
+,,AI21 Labs,1,External reproducibility of capabilities evaluation,2025-12
+,,AI21 Labs,0,Train-test overlap,2025-12
+,,AI21 Labs,1,Risks taxonomy,2025-12
+,,AI21 Labs,1,Risks evaluation,2025-12
+,,AI21 Labs,0,External reproducibility of risks evaluation,2025-12
+,,AI21 Labs,0,Pre-deployment risk evaluation,2025-12
+,,AI21 Labs,1,External risk evaluation,2025-12
+,,AI21 Labs,1,Mitigations taxonomy,2025-12
+,,AI21 Labs,1,Mitigations taxonomy mapped to risk taxonomy,2025-12
+,,AI21 Labs,0,Mitigations efficacy,2025-12
+,,AI21 Labs,0,External reproducibility of mitigations evaluation,2025-12
+,,AI21 Labs,1,Model theft prevention measures,2025-12
+,,AI21 Labs,1,Release stages,2025-12
+,,AI21 Labs,1,Risk thresholds,2025-12
+,,AI21 Labs,1,Versioning protocol,2025-12
+,,AI21 Labs,1,Change log,2025-12
+,,AI21 Labs,1,Foundation model roadmap,2025-12
+,,AI21 Labs,0,Top distribution channels,2025-12
+,,AI21 Labs,1,Quantization,2025-12
+,,AI21 Labs,1,Terms of use,2025-12
+,,AI21 Labs,0,Distribution channels with usage data,2025-12
+,,AI21 Labs,0,Amount of usage,2025-12
+,,AI21 Labs,0,Classification of usage data,2025-12
+,,AI21 Labs,1,Data retention and deletion policy,2025-12
+,,AI21 Labs,0,Geographic statistics,2025-12
+,,AI21 Labs,1,Internal products and services,2025-12
+,,AI21 Labs,0,External products and services,2025-12
+,,AI21 Labs,0,Users of internal products and services,2025-12
+,,AI21 Labs,1,Consumer/enterprise usage,2025-12
+,,AI21 Labs,1,Enterprise users,2025-12
+,,AI21 Labs,1,Government use,2025-12
+,,AI21 Labs,1,Benefits Assessment,2025-12
+,,AI21 Labs,1,AI bug bounty,2025-12
+,,AI21 Labs,1,Responsible disclosure policy,2025-12
+,,AI21 Labs,1,Safe harbor,2025-12
+,,AI21 Labs,1,Security incident reporting protocol,2025-12
+,,AI21 Labs,1,Misuse incident reporting protocol,2025-12
+,,AI21 Labs,0,Post-deployment coordination with government,2025-12
+,,AI21 Labs,0,Feedback mechanisms,2025-12
+,,AI21 Labs,1,"Permitted, restricted, and prohibited model behaviors",2025-12
+,,AI21 Labs,1,Model response characteristics,2025-12
+,,AI21 Labs,1,System prompt,2025-12
+,,AI21 Labs,1,Intermediate tokens,2025-12
+,,AI21 Labs,1,Internal product and service mitigations,2025-12
+,,AI21 Labs,1,External developer mitigations,2025-12
+,,AI21 Labs,1,Enterprise mitigations,2025-12
+,,AI21 Labs,1,Detection of machine-generated content,2025-12
+,,AI21 Labs,1,Documentation for responsible use,2025-12
+,,AI21 Labs,1,Permitted and prohibited users,2025-12
+,,AI21 Labs,1,"Permitted, restricted, and prohibited uses",2025-12
+,,AI21 Labs,1,AUP enforcement process,2025-12
+,,AI21 Labs,0,AUP enforcement frequency,2025-12
+,,AI21 Labs,1,Regional policy variations,2025-12
+,,AI21 Labs,1,Oversight mechanism,2025-12
+,,AI21 Labs,1,Whistleblower protection,2025-12
+,,AI21 Labs,1,Government commitments,2025-12
+,,Alibaba,0,Data acquisition methods,2025-12
+,,Alibaba,0,Public datasets,2025-12
+,,Alibaba,0,Crawling,2025-12
+,,Alibaba,0,Usage data used in training,2025-12
+,,Alibaba,0,Notice of usage data used in training,2025-12
+,,Alibaba,0,Licensed data sources,2025-12
+,,Alibaba,0,Licensed data compensation,2025-12
+,,Alibaba,0,New human-generated data sources,2025-12
+,,Alibaba,0,Instructions for data generation,2025-12
+,,Alibaba,0,Data laborer practices,2025-12
+,,Alibaba,1,Synthetic data sources,2025-12
+,,Alibaba,1,Synthetic data purpose,2025-12
+,,Alibaba,0,Data processing methods,2025-12
+,,Alibaba,0,Data processing purpose,2025-12
+,,Alibaba,0,Data processing techniques,2025-12
+,,Alibaba,1,Data size,2025-12
+,,Alibaba,0,Data language composition,2025-12
+,,Alibaba,0,Data domain composition,2025-12
+,,Alibaba,0,External data access,2025-12
+,,Alibaba,0,Data replicability,2025-12
+,,Alibaba,0,Compute usage for final training run,2025-12
+,,Alibaba,0,Compute usage including R&D,2025-12
+,,Alibaba,0,Development duration for final training run,2025-12
+,,Alibaba,0,Compute hardware for final training run,2025-12
+,,Alibaba,1,Compute provider,2025-12
+,,Alibaba,0,Energy usage for final training run,2025-12
+,,Alibaba,0,Carbon emissions for final training run,2025-12
+,,Alibaba,0,Water usage for final training run,2025-12
+,,Alibaba,0,Internal compute allocation,2025-12
+,,Alibaba,1,Model stages,2025-12
+,,Alibaba,1,Model objectives,2025-12
+,,Alibaba,0,Code access,2025-12
+,,Alibaba,0,Organization chart,2025-12
+,,Alibaba,0,Model cost,2025-12
+,,Alibaba,1,Basic model properties,2025-12
+,,Alibaba,1,Deeper model properties,2025-12
+,,Alibaba,1,Model dependencies,2025-12
+,,Alibaba,0,Benchmarked inference,2025-12
+,,Alibaba,0,Researcher credits,2025-12
+,,Alibaba,0,Specialized access,2025-12
+,,Alibaba,1,Open weights,2025-12
+,,Alibaba,1,Agent Protocols,2025-12
+,,Alibaba,1,Capabilities taxonomy,2025-12
+,,Alibaba,1,Capabilities evaluation,2025-12
+,,Alibaba,0,External reproducibility of capabilities evaluation,2025-12
+,,Alibaba,0,Train-test overlap,2025-12
+,,Alibaba,0,Risks taxonomy,2025-12
+,,Alibaba,0,Risks evaluation,2025-12
+,,Alibaba,0,External reproducibility of risks evaluation,2025-12
+,,Alibaba,0,Pre-deployment risk evaluation,2025-12
+,,Alibaba,0,External risk evaluation,2025-12
+,,Alibaba,0,Mitigations taxonomy,2025-12
+,,Alibaba,0,Mitigations taxonomy mapped to risk taxonomy,2025-12
+,,Alibaba,0,Mitigations efficacy,2025-12
+,,Alibaba,0,External reproducibility of mitigations evaluation,2025-12
+,,Alibaba,0,Model theft prevention measures,2025-12
+,,Alibaba,0,Release stages,2025-12
+,,Alibaba,0,Risk thresholds,2025-12
+,,Alibaba,1,Versioning protocol,2025-12
+,,Alibaba,1,Change log,2025-12
+,,Alibaba,1,Foundation model roadmap,2025-12
+,,Alibaba,1,Top distribution channels,2025-12
+,,Alibaba,0,Quantization,2025-12
+,,Alibaba,1,Terms of use,2025-12
+,,Alibaba,0,Distribution channels with usage data,2025-12
+,,Alibaba,0,Amount of usage,2025-12
+,,Alibaba,0,Classification of usage data,2025-12
+,,Alibaba,0,Data retention and deletion policy,2025-12
+,,Alibaba,0,Geographic statistics,2025-12
+,,Alibaba,0,Internal products and services,2025-12
+,,Alibaba,0,External products and services,2025-12
+,,Alibaba,0,Users of internal products and services,2025-12
+,,Alibaba,0,Consumer/enterprise usage,2025-12
+,,Alibaba,0,Enterprise users,2025-12
+,,Alibaba,0,Government use,2025-12
+,,Alibaba,0,Benefits Assessment,2025-12
+,,Alibaba,0,AI bug bounty,2025-12
+,,Alibaba,0,Responsible disclosure policy,2025-12
+,,Alibaba,0,Safe harbor,2025-12
+,,Alibaba,0,Security incident reporting protocol,2025-12
+,,Alibaba,0,Misuse incident reporting protocol,2025-12
+,,Alibaba,0,Post-deployment coordination with government,2025-12
+,,Alibaba,0,Feedback mechanisms,2025-12
+,,Alibaba,0,"Permitted, restricted, and prohibited model behaviors",2025-12
+,,Alibaba,1,Model response characteristics,2025-12
+,,Alibaba,0,System prompt,2025-12
+,,Alibaba,1,Intermediate tokens,2025-12
+,,Alibaba,0,Internal product and service mitigations,2025-12
+,,Alibaba,1,External developer mitigations,2025-12
+,,Alibaba,1,Enterprise mitigations,2025-12
+,,Alibaba,0,Detection of machine-generated content,2025-12
+,,Alibaba,0,Documentation for responsible use,2025-12
+,,Alibaba,1,Permitted and prohibited users,2025-12
+,,Alibaba,1,"Permitted, restricted, and prohibited uses",2025-12
+,,Alibaba,1,AUP enforcement process,2025-12
+,,Alibaba,0,AUP enforcement frequency,2025-12
+,,Alibaba,0,Regional policy variations,2025-12
+,,Alibaba,0,Oversight mechanism,2025-12
+,,Alibaba,0,Whistleblower protection,2025-12
+,,Alibaba,1,Government commitments,2025-12
+,,Amazon,1,Data acquisition methods,2025-12
+,,Amazon,0,Public datasets,2025-12
+,,Amazon,0,Crawling,2025-12
+,,Amazon,0,Usage data used in training,2025-12
+,,Amazon,0,Notice of usage data used in training,2025-12
+,,Amazon,0,Licensed data sources,2025-12
+,,Amazon,0,Licensed data compensation,2025-12
+,,Amazon,0,New human-generated data sources,2025-12
+,,Amazon,0,Instructions for data generation,2025-12
+,,Amazon,0,Data laborer practices,2025-12
+,,Amazon,0,Synthetic data sources,2025-12
+,,Amazon,1,Synthetic data purpose,2025-12
+,,Amazon,1,Data processing methods,2025-12
+,,Amazon,0,Data processing purpose,2025-12
+,,Amazon,0,Data processing techniques,2025-12
+,,Amazon,0,Data size,2025-12
+,,Amazon,0,Data language composition,2025-12
+,,Amazon,0,Data domain composition,2025-12
+,,Amazon,0,External data access,2025-12
+,,Amazon,0,Data replicability,2025-12
+,,Amazon,0,Compute usage for final training run,2025-12
+,,Amazon,0,Compute usage including R&D,2025-12
+,,Amazon,0,Development duration for final training run,2025-12
+,,Amazon,0,Compute hardware for final training run,2025-12
+,,Amazon,1,Compute provider,2025-12
+,,Amazon,0,Energy usage for final training run,2025-12
+,,Amazon,0,Carbon emissions for final training run,2025-12
+,,Amazon,0,Water usage for final training run,2025-12
+,,Amazon,0,Internal compute allocation,2025-12
+,,Amazon,1,Model stages,2025-12
+,,Amazon,1,Model objectives,2025-12
+,,Amazon,0,Code access,2025-12
+,,Amazon,0,Organization chart,2025-12
+,,Amazon,0,Model cost,2025-12
+,,Amazon,0,Basic model properties,2025-12
+,,Amazon,0,Deeper model properties,2025-12
+,,Amazon,0,Model dependencies,2025-12
+,,Amazon,0,Benchmarked inference,2025-12
+,,Amazon,0,Researcher credits,2025-12
+,,Amazon,1,Specialized access,2025-12
+,,Amazon,0,Open weights,2025-12
+,,Amazon,1,Agent Protocols,2025-12
+,,Amazon,1,Capabilities taxonomy,2025-12
+,,Amazon,1,Capabilities evaluation,2025-12
+,,Amazon,0,External reproducibility of capabilities evaluation,2025-12
+,,Amazon,0,Train-test overlap,2025-12
+,,Amazon,1,Risks taxonomy,2025-12
+,,Amazon,0,Risks evaluation,2025-12
+,,Amazon,0,External reproducibility of risks evaluation,2025-12
+,,Amazon,0,Pre-deployment risk evaluation,2025-12
+,,Amazon,1,External risk evaluation,2025-12
+,,Amazon,1,Mitigations taxonomy,2025-12
+,,Amazon,1,Mitigations taxonomy mapped to risk taxonomy,2025-12
+,,Amazon,0,Mitigations efficacy,2025-12
+,,Amazon,0,External reproducibility of mitigations evaluation,2025-12
+,,Amazon,1,Model theft prevention measures,2025-12
+,,Amazon,1,Release stages,2025-12
+,,Amazon,1,Risk thresholds,2025-12
+,,Amazon,0,Versioning protocol,2025-12
+,,Amazon,1,Change log,2025-12
+,,Amazon,1,Foundation model roadmap,2025-12
+,,Amazon,1,Top distribution channels,2025-12
+,,Amazon,0,Quantization,2025-12
+,,Amazon,1,Terms of use,2025-12
+,,Amazon,1,Distribution channels with usage data,2025-12
+,,Amazon,0,Amount of usage,2025-12
+,,Amazon,0,Classification of usage data,2025-12
+,,Amazon,0,Data retention and deletion policy,2025-12
+,,Amazon,0,Geographic statistics,2025-12
+,,Amazon,0,Internal products and services,2025-12
+,,Amazon,0,External products and services,2025-12
+,,Amazon,0,Users of internal products and services,2025-12
+,,Amazon,0,Consumer/enterprise usage,2025-12
+,,Amazon,0,Enterprise users,2025-12
+,,Amazon,0,Government use,2025-12
+,,Amazon,0,Benefits Assessment,2025-12
+,,Amazon,1,AI bug bounty,2025-12
+,,Amazon,1,Responsible disclosure policy,2025-12
+,,Amazon,0,Safe harbor,2025-12
+,,Amazon,1,Security incident reporting protocol,2025-12
+,,Amazon,0,Misuse incident reporting protocol,2025-12
+,,Amazon,1,Post-deployment coordination with government,2025-12
+,,Amazon,0,Feedback mechanisms,2025-12
+,,Amazon,1,"Permitted, restricted, and prohibited model behaviors",2025-12
+,,Amazon,1,Model response characteristics,2025-12
+,,Amazon,0,System prompt,2025-12
+,,Amazon,1,Intermediate tokens,2025-12
+,,Amazon,1,Internal product and service mitigations,2025-12
+,,Amazon,1,External developer mitigations,2025-12
+,,Amazon,1,Enterprise mitigations,2025-12
+,,Amazon,1,Detection of machine-generated content,2025-12
+,,Amazon,1,Documentation for responsible use,2025-12
+,,Amazon,1,Permitted and prohibited users,2025-12
+,,Amazon,1,"Permitted, restricted, and prohibited uses",2025-12
+,,Amazon,1,AUP enforcement process,2025-12
+,,Amazon,0,AUP enforcement frequency,2025-12
+,,Amazon,1,Regional policy variations,2025-12
+,,Amazon,1,Oversight mechanism,2025-12
+,,Amazon,0,Whistleblower protection,2025-12
+,,Amazon,0,Government commitments,2025-12
+,,Anthropic,1,Data acquisition methods,2025-12
+,,Anthropic,0,Public datasets,2025-12
+,,Anthropic,1,Crawling,2025-12
+,,Anthropic,0,Usage data used in training,2025-12
+,,Anthropic,1,Notice of usage data used in training,2025-12
+,,Anthropic,0,Licensed data sources,2025-12
+,,Anthropic,0,Licensed data compensation,2025-12
+,,Anthropic,0,New human-generated data sources,2025-12
+,,Anthropic,0,Instructions for data generation,2025-12
+,,Anthropic,0,Data laborer practices,2025-12
+,,Anthropic,0,Synthetic data sources,2025-12
+,,Anthropic,0,Synthetic data purpose,2025-12
+,,Anthropic,0,Data processing methods,2025-12
+,,Anthropic,0,Data processing purpose,2025-12
+,,Anthropic,0,Data processing techniques,2025-12
+,,Anthropic,0,Data size,2025-12
+,,Anthropic,0,Data language composition,2025-12
+,,Anthropic,0,Data domain composition,2025-12
+,,Anthropic,0,External data access,2025-12
+,,Anthropic,0,Data replicability,2025-12
+,,Anthropic,0,Compute usage for final training run,2025-12
+,,Anthropic,0,Compute usage including R&D,2025-12
+,,Anthropic,0,Development duration for final training run,2025-12
+,,Anthropic,0,Compute hardware for final training run,2025-12
+,,Anthropic,0,Compute provider,2025-12
+,,Anthropic,0,Energy usage for final training run,2025-12
+,,Anthropic,0,Carbon emissions for final training run,2025-12
+,,Anthropic,0,Water usage for final training run,2025-12
+,,Anthropic,0,Internal compute allocation,2025-12
+,,Anthropic,0,Model stages,2025-12
+,,Anthropic,0,Model objectives,2025-12
+,,Anthropic,0,Code access,2025-12
+,,Anthropic,0,Organization chart,2025-12
+,,Anthropic,0,Model cost,2025-12
+,,Anthropic,0,Basic model properties,2025-12
+,,Anthropic,0,Deeper model properties,2025-12
+,,Anthropic,1,Model dependencies,2025-12
+,,Anthropic,0,Benchmarked inference,2025-12
+,,Anthropic,1,Researcher credits,2025-12
+,,Anthropic,0,Specialized access,2025-12
+,,Anthropic,0,Open weights,2025-12
+,,Anthropic,1,Agent Protocols,2025-12
+,,Anthropic,0,Capabilities taxonomy,2025-12
+,,Anthropic,1,Capabilities evaluation,2025-12
+,,Anthropic,0,External reproducibility of capabilities evaluation,2025-12
+,,Anthropic,0,Train-test overlap,2025-12
+,,Anthropic,1,Risks taxonomy,2025-12
+,,Anthropic,1,Risks evaluation,2025-12
+,,Anthropic,0,External reproducibility of risks evaluation,2025-12
+,,Anthropic,0,Pre-deployment risk evaluation,2025-12
+,,Anthropic,1,External risk evaluation,2025-12
+,,Anthropic,1,Mitigations taxonomy,2025-12
+,,Anthropic,1,Mitigations taxonomy mapped to risk taxonomy,2025-12
+,,Anthropic,1,Mitigations efficacy,2025-12
+,,Anthropic,0,External reproducibility of mitigations evaluation,2025-12
+,,Anthropic,1,Model theft prevention measures,2025-12
+,,Anthropic,1,Release stages,2025-12
+,,Anthropic,1,Risk thresholds,2025-12
+,,Anthropic,1,Versioning protocol,2025-12
+,,Anthropic,1,Change log,2025-12
+,,Anthropic,0,Foundation model roadmap,2025-12
+,,Anthropic,1,Top distribution channels,2025-12
+,,Anthropic,0,Quantization,2025-12
+,,Anthropic,1,Terms of use,2025-12
+,,Anthropic,1,Distribution channels with usage data,2025-12
+,,Anthropic,0,Amount of usage,2025-12
+,,Anthropic,1,Classification of usage data,2025-12
+,,Anthropic,0,Data retention and deletion policy,2025-12
+,,Anthropic,1,Geographic statistics,2025-12
+,,Anthropic,1,Internal products and services,2025-12
+,,Anthropic,0,External products and services,2025-12
+,,Anthropic,0,Users of internal products and services,2025-12
+,,Anthropic,0,Consumer/enterprise usage,2025-12
+,,Anthropic,0,Enterprise users,2025-12
+,,Anthropic,0,Government use,2025-12
+,,Anthropic,1,Benefits Assessment,2025-12
+,,Anthropic,0,AI bug bounty,2025-12
+,,Anthropic,1,Responsible disclosure policy,2025-12
+,,Anthropic,1,Safe harbor,2025-12
+,,Anthropic,1,Security incident reporting protocol,2025-12
+,,Anthropic,0,Misuse incident reporting protocol,2025-12
+,,Anthropic,1,Post-deployment coordination with government,2025-12
+,,Anthropic,0,Feedback mechanisms,2025-12
+,,Anthropic,1,"Permitted, restricted, and prohibited model behaviors",2025-12
+,,Anthropic,1,Model response characteristics,2025-12
+,,Anthropic,1,System prompt,2025-12
+,,Anthropic,1,Intermediate tokens,2025-12
+,,Anthropic,1,Internal product and service mitigations,2025-12
+,,Anthropic,1,External developer mitigations,2025-12
+,,Anthropic,1,Enterprise mitigations,2025-12
+,,Anthropic,1,Detection of machine-generated content,2025-12
+,,Anthropic,1,Documentation for responsible use,2025-12
+,,Anthropic,1,Permitted and prohibited users,2025-12
+,,Anthropic,1,"Permitted, restricted, and prohibited uses",2025-12
+,,Anthropic,1,AUP enforcement process,2025-12
+,,Anthropic,1,AUP enforcement frequency,2025-12
+,,Anthropic,1,Regional policy variations,2025-12
+,,Anthropic,1,Oversight mechanism,2025-12
+,,Anthropic,1,Whistleblower protection,2025-12
+,,Anthropic,1,Government commitments,2025-12
+,,DeepSeek,0,Data acquisition methods,2025-12
+,,DeepSeek,0,Public datasets,2025-12
+,,DeepSeek,0,Crawling,2025-12
+,,DeepSeek,0,Usage data used in training,2025-12
+,,DeepSeek,0,Notice of usage data used in training,2025-12
+,,DeepSeek,0,Licensed data sources,2025-12
+,,DeepSeek,0,Licensed data compensation,2025-12
+,,DeepSeek,0,New human-generated data sources,2025-12
+,,DeepSeek,0,Instructions for data generation,2025-12
+,,DeepSeek,0,Data laborer practices,2025-12
+,,DeepSeek,1,Synthetic data sources,2025-12
+,,DeepSeek,1,Synthetic data purpose,2025-12
+,,DeepSeek,1,Data processing methods,2025-12
+,,DeepSeek,1,Data processing purpose,2025-12
+,,DeepSeek,0,Data processing techniques,2025-12
+,,DeepSeek,1,Data size,2025-12
+,,DeepSeek,0,Data language composition,2025-12
+,,DeepSeek,0,Data domain composition,2025-12
+,,DeepSeek,0,External data access,2025-12
+,,DeepSeek,0,Data replicability,2025-12
+,,DeepSeek,0,Compute usage for final training run,2025-12
+,,DeepSeek,0,Compute usage including R&D,2025-12
+,,DeepSeek,1,Development duration for final training run,2025-12
+,,DeepSeek,1,Compute hardware for final training run,2025-12
+,,DeepSeek,1,Compute provider,2025-12
+,,DeepSeek,0,Energy usage for final training run,2025-12
+,,DeepSeek,0,Carbon emissions for final training run,2025-12
+,,DeepSeek,0,Water usage for final training run,2025-12
+,,DeepSeek,1,Internal compute allocation,2025-12
+,,DeepSeek,1,Model stages,2025-12
+,,DeepSeek,1,Model objectives,2025-12
+,,DeepSeek,0,Code access,2025-12
+,,DeepSeek,0,Organization chart,2025-12
+,,DeepSeek,0,Model cost,2025-12
+,,DeepSeek,1,Basic model properties,2025-12
+,,DeepSeek,1,Deeper model properties,2025-12
+,,DeepSeek,1,Model dependencies,2025-12
+,,DeepSeek,0,Benchmarked inference,2025-12
+,,DeepSeek,0,Researcher credits,2025-12
+,,DeepSeek,0,Specialized access,2025-12
+,,DeepSeek,1,Open weights,2025-12
+,,DeepSeek,1,Agent Protocols,2025-12
+,,DeepSeek,1,Capabilities taxonomy,2025-12
+,,DeepSeek,1,Capabilities evaluation,2025-12
+,,DeepSeek,0,External reproducibility of capabilities evaluation,2025-12
+,,DeepSeek,0,Train-test overlap,2025-12
+,,DeepSeek,1,Risks taxonomy,2025-12
+,,DeepSeek,0,Risks evaluation,2025-12
+,,DeepSeek,0,External reproducibility of risks evaluation,2025-12
+,,DeepSeek,0,Pre-deployment risk evaluation,2025-12
+,,DeepSeek,0,External risk evaluation,2025-12
+,,DeepSeek,1,Mitigations taxonomy,2025-12
+,,DeepSeek,0,Mitigations taxonomy mapped to risk taxonomy,2025-12
+,,DeepSeek,0,Mitigations efficacy,2025-12
+,,DeepSeek,0,External reproducibility of mitigations evaluation,2025-12
+,,DeepSeek,0,Model theft prevention measures,2025-12
+,,DeepSeek,0,Release stages,2025-12
+,,DeepSeek,0,Risk thresholds,2025-12
+,,DeepSeek,0,Versioning protocol,2025-12
+,,DeepSeek,1,Change log,2025-12
+,,DeepSeek,1,Foundation model roadmap,2025-12
+,,DeepSeek,1,Top distribution channels,2025-12
+,,DeepSeek,1,Quantization,2025-12
+,,DeepSeek,1,Terms of use,2025-12
+,,DeepSeek,0,Distribution channels with usage data,2025-12
+,,DeepSeek,0,Amount of usage,2025-12
+,,DeepSeek,0,Classification of usage data,2025-12
+,,DeepSeek,0,Data retention and deletion policy,2025-12
+,,DeepSeek,0,Geographic statistics,2025-12
+,,DeepSeek,0,Internal products and services,2025-12
+,,DeepSeek,0,External products and services,2025-12
+,,DeepSeek,0,Users of internal products and services,2025-12
+,,DeepSeek,0,Consumer/enterprise usage,2025-12
+,,DeepSeek,0,Enterprise users,2025-12
+,,DeepSeek,0,Government use,2025-12
+,,DeepSeek,0,Benefits Assessment,2025-12
+,,DeepSeek,0,AI bug bounty,2025-12
+,,DeepSeek,0,Responsible disclosure policy,2025-12
+,,DeepSeek,0,Safe harbor,2025-12
+,,DeepSeek,0,Security incident reporting protocol,2025-12
+,,DeepSeek,0,Misuse incident reporting protocol,2025-12
+,,DeepSeek,0,Post-deployment coordination with government,2025-12
+,,DeepSeek,0,Feedback mechanisms,2025-12
+,,DeepSeek,0,"Permitted, restricted, and prohibited model behaviors",2025-12
+,,DeepSeek,1,Model response characteristics,2025-12
+,,DeepSeek,1,System prompt,2025-12
+,,DeepSeek,1,Intermediate tokens,2025-12
+,,DeepSeek,0,Internal product and service mitigations,2025-12
+,,DeepSeek,0,External developer mitigations,2025-12
+,,DeepSeek,0,Enterprise mitigations,2025-12
+,,DeepSeek,0,Detection of machine-generated content,2025-12
+,,DeepSeek,0,Documentation for responsible use,2025-12
+,,DeepSeek,1,Permitted and prohibited users,2025-12
+,,DeepSeek,1,"Permitted, restricted, and prohibited uses",2025-12
+,,DeepSeek,1,AUP enforcement process,2025-12
+,,DeepSeek,0,AUP enforcement frequency,2025-12
+,,DeepSeek,0,Regional policy variations,2025-12
+,,DeepSeek,0,Oversight mechanism,2025-12
+,,DeepSeek,0,Whistleblower protection,2025-12
+,,DeepSeek,1,Government commitments,2025-12
+,,Google,0,Data acquisition methods,2025-12
+,,Google,0,Public datasets,2025-12
+,,Google,1,Crawling,2025-12
+,,Google,0,Usage data used in training,2025-12
+,,Google,1,Notice of usage data used in training,2025-12
+,,Google,0,Licensed data sources,2025-12
+,,Google,0,Licensed data compensation,2025-12
+,,Google,0,New human-generated data sources,2025-12
+,,Google,0,Instructions for data generation,2025-12
+,,Google,0,Data laborer practices,2025-12
+,,Google,1,Synthetic data sources,2025-12
+,,Google,1,Synthetic data purpose,2025-12
+,,Google,0,Data processing methods,2025-12
+,,Google,1,Data processing purpose,2025-12
+,,Google,0,Data processing techniques,2025-12
+,,Google,0,Data size,2025-12
+,,Google,0,Data language composition,2025-12
+,,Google,0,Data domain composition,2025-12
+,,Google,0,External data access,2025-12
+,,Google,0,Data replicability,2025-12
+,,Google,0,Compute usage for final training run,2025-12
+,,Google,0,Compute usage including R&D,2025-12
+,,Google,0,Development duration for final training run,2025-12
+,,Google,0,Compute hardware for final training run,2025-12
+,,Google,1,Compute provider,2025-12
+,,Google,0,Energy usage for final training run,2025-12
+,,Google,0,Carbon emissions for final training run,2025-12
+,,Google,0,Water usage for final training run,2025-12
+,,Google,0,Internal compute allocation,2025-12
+,,Google,1,Model stages,2025-12
+,,Google,1,Model objectives,2025-12
+,,Google,0,Code access,2025-12
+,,Google,0,Organization chart,2025-12
+,,Google,0,Model cost,2025-12
+,,Google,0,Basic model properties,2025-12
+,,Google,0,Deeper model properties,2025-12
+,,Google,0,Model dependencies,2025-12
+,,Google,0,Benchmarked inference,2025-12
+,,Google,1,Researcher credits,2025-12
+,,Google,0,Specialized access,2025-12
+,,Google,0,Open weights,2025-12
+,,Google,1,Agent Protocols,2025-12
+,,Google,0,Capabilities taxonomy,2025-12
+,,Google,1,Capabilities evaluation,2025-12
+,,Google,0,External reproducibility of capabilities evaluation,2025-12
+,,Google,0,Train-test overlap,2025-12
+,,Google,1,Risks taxonomy,2025-12
+,,Google,0,Risks evaluation,2025-12
+,,Google,0,External reproducibility of risks evaluation,2025-12
+,,Google,0,Pre-deployment risk evaluation,2025-12
+,,Google,0,External risk evaluation,2025-12
+,,Google,1,Mitigations taxonomy,2025-12
+,,Google,0,Mitigations taxonomy mapped to risk taxonomy,2025-12
+,,Google,0,Mitigations efficacy,2025-12
+,,Google,0,External reproducibility of mitigations evaluation,2025-12
+,,Google,1,Model theft prevention measures,2025-12
+,,Google,1,Release stages,2025-12
+,,Google,1,Risk thresholds,2025-12
+,,Google,1,Versioning protocol,2025-12
+,,Google,1,Change log,2025-12
+,,Google,1,Foundation model roadmap,2025-12
+,,Google,1,Top distribution channels,2025-12
+,,Google,0,Quantization,2025-12
+,,Google,1,Terms of use,2025-12
+,,Google,0,Distribution channels with usage data,2025-12
+,,Google,0,Amount of usage,2025-12
+,,Google,0,Classification of usage data,2025-12
+,,Google,0,Data retention and deletion policy,2025-12
+,,Google,0,Geographic statistics,2025-12
+,,Google,0,Internal products and services,2025-12
+,,Google,1,External products and services,2025-12
+,,Google,0,Users of internal products and services,2025-12
+,,Google,0,Consumer/enterprise usage,2025-12
+,,Google,0,Enterprise users,2025-12
+,,Google,0,Government use,2025-12
+,,Google,1,Benefits Assessment,2025-12
+,,Google,1,AI bug bounty,2025-12
+,,Google,1,Responsible disclosure policy,2025-12
+,,Google,0,Safe harbor,2025-12
+,,Google,1,Security incident reporting protocol,2025-12
+,,Google,0,Misuse incident reporting protocol,2025-12
+,,Google,0,Post-deployment coordination with government,2025-12
+,,Google,0,Feedback mechanisms,2025-12
+,,Google,1,"Permitted, restricted, and prohibited model behaviors",2025-12
+,,Google,1,Model response characteristics,2025-12
+,,Google,0,System prompt,2025-12
+,,Google,1,Intermediate tokens,2025-12
+,,Google,1,Internal product and service mitigations,2025-12
+,,Google,1,External developer mitigations,2025-12
+,,Google,1,Enterprise mitigations,2025-12
+,,Google,1,Detection of machine-generated content,2025-12
+,,Google,1,Documentation for responsible use,2025-12
+,,Google,1,Permitted and prohibited users,2025-12
+,,Google,1,"Permitted, restricted, and prohibited uses",2025-12
+,,Google,1,AUP enforcement process,2025-12
+,,Google,0,AUP enforcement frequency,2025-12
+,,Google,1,Regional policy variations,2025-12
+,,Google,1,Oversight mechanism,2025-12
+,,Google,1,Whistleblower protection,2025-12
+,,Google,1,Government commitments,2025-12
+,,IBM,1,Data acquisition methods,2025-12
+,,IBM,1,Public datasets,2025-12
+,,IBM,1,Crawling,2025-12
+,,IBM,1,Usage data used in training,2025-12
+,,IBM,1,Notice of usage data used in training,2025-12
+,,IBM,1,Licensed data sources,2025-12
+,,IBM,1,Licensed data compensation,2025-12
+,,IBM,1,New human-generated data sources,2025-12
+,,IBM,1,Instructions for data generation,2025-12
+,,IBM,1,Data laborer practices,2025-12
+,,IBM,1,Synthetic data sources,2025-12
+,,IBM,1,Synthetic data purpose,2025-12
+,,IBM,1,Data processing methods,2025-12
+,,IBM,1,Data processing purpose,2025-12
+,,IBM,1,Data processing techniques,2025-12
+,,IBM,1,Data size,2025-12
+,,IBM,1,Data language composition,2025-12
+,,IBM,1,Data domain composition,2025-12
+,,IBM,1,External data access,2025-12
+,,IBM,1,Data replicability,2025-12
+,,IBM,1,Compute usage for final training run,2025-12
+,,IBM,1,Compute usage including R&D,2025-12
+,,IBM,1,Development duration for final training run,2025-12
+,,IBM,1,Compute hardware for final training run,2025-12
+,,IBM,1,Compute provider,2025-12
+,,IBM,1,Energy usage for final training run,2025-12
+,,IBM,1,Carbon emissions for final training run,2025-12
+,,IBM,1,Water usage for final training run,2025-12
+,,IBM,1,Internal compute allocation,2025-12
+,,IBM,1,Model stages,2025-12
+,,IBM,1,Model objectives,2025-12
+,,IBM,1,Code access,2025-12
+,,IBM,1,Organization chart,2025-12
+,,IBM,1,Model cost,2025-12
+,,IBM,1,Basic model properties,2025-12
+,,IBM,1,Deeper model properties,2025-12
+,,IBM,1,Model dependencies,2025-12
+,,IBM,1,Benchmarked inference,2025-12
+,,IBM,1,Researcher credits,2025-12
+,,IBM,1,Specialized access,2025-12
+,,IBM,1,Open weights,2025-12
+,,IBM,1,Agent Protocols,2025-12
+,,IBM,1,Capabilities taxonomy,2025-12
+,,IBM,1,Capabilities evaluation,2025-12
+,,IBM,1,External reproducibility of capabilities evaluation,2025-12
+,,IBM,0,Train-test overlap,2025-12
+,,IBM,1,Risks taxonomy,2025-12
+,,IBM,1,Risks evaluation,2025-12
+,,IBM,1,External reproducibility of risks evaluation,2025-12
+,,IBM,1,Pre-deployment risk evaluation,2025-12
+,,IBM,1,External risk evaluation,2025-12
+,,IBM,1,Mitigations taxonomy,2025-12
+,,IBM,1,Mitigations taxonomy mapped to risk taxonomy,2025-12
+,,IBM,1,Mitigations efficacy,2025-12
+,,IBM,0,External reproducibility of mitigations evaluation,2025-12
+,,IBM,1,Model theft prevention measures,2025-12
+,,IBM,1,Release stages,2025-12
+,,IBM,1,Risk thresholds,2025-12
+,,IBM,1,Versioning protocol,2025-12
+,,IBM,1,Change log,2025-12
+,,IBM,1,Foundation model roadmap,2025-12
+,,IBM,1,Top distribution channels,2025-12
+,,IBM,1,Quantization,2025-12
+,,IBM,1,Terms of use,2025-12
+,,IBM,1,Distribution channels with usage data,2025-12
+,,IBM,1,Amount of usage,2025-12
+,,IBM,1,Classification of usage data,2025-12
+,,IBM,1,Data retention and deletion policy,2025-12
+,,IBM,0,Geographic statistics,2025-12
+,,IBM,1,Internal products and services,2025-12
+,,IBM,1,External products and services,2025-12
+,,IBM,1,Users of internal products and services,2025-12
+,,IBM,1,Consumer/enterprise usage,2025-12
+,,IBM,0,Enterprise users,2025-12
+,,IBM,1,Government use,2025-12
+,,IBM,1,Benefits Assessment,2025-12
+,,IBM,1,AI bug bounty,2025-12
+,,IBM,1,Responsible disclosure policy,2025-12
+,,IBM,1,Safe harbor,2025-12
+,,IBM,1,Security incident reporting protocol,2025-12
+,,IBM,1,Misuse incident reporting protocol,2025-12
+,,IBM,1,Post-deployment coordination with government,2025-12
+,,IBM,1,Feedback mechanisms,2025-12
+,,IBM,1,"Permitted, restricted, and prohibited model behaviors",2025-12
+,,IBM,1,Model response characteristics,2025-12
+,,IBM,1,System prompt,2025-12
+,,IBM,1,Intermediate tokens,2025-12
+,,IBM,1,Internal product and service mitigations,2025-12
+,,IBM,1,External developer mitigations,2025-12
+,,IBM,1,Enterprise mitigations,2025-12
+,,IBM,1,Detection of machine-generated content,2025-12
+,,IBM,1,Documentation for responsible use,2025-12
+,,IBM,1,Permitted and prohibited users,2025-12
+,,IBM,1,"Permitted, restricted, and prohibited uses",2025-12
+,,IBM,1,AUP enforcement process,2025-12
+,,IBM,0,AUP enforcement frequency,2025-12
+,,IBM,1,Regional policy variations,2025-12
+,,IBM,1,Oversight mechanism,2025-12
+,,IBM,1,Whistleblower protection,2025-12
+,,IBM,1,Government commitments,2025-12
+,,Meta,1,Data acquisition methods,2025-12
+,,Meta,0,Public datasets,2025-12
+,,Meta,1,Crawling,2025-12
+,,Meta,1,Usage data used in training,2025-12
+,,Meta,1,Notice of usage data used in training,2025-12
+,,Meta,0,Licensed data sources,2025-12
+,,Meta,0,Licensed data compensation,2025-12
+,,Meta,0,New human-generated data sources,2025-12
+,,Meta,0,Instructions for data generation,2025-12
+,,Meta,0,Data laborer practices,2025-12
+,,Meta,0,Synthetic data sources,2025-12
+,,Meta,0,Synthetic data purpose,2025-12
+,,Meta,0,Data processing methods,2025-12
+,,Meta,0,Data processing purpose,2025-12
+,,Meta,0,Data processing techniques,2025-12
+,,Meta,1,Data size,2025-12
+,,Meta,0,Data language composition,2025-12
+,,Meta,0,Data domain composition,2025-12
+,,Meta,0,External data access,2025-12
+,,Meta,0,Data replicability,2025-12
+,,Meta,0,Compute usage for final training run,2025-12
+,,Meta,0,Compute usage including R&D,2025-12
+,,Meta,0,Development duration for final training run,2025-12
+,,Meta,0,Compute hardware for final training run,2025-12
+,,Meta,1,Compute provider,2025-12
+,,Meta,0,Energy usage for final training run,2025-12
+,,Meta,1,Carbon emissions for final training run,2025-12
+,,Meta,0,Water usage for final training run,2025-12
+,,Meta,0,Internal compute allocation,2025-12
+,,Meta,0,Model stages,2025-12
+,,Meta,0,Model objectives,2025-12
+,,Meta,0,Code access,2025-12
+,,Meta,0,Organization chart,2025-12
+,,Meta,0,Model cost,2025-12
+,,Meta,1,Basic model properties,2025-12
+,,Meta,1,Deeper model properties,2025-12
+,,Meta,1,Model dependencies,2025-12
+,,Meta,0,Benchmarked inference,2025-12
+,,Meta,1,Researcher credits,2025-12
+,,Meta,0,Specialized access,2025-12
+,,Meta,1,Open weights,2025-12
+,,Meta,0,Agent Protocols,2025-12
+,,Meta,1,Capabilities taxonomy,2025-12
+,,Meta,1,Capabilities evaluation,2025-12
+,,Meta,0,External reproducibility of capabilities evaluation,2025-12
+,,Meta,0,Train-test overlap,2025-12
+,,Meta,1,Risks taxonomy,2025-12
+,,Meta,0,Risks evaluation,2025-12
+,,Meta,0,External reproducibility of risks evaluation,2025-12
+,,Meta,0,Pre-deployment risk evaluation,2025-12
+,,Meta,0,External risk evaluation,2025-12
+,,Meta,0,Mitigations taxonomy,2025-12
+,,Meta,0,Mitigations taxonomy mapped to risk taxonomy,2025-12
+,,Meta,0,Mitigations efficacy,2025-12
+,,Meta,0,External reproducibility of mitigations evaluation,2025-12
+,,Meta,0,Model theft prevention measures,2025-12
+,,Meta,0,Release stages,2025-12
+,,Meta,1,Risk thresholds,2025-12
+,,Meta,0,Versioning protocol,2025-12
+,,Meta,1,Change log,2025-12
+,,Meta,0,Foundation model roadmap,2025-12
+,,Meta,0,Top distribution channels,2025-12
+,,Meta,1,Quantization,2025-12
+,,Meta,1,Terms of use,2025-12
+,,Meta,0,Distribution channels with usage data,2025-12
+,,Meta,0,Amount of usage,2025-12
+,,Meta,0,Classification of usage data,2025-12
+,,Meta,0,Data retention and deletion policy,2025-12
+,,Meta,0,Geographic statistics,2025-12
+,,Meta,0,Internal products and services,2025-12
+,,Meta,0,External products and services,2025-12
+,,Meta,0,Users of internal products and services,2025-12
+,,Meta,0,Consumer/enterprise usage,2025-12
+,,Meta,0,Enterprise users,2025-12
+,,Meta,0,Government use,2025-12
+,,Meta,1,Benefits Assessment,2025-12
+,,Meta,1,AI bug bounty,2025-12
+,,Meta,1,Responsible disclosure policy,2025-12
+,,Meta,0,Safe harbor,2025-12
+,,Meta,0,Security incident reporting protocol,2025-12
+,,Meta,0,Misuse incident reporting protocol,2025-12
+,,Meta,0,Post-deployment coordination with government,2025-12
+,,Meta,0,Feedback mechanisms,2025-12
+,,Meta,0,"Permitted, restricted, and prohibited model behaviors",2025-12
+,,Meta,1,Model response characteristics,2025-12
+,,Meta,1,System prompt,2025-12
+,,Meta,1,Intermediate tokens,2025-12
+,,Meta,0,Internal product and service mitigations,2025-12
+,,Meta,1,External developer mitigations,2025-12
+,,Meta,1,Enterprise mitigations,2025-12
+,,Meta,1,Detection of machine-generated content,2025-12
+,,Meta,1,Documentation for responsible use,2025-12
+,,Meta,1,Permitted and prohibited users,2025-12
+,,Meta,1,"Permitted, restricted, and prohibited uses",2025-12
+,,Meta,0,AUP enforcement process,2025-12
+,,Meta,0,AUP enforcement frequency,2025-12
+,,Meta,0,Regional policy variations,2025-12
+,,Meta,0,Oversight mechanism,2025-12
+,,Meta,0,Whistleblower protection,2025-12
+,,Meta,0,Government commitments,2025-12
+,,Midjourney,0,Data acquisition methods,2025-12
+,,Midjourney,0,Public datasets,2025-12
+,,Midjourney,0,Crawling,2025-12
+,,Midjourney,0,Usage data used in training,2025-12
+,,Midjourney,0,Notice of usage data used in training,2025-12
+,,Midjourney,0,Licensed data sources,2025-12
+,,Midjourney,0,Licensed data compensation,2025-12
+,,Midjourney,0,New human-generated data sources,2025-12
+,,Midjourney,0,Instructions for data generation,2025-12
+,,Midjourney,0,Data laborer practices,2025-12
+,,Midjourney,0,Synthetic data sources,2025-12
+,,Midjourney,0,Synthetic data purpose,2025-12
+,,Midjourney,0,Data processing methods,2025-12
+,,Midjourney,0,Data processing purpose,2025-12
+,,Midjourney,0,Data processing techniques,2025-12
+,,Midjourney,0,Data size,2025-12
+,,Midjourney,0,Data language composition,2025-12
+,,Midjourney,0,Data domain composition,2025-12
+,,Midjourney,0,External data access,2025-12
+,,Midjourney,0,Data replicability,2025-12
+,,Midjourney,0,Compute usage for final training run,2025-12
+,,Midjourney,0,Compute usage including R&D,2025-12
+,,Midjourney,0,Development duration for final training run,2025-12
+,,Midjourney,0,Compute hardware for final training run,2025-12
+,,Midjourney,0,Compute provider,2025-12
+,,Midjourney,0,Energy usage for final training run,2025-12
+,,Midjourney,0,Carbon emissions for final training run,2025-12
+,,Midjourney,0,Water usage for final training run,2025-12
+,,Midjourney,0,Internal compute allocation,2025-12
+,,Midjourney,0,Model stages,2025-12
+,,Midjourney,0,Model objectives,2025-12
+,,Midjourney,0,Code access,2025-12
+,,Midjourney,0,Organization chart,2025-12
+,,Midjourney,0,Model cost,2025-12
+,,Midjourney,0,Basic model properties,2025-12
+,,Midjourney,0,Deeper model properties,2025-12
+,,Midjourney,0,Model dependencies,2025-12
+,,Midjourney,0,Benchmarked inference,2025-12
+,,Midjourney,0,Researcher credits,2025-12
+,,Midjourney,0,Specialized access,2025-12
+,,Midjourney,0,Open weights,2025-12
+,,Midjourney,0,Agent Protocols,2025-12
+,,Midjourney,0,Capabilities taxonomy,2025-12
+,,Midjourney,0,Capabilities evaluation,2025-12
+,,Midjourney,0,External reproducibility of capabilities evaluation,2025-12
+,,Midjourney,0,Train-test overlap,2025-12
+,,Midjourney,0,Risks taxonomy,2025-12
+,,Midjourney,0,Risks evaluation,2025-12
+,,Midjourney,0,External reproducibility of risks evaluation,2025-12
+,,Midjourney,0,Pre-deployment risk evaluation,2025-12
+,,Midjourney,0,External risk evaluation,2025-12
+,,Midjourney,0,Mitigations taxonomy,2025-12
+,,Midjourney,0,Mitigations taxonomy mapped to risk taxonomy,2025-12
+,,Midjourney,0,Mitigations efficacy,2025-12
+,,Midjourney,0,External reproducibility of mitigations evaluation,2025-12
+,,Midjourney,0,Model theft prevention measures,2025-12
+,,Midjourney,0,Release stages,2025-12
+,,Midjourney,0,Risk thresholds,2025-12
+,,Midjourney,0,Versioning protocol,2025-12
+,,Midjourney,1,Change log,2025-12
+,,Midjourney,1,Foundation model roadmap,2025-12
+,,Midjourney,1,Top distribution channels,2025-12
+,,Midjourney,1,Quantization,2025-12
+,,Midjourney,1,Terms of use,2025-12
+,,Midjourney,1,Distribution channels with usage data,2025-12
+,,Midjourney,0,Amount of usage,2025-12
+,,Midjourney,0,Classification of usage data,2025-12
+,,Midjourney,0,Data retention and deletion policy,2025-12
+,,Midjourney,0,Geographic statistics,2025-12
+,,Midjourney,1,Internal products and services,2025-12
+,,Midjourney,1,External products and services,2025-12
+,,Midjourney,0,Users of internal products and services,2025-12
+,,Midjourney,0,Consumer/enterprise usage,2025-12
+,,Midjourney,0,Enterprise users,2025-12
+,,Midjourney,0,Government use,2025-12
+,,Midjourney,0,Benefits Assessment,2025-12
+,,Midjourney,0,AI bug bounty,2025-12
+,,Midjourney,0,Responsible disclosure policy,2025-12
+,,Midjourney,0,Safe harbor,2025-12
+,,Midjourney,0,Security incident reporting protocol,2025-12
+,,Midjourney,0,Misuse incident reporting protocol,2025-12
+,,Midjourney,0,Post-deployment coordination with government,2025-12
+,,Midjourney,0,Feedback mechanisms,2025-12
+,,Midjourney,0,"Permitted, restricted, and prohibited model behaviors",2025-12
+,,Midjourney,1,Model response characteristics,2025-12
+,,Midjourney,0,System prompt,2025-12
+,,Midjourney,0,Intermediate tokens,2025-12
+,,Midjourney,0,Internal product and service mitigations,2025-12
+,,Midjourney,1,External developer mitigations,2025-12
+,,Midjourney,0,Enterprise mitigations,2025-12
+,,Midjourney,0,Detection of machine-generated content,2025-12
+,,Midjourney,1,Documentation for responsible use,2025-12
+,,Midjourney,1,Permitted and prohibited users,2025-12
+,,Midjourney,1,"Permitted, restricted, and prohibited uses",2025-12
+,,Midjourney,1,AUP enforcement process,2025-12
+,,Midjourney,0,AUP enforcement frequency,2025-12
+,,Midjourney,0,Regional policy variations,2025-12
+,,Midjourney,0,Oversight mechanism,2025-12
+,,Midjourney,0,Whistleblower protection,2025-12
+,,Midjourney,0,Government commitments,2025-12
+,,Mistral,0,Data acquisition methods,2025-12
+,,Mistral,0,Public datasets,2025-12
+,,Mistral,0,Crawling,2025-12
+,,Mistral,0,Usage data used in training,2025-12
+,,Mistral,0,Notice of usage data used in training,2025-12
+,,Mistral,0,Licensed data sources,2025-12
+,,Mistral,0,Licensed data compensation,2025-12
+,,Mistral,0,New human-generated data sources,2025-12
+,,Mistral,0,Instructions for data generation,2025-12
+,,Mistral,0,Data laborer practices,2025-12
+,,Mistral,0,Synthetic data sources,2025-12
+,,Mistral,0,Synthetic data purpose,2025-12
+,,Mistral,0,Data processing methods,2025-12
+,,Mistral,0,Data processing purpose,2025-12
+,,Mistral,0,Data processing techniques,2025-12
+,,Mistral,0,Data size,2025-12
+,,Mistral,0,Data language composition,2025-12
+,,Mistral,0,Data domain composition,2025-12
+,,Mistral,0,External data access,2025-12
+,,Mistral,0,Data replicability,2025-12
+,,Mistral,0,Compute usage for final training run,2025-12
+,,Mistral,0,Compute usage including R&D,2025-12
+,,Mistral,0,Development duration for final training run,2025-12
+,,Mistral,0,Compute hardware for final training run,2025-12
+,,Mistral,0,Compute provider,2025-12
+,,Mistral,0,Energy usage for final training run,2025-12
+,,Mistral,0,Carbon emissions for final training run,2025-12
+,,Mistral,0,Water usage for final training run,2025-12
+,,Mistral,0,Internal compute allocation,2025-12
+,,Mistral,0,Model stages,2025-12
+,,Mistral,0,Model objectives,2025-12
+,,Mistral,0,Code access,2025-12
+,,Mistral,0,Organization chart,2025-12
+,,Mistral,0,Model cost,2025-12
+,,Mistral,0,Basic model properties,2025-12
+,,Mistral,0,Deeper model properties,2025-12
+,,Mistral,0,Model dependencies,2025-12
+,,Mistral,0,Benchmarked inference,2025-12
+,,Mistral,0,Researcher credits,2025-12
+,,Mistral,0,Specialized access,2025-12
+,,Mistral,0,Open weights,2025-12
+,,Mistral,1,Agent Protocols,2025-12
+,,Mistral,0,Capabilities taxonomy,2025-12
+,,Mistral,1,Capabilities evaluation,2025-12
+,,Mistral,0,External reproducibility of capabilities evaluation,2025-12
+,,Mistral,0,Train-test overlap,2025-12
+,,Mistral,0,Risks taxonomy,2025-12
+,,Mistral,0,Risks evaluation,2025-12
+,,Mistral,0,External reproducibility of risks evaluation,2025-12
+,,Mistral,0,Pre-deployment risk evaluation,2025-12
+,,Mistral,0,External risk evaluation,2025-12
+,,Mistral,0,Mitigations taxonomy,2025-12
+,,Mistral,0,Mitigations taxonomy mapped to risk taxonomy,2025-12
+,,Mistral,0,Mitigations efficacy,2025-12
+,,Mistral,0,External reproducibility of mitigations evaluation,2025-12
+,,Mistral,1,Model theft prevention measures,2025-12
+,,Mistral,0,Release stages,2025-12
+,,Mistral,0,Risk thresholds,2025-12
+,,Mistral,0,Versioning protocol,2025-12
+,,Mistral,1,Change log,2025-12
+,,Mistral,1,Foundation model roadmap,2025-12
+,,Mistral,0,Top distribution channels,2025-12
+,,Mistral,0,Quantization,2025-12
+,,Mistral,1,Terms of use,2025-12
+,,Mistral,0,Distribution channels with usage data,2025-12
+,,Mistral,0,Amount of usage,2025-12
+,,Mistral,0,Classification of usage data,2025-12
+,,Mistral,0,Data retention and deletion policy,2025-12
+,,Mistral,0,Geographic statistics,2025-12
+,,Mistral,1,Internal products and services,2025-12
+,,Mistral,0,External products and services,2025-12
+,,Mistral,0,Users of internal products and services,2025-12
+,,Mistral,0,Consumer/enterprise usage,2025-12
+,,Mistral,0,Enterprise users,2025-12
+,,Mistral,0,Government use,2025-12
+,,Mistral,0,Benefits Assessment,2025-12
+,,Mistral,1,AI bug bounty,2025-12
+,,Mistral,1,Responsible disclosure policy,2025-12
+,,Mistral,1,Safe harbor,2025-12
+,,Mistral,0,Security incident reporting protocol,2025-12
+,,Mistral,0,Misuse incident reporting protocol,2025-12
+,,Mistral,0,Post-deployment coordination with government,2025-12
+,,Mistral,0,Feedback mechanisms,2025-12
+,,Mistral,0,"Permitted, restricted, and prohibited model behaviors",2025-12
+,,Mistral,0,Model response characteristics,2025-12
+,,Mistral,0,System prompt,2025-12
+,,Mistral,0,Intermediate tokens,2025-12
+,,Mistral,0,Internal product and service mitigations,2025-12
+,,Mistral,1,External developer mitigations,2025-12
+,,Mistral,1,Enterprise mitigations,2025-12
+,,Mistral,1,Detection of machine-generated content,2025-12
+,,Mistral,1,Documentation for responsible use,2025-12
+,,Mistral,1,Permitted and prohibited users,2025-12
+,,Mistral,1,"Permitted, restricted, and prohibited uses",2025-12
+,,Mistral,1,AUP enforcement process,2025-12
+,,Mistral,0,AUP enforcement frequency,2025-12
+,,Mistral,0,Regional policy variations,2025-12
+,,Mistral,0,Oversight mechanism,2025-12
+,,Mistral,0,Whistleblower protection,2025-12
+,,Mistral,1,Government commitments,2025-12
+,,OpenAI,0,Data acquisition methods,2025-12
+,,OpenAI,0,Public datasets,2025-12
+,,OpenAI,1,Crawling,2025-12
+,,OpenAI,0,Usage data used in training,2025-12
+,,OpenAI,0,Notice of usage data used in training,2025-12
+,,OpenAI,0,Licensed data sources,2025-12
+,,OpenAI,0,Licensed data compensation,2025-12
+,,OpenAI,0,New human-generated data sources,2025-12
+,,OpenAI,0,Instructions for data generation,2025-12
+,,OpenAI,0,Data laborer practices,2025-12
+,,OpenAI,0,Synthetic data sources,2025-12
+,,OpenAI,0,Synthetic data purpose,2025-12
+,,OpenAI,0,Data processing methods,2025-12
+,,OpenAI,0,Data processing purpose,2025-12
+,,OpenAI,0,Data processing techniques,2025-12
+,,OpenAI,0,Data size,2025-12
+,,OpenAI,0,Data language composition,2025-12
+,,OpenAI,0,Data domain composition,2025-12
+,,OpenAI,0,External data access,2025-12
+,,OpenAI,0,Data replicability,2025-12
+,,OpenAI,0,Compute usage for final training run,2025-12
+,,OpenAI,0,Compute usage including R&D,2025-12
+,,OpenAI,0,Development duration for final training run,2025-12
+,,OpenAI,0,Compute hardware for final training run,2025-12
+,,OpenAI,0,Compute provider,2025-12
+,,OpenAI,0,Energy usage for final training run,2025-12
+,,OpenAI,0,Carbon emissions for final training run,2025-12
+,,OpenAI,0,Water usage for final training run,2025-12
+,,OpenAI,0,Internal compute allocation,2025-12
+,,OpenAI,0,Model stages,2025-12
+,,OpenAI,0,Model objectives,2025-12
+,,OpenAI,0,Code access,2025-12
+,,OpenAI,0,Organization chart,2025-12
+,,OpenAI,0,Model cost,2025-12
+,,OpenAI,0,Basic model properties,2025-12
+,,OpenAI,0,Deeper model properties,2025-12
+,,OpenAI,0,Model dependencies,2025-12
+,,OpenAI,0,Benchmarked inference,2025-12
+,,OpenAI,0,Researcher credits,2025-12
+,,OpenAI,0,Specialized access,2025-12
+,,OpenAI,0,Open weights,2025-12
+,,OpenAI,0,Agent Protocols,2025-12
+,,OpenAI,0,Capabilities taxonomy,2025-12
+,,OpenAI,1,Capabilities evaluation,2025-12
+,,OpenAI,0,External reproducibility of capabilities evaluation,2025-12
+,,OpenAI,0,Train-test overlap,2025-12
+,,OpenAI,1,Risks taxonomy,2025-12
+,,OpenAI,1,Risks evaluation,2025-12
+,,OpenAI,0,External reproducibility of risks evaluation,2025-12
+,,OpenAI,0,Pre-deployment risk evaluation,2025-12
+,,OpenAI,1,External risk evaluation,2025-12
+,,OpenAI,1,Mitigations taxonomy,2025-12
+,,OpenAI,1,Mitigations taxonomy mapped to risk taxonomy,2025-12
+,,OpenAI,1,Mitigations efficacy,2025-12
+,,OpenAI,0,External reproducibility of mitigations evaluation,2025-12
+,,OpenAI,1,Model theft prevention measures,2025-12
+,,OpenAI,1,Release stages,2025-12
+,,OpenAI,1,Risk thresholds,2025-12
+,,OpenAI,1,Versioning protocol,2025-12
+,,OpenAI,1,Change log,2025-12
+,,OpenAI,0,Foundation model roadmap,2025-12
+,,OpenAI,0,Top distribution channels,2025-12
+,,OpenAI,0,Quantization,2025-12
+,,OpenAI,1,Terms of use,2025-12
+,,OpenAI,0,Distribution channels with usage data,2025-12
+,,OpenAI,0,Amount of usage,2025-12
+,,OpenAI,0,Classification of usage data,2025-12
+,,OpenAI,1,Data retention and deletion policy,2025-12
+,,OpenAI,0,Geographic statistics,2025-12
+,,OpenAI,1,Internal products and services,2025-12
+,,OpenAI,0,External products and services,2025-12
+,,OpenAI,0,Users of internal products and services,2025-12
+,,OpenAI,0,Consumer/enterprise usage,2025-12
+,,OpenAI,0,Enterprise users,2025-12
+,,OpenAI,0,Government use,2025-12
+,,OpenAI,0,Benefits Assessment,2025-12
+,,OpenAI,1,AI bug bounty,2025-12
+,,OpenAI,1,Responsible disclosure policy,2025-12
+,,OpenAI,1,Safe harbor,2025-12
+,,OpenAI,1,Security incident reporting protocol,2025-12
+,,OpenAI,0,Misuse incident reporting protocol,2025-12
+,,OpenAI,1,Post-deployment coordination with government,2025-12
+,,OpenAI,0,Feedback mechanisms,2025-12
+,,OpenAI,1,"Permitted, restricted, and prohibited model behaviors",2025-12
+,,OpenAI,1,Model response characteristics,2025-12
+,,OpenAI,0,System prompt,2025-12
+,,OpenAI,1,Intermediate tokens,2025-12
+,,OpenAI,1,Internal product and service mitigations,2025-12
+,,OpenAI,1,External developer mitigations,2025-12
+,,OpenAI,1,Enterprise mitigations,2025-12
+,,OpenAI,1,Detection of machine-generated content,2025-12
+,,OpenAI,1,Documentation for responsible use,2025-12
+,,OpenAI,1,Permitted and prohibited users,2025-12
+,,OpenAI,1,"Permitted, restricted, and prohibited uses",2025-12
+,,OpenAI,0,AUP enforcement process,2025-12
+,,OpenAI,0,AUP enforcement frequency,2025-12
+,,OpenAI,1,Regional policy variations,2025-12
+,,OpenAI,1,Oversight mechanism,2025-12
+,,OpenAI,1,Whistleblower protection,2025-12
+,,OpenAI,1,Government commitments,2025-12
+,,Writer,1,Data acquisition methods,2025-12
+,,Writer,0,Public datasets,2025-12
+,,Writer,0,Crawling,2025-12
+,,Writer,1,Usage data used in training,2025-12
+,,Writer,1,Notice of usage data used in training,2025-12
+,,Writer,0,Licensed data sources,2025-12
+,,Writer,0,Licensed data compensation,2025-12
+,,Writer,0,New human-generated data sources,2025-12
+,,Writer,1,Instructions for data generation,2025-12
+,,Writer,1,Data laborer practices,2025-12
+,,Writer,1,Synthetic data sources,2025-12
+,,Writer,1,Synthetic data purpose,2025-12
+,,Writer,1,Data processing methods,2025-12
+,,Writer,1,Data processing purpose,2025-12
+,,Writer,1,Data processing techniques,2025-12
+,,Writer,1,Data size,2025-12
+,,Writer,1,Data language composition,2025-12
+,,Writer,0,Data domain composition,2025-12
+,,Writer,0,External data access,2025-12
+,,Writer,0,Data replicability,2025-12
+,,Writer,1,Compute usage for final training run,2025-12
+,,Writer,1,Compute usage including R&D,2025-12
+,,Writer,1,Development duration for final training run,2025-12
+,,Writer,1,Compute hardware for final training run,2025-12
+,,Writer,1,Compute provider,2025-12
+,,Writer,1,Energy usage for final training run,2025-12
+,,Writer,1,Carbon emissions for final training run,2025-12
+,,Writer,1,Water usage for final training run,2025-12
+,,Writer,1,Internal compute allocation,2025-12
+,,Writer,1,Model stages,2025-12
+,,Writer,0,Model objectives,2025-12
+,,Writer,0,Code access,2025-12
+,,Writer,1,Organization chart,2025-12
+,,Writer,1,Model cost,2025-12
+,,Writer,1,Basic model properties,2025-12
+,,Writer,0,Deeper model properties,2025-12
+,,Writer,1,Model dependencies,2025-12
+,,Writer,1,Benchmarked inference,2025-12
+,,Writer,1,Researcher credits,2025-12
+,,Writer,0,Specialized access,2025-12
+,,Writer,0,Open weights,2025-12
+,,Writer,1,Agent Protocols,2025-12
+,,Writer,1,Capabilities taxonomy,2025-12
+,,Writer,1,Capabilities evaluation,2025-12
+,,Writer,0,External reproducibility of capabilities evaluation,2025-12
+,,Writer,0,Train-test overlap,2025-12
+,,Writer,1,Risks taxonomy,2025-12
+,,Writer,0,Risks evaluation,2025-12
+,,Writer,0,External reproducibility of risks evaluation,2025-12
+,,Writer,1,Pre-deployment risk evaluation,2025-12
+,,Writer,0,External risk evaluation,2025-12
+,,Writer,1,Mitigations taxonomy,2025-12
+,,Writer,0,Mitigations taxonomy mapped to risk taxonomy,2025-12
+,,Writer,0,Mitigations efficacy,2025-12
+,,Writer,0,External reproducibility of mitigations evaluation,2025-12
+,,Writer,1,Model theft prevention measures,2025-12
+,,Writer,1,Release stages,2025-12
+,,Writer,1,Risk thresholds,2025-12
+,,Writer,1,Versioning protocol,2025-12
+,,Writer,1,Change log,2025-12
+,,Writer,0,Foundation model roadmap,2025-12
+,,Writer,1,Top distribution channels,2025-12
+,,Writer,1,Quantization,2025-12
+,,Writer,1,Terms of use,2025-12
+,,Writer,1,Distribution channels with usage data,2025-12
+,,Writer,1,Amount of usage,2025-12
+,,Writer,1,Classification of usage data,2025-12
+,,Writer,1,Data retention and deletion policy,2025-12
+,,Writer,1,Geographic statistics,2025-12
+,,Writer,1,Internal products and services,2025-12
+,,Writer,1,External products and services,2025-12
+,,Writer,1,Users of internal products and services,2025-12
+,,Writer,1,Consumer/enterprise usage,2025-12
+,,Writer,1,Enterprise users,2025-12
+,,Writer,0,Government use,2025-12
+,,Writer,1,Benefits Assessment,2025-12
+,,Writer,1,AI bug bounty,2025-12
+,,Writer,1,Responsible disclosure policy,2025-12
+,,Writer,1,Safe harbor,2025-12
+,,Writer,0,Security incident reporting protocol,2025-12
+,,Writer,1,Misuse incident reporting protocol,2025-12
+,,Writer,1,Post-deployment coordination with government,2025-12
+,,Writer,1,Feedback mechanisms,2025-12
+,,Writer,0,"Permitted, restricted, and prohibited model behaviors",2025-12
+,,Writer,1,Model response characteristics,2025-12
+,,Writer,0,System prompt,2025-12
+,,Writer,1,Intermediate tokens,2025-12
+,,Writer,1,Internal product and service mitigations,2025-12
+,,Writer,1,External developer mitigations,2025-12
+,,Writer,1,Enterprise mitigations,2025-12
+,,Writer,1,Detection of machine-generated content,2025-12
+,,Writer,1,Documentation for responsible use,2025-12
+,,Writer,1,Permitted and prohibited users,2025-12
+,,Writer,1,"Permitted, restricted, and prohibited uses",2025-12
+,,Writer,1,AUP enforcement process,2025-12
+,,Writer,0,AUP enforcement frequency,2025-12
+,,Writer,1,Regional policy variations,2025-12
+,,Writer,1,Oversight mechanism,2025-12
+,,Writer,0,Whistleblower protection,2025-12
+,,Writer,1,Government commitments,2025-12
+,,xAI,0,Data acquisition methods,2025-12
+,,xAI,0,Public datasets,2025-12
+,,xAI,0,Crawling,2025-12
+,,xAI,0,Usage data used in training,2025-12
+,,xAI,0,Notice of usage data used in training,2025-12
+,,xAI,0,Licensed data sources,2025-12
+,,xAI,0,Licensed data compensation,2025-12
+,,xAI,0,New human-generated data sources,2025-12
+,,xAI,0,Instructions for data generation,2025-12
+,,xAI,0,Data laborer practices,2025-12
+,,xAI,0,Synthetic data sources,2025-12
+,,xAI,0,Synthetic data purpose,2025-12
+,,xAI,0,Data processing methods,2025-12
+,,xAI,0,Data processing purpose,2025-12
+,,xAI,0,Data processing techniques,2025-12
+,,xAI,0,Data size,2025-12
+,,xAI,0,Data language composition,2025-12
+,,xAI,0,Data domain composition,2025-12
+,,xAI,0,External data access,2025-12
+,,xAI,0,Data replicability,2025-12
+,,xAI,0,Compute usage for final training run,2025-12
+,,xAI,0,Compute usage including R&D,2025-12
+,,xAI,0,Development duration for final training run,2025-12
+,,xAI,0,Compute hardware for final training run,2025-12
+,,xAI,1,Compute provider,2025-12
+,,xAI,0,Energy usage for final training run,2025-12
+,,xAI,0,Carbon emissions for final training run,2025-12
+,,xAI,0,Water usage for final training run,2025-12
+,,xAI,0,Internal compute allocation,2025-12
+,,xAI,0,Model stages,2025-12
+,,xAI,0,Model objectives,2025-12
+,,xAI,0,Code access,2025-12
+,,xAI,0,Organization chart,2025-12
+,,xAI,0,Model cost,2025-12
+,,xAI,0,Basic model properties,2025-12
+,,xAI,0,Deeper model properties,2025-12
+,,xAI,0,Model dependencies,2025-12
+,,xAI,0,Benchmarked inference,2025-12
+,,xAI,0,Researcher credits,2025-12
+,,xAI,0,Specialized access,2025-12
+,,xAI,0,Open weights,2025-12
+,,xAI,0,Agent Protocols,2025-12
+,,xAI,0,Capabilities taxonomy,2025-12
+,,xAI,1,Capabilities evaluation,2025-12
+,,xAI,0,External reproducibility of capabilities evaluation,2025-12
+,,xAI,0,Train-test overlap,2025-12
+,,xAI,0,Risks taxonomy,2025-12
+,,xAI,0,Risks evaluation,2025-12
+,,xAI,0,External reproducibility of risks evaluation,2025-12
+,,xAI,0,Pre-deployment risk evaluation,2025-12
+,,xAI,0,External risk evaluation,2025-12
+,,xAI,0,Mitigations taxonomy,2025-12
+,,xAI,0,Mitigations taxonomy mapped to risk taxonomy,2025-12
+,,xAI,0,Mitigations efficacy,2025-12
+,,xAI,0,External reproducibility of mitigations evaluation,2025-12
+,,xAI,0,Model theft prevention measures,2025-12
+,,xAI,0,Release stages,2025-12
+,,xAI,0,Risk thresholds,2025-12
+,,xAI,0,Versioning protocol,2025-12
+,,xAI,1,Change log,2025-12
+,,xAI,1,Foundation model roadmap,2025-12
+,,xAI,1,Top distribution channels,2025-12
+,,xAI,0,Quantization,2025-12
+,,xAI,1,Terms of use,2025-12
+,,xAI,0,Distribution channels with usage data,2025-12
+,,xAI,0,Amount of usage,2025-12
+,,xAI,0,Classification of usage data,2025-12
+,,xAI,0,Data retention and deletion policy,2025-12
+,,xAI,0,Geographic statistics,2025-12
+,,xAI,0,Internal products and services,2025-12
+,,xAI,0,External products and services,2025-12
+,,xAI,0,Users of internal products and services,2025-12
+,,xAI,0,Consumer/enterprise usage,2025-12
+,,xAI,0,Enterprise users,2025-12
+,,xAI,0,Government use,2025-12
+,,xAI,0,Benefits Assessment,2025-12
+,,xAI,0,AI bug bounty,2025-12
+,,xAI,0,Responsible disclosure policy,2025-12
+,,xAI,0,Safe harbor,2025-12
+,,xAI,0,Security incident reporting protocol,2025-12
+,,xAI,0,Misuse incident reporting protocol,2025-12
+,,xAI,0,Post-deployment coordination with government,2025-12
+,,xAI,0,Feedback mechanisms,2025-12
+,,xAI,0,"Permitted, restricted, and prohibited model behaviors",2025-12
+,,xAI,1,Model response characteristics,2025-12
+,,xAI,1,System prompt,2025-12
+,,xAI,1,Intermediate tokens,2025-12
+,,xAI,1,Internal product and service mitigations,2025-12
+,,xAI,0,External developer mitigations,2025-12
+,,xAI,1,Enterprise mitigations,2025-12
+,,xAI,0,Detection of machine-generated content,2025-12
+,,xAI,0,Documentation for responsible use,2025-12
+,,xAI,1,Permitted and prohibited users,2025-12
+,,xAI,1,"Permitted, restricted, and prohibited uses",2025-12
+,,xAI,1,AUP enforcement process,2025-12
+,,xAI,0,AUP enforcement frequency,2025-12
+,,xAI,0,Regional policy variations,2025-12
+,,xAI,0,Oversight mechanism,2025-12
+,,xAI,0,Whistleblower protection,2025-12
+,,xAI,0,Government commitments,2025-12
