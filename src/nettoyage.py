@@ -112,8 +112,8 @@ def eclater_pays(df: pd.DataFrame, mode: str = "fractionnaire") -> pd.DataFrame:
     - « entier » : le modèle compte 1 pour chaque pays participant (une seule
       fois par pays). La somme des pays dépasse alors le nombre de modèles.
 
-    Choix à justifier dans le rapport ; le mode « entier » sert de test de
-    robustesse.
+    Le mode « fractionnaire » est utilisé dans tout le rapport ; le mode « entier »
+    sert de test de robustesse.
     """
     if mode not in {"fractionnaire", "entier"}:
         raise ValueError("mode = 'fractionnaire' ou 'entier'")
