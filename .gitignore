@@ -3,10 +3,11 @@
 *.key
 
 # Données : stockées sur MinIO (SSPCloud), pas dans Git
-# Données brutes figées du 22/11/2026, versionnées pour que le rapport tourne sans SSP Cloud
+# Données brutes figées (22/11/2026, et 24/11 pour Hugging Face), versionnées pour que le rapport tourne sans SSP Cloud
 data/raw/*
 !data/raw/.gitkeep
 !data/raw/*_2026-11-22.csv
+!data/raw/hf_models_2026-11-24.csv
 
 # Python / Jupyter
 __pycache__/

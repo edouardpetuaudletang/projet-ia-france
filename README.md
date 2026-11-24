@@ -59,6 +59,7 @@ de robustesse qui ne figurent pas dans le rapport.
 rapport.ipynb  rapport final
 src/           collecte, nettoyage, analyses et graphiques (fonctions réutilisables)
 notebooks/     annexes
-data/raw/      données brutes datées (non versionnées)
+data/raw/      données brutes datées (copie de celles figées sur MinIO)
+data/processed vecteurs d'embeddings des résumés (partie 4), calculés une fois
 figures/       graphiques exportés pour le rapport
 ```
