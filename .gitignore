@@ -7,6 +7,8 @@ data/raw/*
 data/processed/*
 !data/raw/.gitkeep
 !data/processed/.gitkeep
+# Exception : les embeddings, longs à recalculer, sont versionnés (voir src/embeddings.py)
+!data/processed/embeddings_*.parquet
 
 # Python / Jupyter
 __pycache__/
