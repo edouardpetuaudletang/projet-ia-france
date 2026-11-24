@@ -9,6 +9,8 @@ Projet Python pour la data science — ENSAE 2A.
 2. **L'opacité** : les développeurs publient-ils de moins en moins d'informations
    sur leurs modèles, et l'AI Act (août 2025) a-t-il changé quelque chose ?
 3. **La synthèse** : l'opacité des leaders biaise-t-elle la mesure du retard ?
+4. **Le contenu de la recherche** : de quoi parle la recherche française en IA, comparée
+   à la recherche américaine ? (analyse des résumés d'articles : spaCy, TF-IDF, nuages de mots)
 
 ## Sources
 
