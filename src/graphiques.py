@@ -253,7 +253,7 @@ def halteres_groupes(par_groupe, etiquettes, mediane_fr, mediane_us, titre, xlab
         ax.text(mediane, len(t) - 0.35, f" médiane {pays}", color=COULEURS_PAYS[pays], fontsize=8,
                 ha="left" if pays == "France" else "right", va="bottom")
     ax.set_xlabel(xlabel)
-    ax.set_title(titre, pad=18)
+    ax.set_title(titre, pad=30)
     ax.grid(axis="y", visible=False)
     ax.legend(ncol=2, loc="upper center", bbox_to_anchor=(0.5, -0.22), fontsize=9)
     _enregistrer(ax, fichier)
