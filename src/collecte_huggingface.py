@@ -1,7 +1,9 @@
 """Collecte Hugging Face : modèles ouverts des principales organisations.
 
 Hugging Face ne fournit pas le pays : la correspondance organisation -> pays
-est construite à la main ci-dessous.
+est construite à la main ci-dessous. Les noms sont ceux des comptes
+Hugging Face à la date de collecte (THUDM est devenu zai-org, CohereForAI
+est devenu CohereLabs).
 """
 
 import pandas as pd
@@ -14,9 +16,9 @@ ORGANISATIONS = {
     "mistralai": "France", "kyutai": "France", "lightonai": "France",
     "meta-llama": "États-Unis", "google": "États-Unis", "microsoft": "États-Unis",
     "openai": "États-Unis", "nvidia": "États-Unis",
-    "Qwen": "Chine", "deepseek-ai": "Chine", "THUDM": "Chine",
-    "CohereForAI": "Canada", "stabilityai": "Royaume-Uni",
-    "aleph-alpha": "Allemagne",
+    "Qwen": "Chine", "deepseek-ai": "Chine", "zai-org": "Chine",
+    "CohereLabs": "Canada", "stabilityai": "Royaume-Uni",
+    "Aleph-Alpha": "Allemagne",
 }
 
 
