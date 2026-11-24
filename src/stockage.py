@@ -1,11 +1,9 @@
 """Stockage des données brutes sur MinIO (SSP Cloud), au format Parquet.
 
-Conformément aux consignes du cours : les données issues d'API sont « figées »
-sur le stockage S3 une fois collectées, et l'analyse relit ces copies.
-Le dossier `diffusion` du bucket est lisible par tous les utilisateurs
-authentifiés du SSP Cloud.
-
-
+Les données issues des API sont « figées » sur le stockage S3 une fois
+collectées, et l'analyse relit ces copies : les résultats ne changent pas
+si une source est mise à jour. Le dossier `diffusion` du bucket est lisible
+par tous les utilisateurs authentifiés du SSP Cloud.
 """
 
 import os
@@ -27,7 +25,7 @@ def envoyer(df: pd.DataFrame, nom: str) -> str:
     """Écrit `df` en Parquet sur MinIO sous le nom `nom` (sans extension).
 
     Hors du SSP Cloud (pas d'accès MinIO), la copie distante est ignorée avec
-    un avertissement : la copie locale dans data/raw suffit pour avancer.
+    un avertissement, et seule la copie locale dans data/raw est conservée.
     """
     chemin = f"{DOSSIER}/{nom}.parquet"
     try:

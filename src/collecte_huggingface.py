@@ -1,7 +1,7 @@
 """Collecte Hugging Face : modèles ouverts des principales organisations.
 
 Hugging Face ne fournit pas le pays : la correspondance organisation -> pays
-est construite à la main ci-dessous (et recoupée avec Epoch AI dans le notebook).
+est construite à la main ci-dessous.
 """
 
 import pandas as pd

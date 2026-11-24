@@ -89,8 +89,8 @@ def qualifier_source_calcul(df: pd.DataFrame) -> pd.Series:
       ou valeur déclarée directement.
 
     Distinction essentielle pour la partie opacité : une valeur renseignée ne
-    prouve pas que le développeur l'a divulguée. Sans les colonnes de notes
-    (fichier allégé), toute valeur présente est classée dans la 3e catégorie.
+    prouve pas que le développeur l'a divulguée. Si les colonnes de notes
+    sont absentes, toute valeur présente est classée dans la 3e catégorie.
     """
     presente = df["Training compute (FLOP)"].notna()
     notes = df.get("Training compute notes", pd.Series("", index=df.index)).fillna("")
