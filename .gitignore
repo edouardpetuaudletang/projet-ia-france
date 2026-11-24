@@ -4,9 +4,7 @@
 
 # Données : stockées sur MinIO (SSPCloud), pas dans Git
 data/raw/*
-data/processed/*
 !data/raw/.gitkeep
-!data/processed/.gitkeep
 
 # Python / Jupyter
 __pycache__/

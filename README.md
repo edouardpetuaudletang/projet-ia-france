@@ -60,6 +60,5 @@ rapport.ipynb  rapport final
 src/           collecte, nettoyage, analyses et graphiques (fonctions réutilisables)
 notebooks/     annexes
 data/raw/      données brutes datées (non versionnées)
-data/processed données nettoyées (non versionnées)
 figures/       graphiques exportés pour le rapport
 ```

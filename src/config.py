@@ -6,7 +6,6 @@ from pathlib import Path
 
 RACINE = Path(__file__).resolve().parents[1]
 RAW = Path(os.environ.get("PROJET_RAW", RACINE / "data" / "raw"))
-PROCESSED = RACINE / "data" / "processed"
 FIGURES = RACINE / "figures"
 
 AUJOURDHUI = date.today().isoformat()
