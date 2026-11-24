@@ -5,7 +5,7 @@ import re
 import numpy as np
 import pandas as pd
 
-from config import DATE_AI_ACT, PAYS_COMPARES, RAW
+from config import DATE_AI_ACT, PAYS_COMPARES, RACINE, RAW
 
 # Informations dont on mesure la publication (variables d'opacité)
 INFOS_PUBLIABLES = {
@@ -20,23 +20,25 @@ INFOS_PUBLIABLES = {
 def charger_dernier(prefixe: str) -> pd.DataFrame:
     """Lit la version la plus récente d'un fichier brut.
 
-    Ordre de recherche : d'abord la copie figée sur MinIO (source de référence
-    pour la reproductibilité), sinon le fichier local dans data/raw.
+    Ordre de recherche : d'abord les fichiers datés de data/raw, qui sont
+    versionnés avec le dépôt (tout le monde lit donc les mêmes données, avec ou
+    sans accès au SSP Cloud), sinon la copie figée sur MinIO.
     """
+    fichiers = sorted(RAW.glob(f"{prefixe}_*.csv"))
+    if fichiers:
+        chemin = fichiers[-1]
+        print(f"Lecture locale : {chemin.relative_to(RACINE) if chemin.is_relative_to(RACINE) else chemin}")
+        return pd.read_csv(chemin)
+
     try:
         from stockage import lire, lister
         distants = lister(prefixe)
     except Exception:          # hors SSP Cloud ou s3fs absent
         distants = []
-    if distants:
-        print(f"Lecture MinIO : {distants[-1]}")
-        return lire(distants[-1])
-
-    fichiers = sorted(RAW.glob(f"{prefixe}_*.csv"))
-    if not fichiers:
-        raise FileNotFoundError(f"Aucun fichier {prefixe}_* sur MinIO ni dans {RAW}")
-    print(f"Lecture locale : {fichiers[-1]}")
-    return pd.read_csv(fichiers[-1])
+    if not distants:
+        raise FileNotFoundError(f"Aucun fichier {prefixe}_* dans {RAW} ni sur MinIO")
+    print(f"Lecture MinIO : {distants[-1]}")
+    return lire(distants[-1])
 
 
 def preparer_epoch(brut: pd.DataFrame) -> pd.DataFrame:

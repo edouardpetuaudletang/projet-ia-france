@@ -10,7 +10,7 @@ Projet Python pour la data science — ENSAE 2A.
    sur leurs modèles, et l'AI Act (août 2025) a-t-il changé quelque chose ?
 3. **La synthèse** : l'opacité des leaders biaise-t-elle la mesure du retard ?
 4. **Le contenu de la recherche** : de quoi parle la recherche française en IA, comparée
-   à la recherche américaine ? (analyse des résumés d'articles : spaCy, TF-IDF, nuages de mots)
+   à la recherche américaine ? (analyse des résumés d'articles : spaCy, TF-IDF, nuages de mots, embeddings)
 
 ## Sources
 
@@ -31,13 +31,37 @@ de la lecture des données aux conclusions.
 ```bash
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
-export OPENALEX_API_KEY="..."          # clé gratuite, jamais dans le dépôt
 ```
 
-Par défaut, le rapport relit les données figées (stockage MinIO du SSP Cloud,
-sinon `data/raw/`). Mettre `COLLECTER = True` dans sa première cellule de code
-relance toute la collecte (`src/pipeline.py`), source par source. Chaque script
-de collecte peut aussi être lancé seul, par exemple `python src/collecte_epoch.py`.
+Puis ouvrir `rapport.ipynb` avec Jupyter depuis la racine du dépôt et exécuter toutes
+les cellules, ou en ligne de commande :
+
+```bash
+jupyter nbconvert --to notebook --execute --inplace rapport.ipynb
+```
+
+Aucune clé d'API et aucune connexion ne sont nécessaires pour cela. Les annexes se
+lancent de la même façon depuis le dossier `notebooks/`. Le tout a été testé sur une
+installation neuve avec Python 3.12, pandas 3.1, scikit-learn 1.9 et spaCy 3.8.
+
+Par défaut, le rapport relit les données figées, versionnées dans le dépôt : les
+fichiers CSV datés de `data/raw/` (collecte du 22 novembre 2026, et du 24 novembre pour
+Hugging Face), les embeddings de `data/processed/` et le fond de carte de
+`data/fond_carte/`. Les résultats sont donc les mêmes à chaque exécution, avec ou sans
+accès au SSP Cloud. La copie sur MinIO n'est lue que si un fichier manque dans `data/raw/`.
+
+Mettre `COLLECTER = True` dans la deuxième cellule de code du rapport relance toute la
+collecte (`src/pipeline.py`), source par source. Chaque script de collecte peut aussi
+être lancé seul, par exemple `python src/collecte_epoch.py`. Pour la collecte OpenAlex,
+une clé gratuite évite d'être limité par l'API ; elle se place dans une variable
+d'environnement, jamais dans le dépôt :
+
+```bash
+export OPENALEX_API_KEY="..."
+```
+
+Les embeddings de la partie 4 sont déjà calculés et versionnés dans `data/processed/`.
+Les recalculer (`python src/embeddings.py`) demande en plus `sentence-transformers` et `torch`.
 
 Chaque collecte « fige » ses données en Parquet sur MinIO, dans
 `<bucket>/diffusion/projet-ia-france/raw/` (lisible par tous les utilisateurs du
@@ -61,5 +85,6 @@ src/           collecte, nettoyage, analyses et graphiques (fonctions réutilisa
 notebooks/     annexes
 data/raw/      données brutes datées (copie de celles figées sur MinIO)
 data/processed vecteurs d'embeddings des résumés (partie 4), calculés une fois
-figures/       graphiques exportés pour le rapport
+data/fond_carte fond de carte du monde (Natural Earth, domaine public)
+figures/       graphiques, créés à l'exécution des notebooks
 ```

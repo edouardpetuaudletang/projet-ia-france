@@ -79,8 +79,15 @@ def nuage_de_points_annote(table, x, y, titre, xlabel, ylabel, fichier=None):
     """Nuage de points avec le nom de chaque ligne écrit à côté de son point."""
     fig, ax = plt.subplots(figsize=(8, 5.5))
     ax.scatter(table[x], table[y], s=60, color="#2a78d6", zorder=3)
+    # Deux points voisins (Writer et AI21 Labs par exemple) : la seconde étiquette passe à gauche
+    etendue_x, etendue_y = np.ptp(table[x]) or 1, np.ptp(table[y]) or 1
+    places = []
     for nom, ligne in table.iterrows():
-        ax.annotate(nom, (ligne[x], ligne[y]), textcoords="offset points", xytext=(6, 4), fontsize=9)
+        voisin = any(abs(ligne[x] - px) < 0.15 * etendue_x and abs(ligne[y] - py) < 0.05 * etendue_y
+                     for px, py in places)
+        ax.annotate(nom, (ligne[x], ligne[y]), textcoords="offset points",
+                    xytext=(-6, 4) if voisin else (6, 4), ha="right" if voisin else "left", fontsize=9)
+        places.append((ligne[x], ligne[y]))
     ax.xaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
     ax.yaxis.set_major_formatter(lambda v, _: f"{v:.0%}")
     ax.set_xlabel(xlabel)

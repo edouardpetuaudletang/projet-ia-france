@@ -11,6 +11,8 @@ python-dotenv
 beautifulsoup4
 geopandas
 scikit-learn
+scipy
+jupyter
 jinja2          # mise en forme des tableaux (DataFrame.style)
 # sentence-transformers et torch : seulement pour recalculer les embeddings (src/embeddings.py)
 # modèles spaCy (à installer une fois) :

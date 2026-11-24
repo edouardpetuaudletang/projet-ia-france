@@ -8,7 +8,7 @@ pour que deux textes de sens proche aient des vecteurs proches (cosinus élevé)
 Modèle : microsoft/harrier-oss-v1-0.6b (licence MIT, 0,6 milliard de paramètres),
 lancé en local avec la bibliothèque sentence-transformers.
 
-Le calcul prend une quinzaine de minutes sur un ordinateur portable. Il est fait
+Le calcul prend environ six minutes sur un ordinateur portable. Il est fait
 une seule fois (`python src/embeddings.py`) et les vecteurs sont enregistrés dans
 data/processed/. Le rapport relit ce fichier : il n'a besoin ni du modèle ni de
 torch pour s'exécuter.
@@ -81,10 +81,16 @@ def calculer(resumes: pd.DataFrame) -> None:
 def charger(ids) -> np.ndarray:
     """Vecteurs des résumés dans l'ordre des identifiants demandés."""
     table = pd.read_parquet(FICHIER_RESUMES).set_index("id")
+    manquants = pd.Index(ids).difference(table.index)
+    if len(manquants):
+        raise KeyError(f"{len(manquants)} résumés n'ont pas de vecteur dans {FICHIER_RESUMES.name} : "
+                       "les résumés ont changé depuis le calcul des embeddings. "
+                       "Relancer avec RECALCULER_EMBEDDINGS = True.")
     return table.loc[list(ids)].to_numpy()
 
 
 def charger_references() -> pd.DataFrame:
+    """Vecteurs des huit phrases de référence, avec leur type (théorique ou appliquée)."""
     return pd.read_parquet(FICHIER_REFERENCES)
 
 
