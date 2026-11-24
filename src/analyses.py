@@ -44,7 +44,7 @@ def profil_recent(chaine, hf, periode="2024-2025"):
         "Articles top 1 %": part(r["articles_top1"]),
         "Modèles notables": part(r["modeles"]),
         "Modèles de pointe": part(r["modeles_pointe"]),
-        "Téléchargements HF": part(telechargements),
+        "Téléchargements HF\n(relevé nov. 2026)": part(telechargements),
     }).reindex(PAYS)
 
 

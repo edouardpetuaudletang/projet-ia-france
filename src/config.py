@@ -26,6 +26,8 @@ CODES_ISO = {"États-Unis": "us", "Chine": "cn", "Royaume-Uni": "gb",
 # Entrée en application des obligations de l'AI Act pour les modèles d'IA à usage général
 DATE_AI_ACT = "2025-08-02"
 
-# Fond de carte des pays du monde (Natural Earth, domaine public), lu directement par URL
+# Fond de carte des pays du monde (Natural Earth, domaine public). Le fichier est
+# versionné dans le dépôt pour que la carte se trace sans connexion ; l'URL est sa source.
+FOND_MONDE = RACINE / "data" / "fond_carte" / "ne_110m_admin_0_countries.geojson"
 URL_FOND_MONDE = ("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/"
                   "master/geojson/ne_110m_admin_0_countries.geojson")

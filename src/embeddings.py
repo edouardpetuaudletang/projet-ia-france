@@ -81,10 +81,16 @@ def calculer(resumes: pd.DataFrame) -> None:
 def charger(ids) -> np.ndarray:
     """Vecteurs des résumés dans l'ordre des identifiants demandés."""
     table = pd.read_parquet(FICHIER_RESUMES).set_index("id")
+    manquants = pd.Index(ids).difference(table.index)
+    if len(manquants):
+        raise KeyError(f"{len(manquants)} résumés n'ont pas de vecteur dans {FICHIER_RESUMES.name} : "
+                       "les résumés ont changé depuis le calcul des embeddings. "
+                       "Relancer avec RECALCULER_EMBEDDINGS = True.")
     return table.loc[list(ids)].to_numpy()
 
 
 def charger_references() -> pd.DataFrame:
+    """Vecteurs des huit phrases de référence, avec leur type (théorique ou appliquée)."""
     return pd.read_parquet(FICHIER_REFERENCES)
 
 
